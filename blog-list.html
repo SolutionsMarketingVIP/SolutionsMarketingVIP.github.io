@@ -72,6 +72,21 @@
   }
   header nav a:hover, header nav button:hover { color: #fff; }
 
+  /* ===== LOGO ===== */
+  header h1.logo-block { line-height: 0; }
+  header h1.logo-block a { display: inline-block; text-decoration: none; }
+  header h1.logo-block img {
+    height: 54px; width: auto; max-width: 240px;
+    display: block; border-radius: 3px;
+    transition: height 0.3s ease;
+  }
+  header.condensed h1.logo-block img { height: 40px; }
+  @media (max-width: 600px) {
+    header h1.logo-block img { height: 42px; max-width: 190px; }
+    header.condensed h1.logo-block img { height: 34px; }
+  }
+  /* ===== END LOGO ===== */
+
   .page-title {
     max-width: 900px; margin: 0 auto; padding: 50px 24px 8px;
     text-align: center;
