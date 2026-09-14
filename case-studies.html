@@ -45,6 +45,19 @@
     background:none; border:none; cursor:pointer; font-family:inherit; }
   header nav a:hover, header nav button:hover { color:#fff; }
   .lang-active { color:#fff !important; font-weight:bold; }
+
+  /* ===== LOGO ===== */
+  header h1.logo-block { line-height: 0; letter-spacing: normal; }
+  header h1.logo-block a { display: inline-block; text-decoration: none; }
+  header h1.logo-block img {
+    height: 54px; width: auto; max-width: 240px;
+    display: block; border-radius: 3px;
+  }
+  @media (max-width: 600px) {
+    header h1.logo-block img { height: 42px; max-width: 190px; }
+  }
+  /* ===== END LOGO ===== */
+
   .page-title { color:var(--gold); font-size:1.4rem; text-align:center;
     margin:40px 0 30px; }
   .case { background:#fff; border:1px solid #D8CFBA;
@@ -70,7 +83,7 @@
 
 <header>
   <div class="wrap">
-    <h1>SOLUTIONS <span>MARKETING</span> VIP</h1>
+    <h1 class="logo-block"><a href="index.html"><img src="/logo-new.png" alt="Solutions Marketing VIP"></a></h1>
     <nav>
       <a href="index.html" id="home"></a>
       <button id="btn-en" class="lang-active" onclick="setLang('en')">EN</button>
@@ -239,7 +252,7 @@
       <p>Nous pratiquons d'abord sur nous-mêmes. Notre propre site bilingue
          a débuté à 85/100 avec 10 problèmes documentés sur 10 pages :
          déploiements périmés, titres trop longs, balisage schema manquant
-         et pages trop maigres. Nous avons tout corrigé, puis relancé
+         et pages trop maigres. Nous avons tout corrigé, puis relançé
          exactement le même audit que nous vendons à nos clients.</p>
       <h4>Le résultat</h4>
       <ul>
