@@ -76,6 +76,21 @@
   }
   header nav a:hover, header nav button:hover { color: #fff; }
 
+  /* ===== LOGO ===== */
+  header h1.logo-block { line-height: 0; letter-spacing: normal; }
+  header h1.logo-block a { display: inline-block; text-decoration: none; }
+  header h1.logo-block img {
+    height: 54px; width: auto; max-width: 240px;
+    display: block; border-radius: 3px;
+    transition: height 0.3s ease;
+  }
+  header.condensed h1.logo-block img { height: 40px; }
+  @media (max-width: 600px) {
+    header h1.logo-block img { height: 42px; max-width: 190px; }
+    header.condensed h1.logo-block img { height: 34px; }
+  }
+  /* ===== END LOGO ===== */
+
   article {
     max-width: 720px; margin: 36px auto; padding: 34px 26px;
     background: #fff; border: 1px solid #D8CFBA;
@@ -139,7 +154,7 @@
 
 <header id="site-header">
   <div class="hwrap">
-    <h1>SOLUTIONS <span>MARKETING</span> VIP</h1>
+    <h1 class="logo-block"><a href="index.html"><img src="/logo-new.png" alt="Solutions Marketing VIP"></a></h1>
     <nav>
       <a href="index.html"><span class="en" lang="en">Home</span><span class="fr" lang="fr">Accueil</span></a>
       <a href="blog-list.html"><span class="en" lang="en">Articles</span><span class="fr" lang="fr">Articles</span></a>
@@ -205,7 +220,7 @@
 <p>Le plus audacieux de la liste. Linux Mint est un système d'exploitation gratuit qui fait tourner votre ordinateur à la place de Windows. Les versions récentes sont assez conviviales pour les utilisateurs non techniques, et aucun empire de collecte de données n'y est attaché. Nous menons toutes nos opérations sous Linux, y compris tout notre travail d'audit. Commencez avec un vieil ordinateur portable si vous êtes curieux : le démarrage double vous permet d'essayer sans toucher à votre installation principale.</p>
 
 <div class="tip-box">
-<p><strong>Par où commencer :</strong> ne changez pas tout en une fin de semaine. Changez de navigateur cette semaine. Déplacez votre courriel le mois prochain. Les habitudes valent mieux que les achats : un outil que vous utilisez vraiment bat dix outils que vous abandonnez. Et les cinq sont gratuits, alors « pas maintenant » ne vous coûte que de la protection.</p>
+<p><strong>Par où commencer :</strong> ne changez pas tout en une fin de semaine. Changez de navigateur cette semaine. Déplacez votre courriel le mois prochain. Les habitudes valent mieux que les achats : un outil que vous utilisez vraiment bat dix outils que vous abandonnent. Et les cinq sont gratuits, alors « pas maintenant » ne vous coûte que de la protection.</p>
 </div>
 
 <div class="cta">
