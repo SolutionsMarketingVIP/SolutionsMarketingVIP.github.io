@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://solutionsmarketingvip.com/</loc><priority>1.0</priority></url>
+  <url><loc>https://solutionsmarketingvip.com/blog-list.html</loc><priority>0.8</priority></url>
   <url><loc>https://solutionsmarketingvip.com/documents.html</loc><priority>0.8</priority></url>
   <url><loc>https://solutionsmarketingvip.com/case-studies.html</loc><priority>0.8</priority></url>
-  <url><loc>https://solutionsmarketingvip.com/blog-list.html</loc><priority>0.8</priority></url>
-  <url><loc>https://solutionsmarketingvip.com/blog7.html</loc><priority>0.7</priority></url>
   <url><loc>https://solutionsmarketingvip.com/blog.html</loc><priority>0.7</priority></url>
   <url><loc>https://solutionsmarketingvip.com/blog2.html</loc><priority>0.7</priority></url>
   <url><loc>https://solutionsmarketingvip.com/blog3.html</loc><priority>0.7</priority></url>
   <url><loc>https://solutionsmarketingvip.com/blog4.html</loc><priority>0.7</priority></url>
   <url><loc>https://solutionsmarketingvip.com/blog5.html</loc><priority>0.7</priority></url>
   <url><loc>https://solutionsmarketingvip.com/blog6.html</loc><priority>0.7</priority></url>
+  <url><loc>https://solutionsmarketingvip.com/blog7.html</loc><priority>0.7</priority></url>
 </urlset>
