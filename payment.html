@@ -6,7 +6,7 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="canonical" href="https://solutionsmarketingvip.com/payment.html">
 <title>Payment Options | Solutions Marketing VIP</title>
-<meta name="description" content="Secure payment options for SEO audits and services. Interac e-Transfer or card via Square. No third-party wallets holding your money.">
+<meta name="description" content="Secure payment options for SEO audits, website builds, and monitoring services. Interac e-Transfer or card via Square. No third-party wallets holding your money.">
 <style>
   :root {
     --gold: #B08D3E;
@@ -129,6 +129,27 @@
   .card-button:hover {
     background: #9c7b33; transform: translateY(-1px);
   }
+  .coming-soon {
+    background: rgba(176, 141, 62, 0.12);
+    border-left: 3px solid var(--gold);
+    padding: 18px 22px; margin: 22px 0;
+    font-size: 0.92rem;
+    border-radius: 3px;
+  }
+  .website-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px; margin-top: 18px;
+  }
+  .website-item {
+    background: var(--gold-light); color: var(--dark);
+    padding: 14px 18px; border-radius: 4px;
+    font-size: 0.95rem;
+    transition: transform 0.25s ease;
+  }
+  .website-item:hover {
+    transform: translateY(-2px);
+  }
+  .website-item strong { display: block; font-size: 1.1rem; margin-bottom: 4px; }
 
   footer {
     background: var(--dark); color: #8a8a8a; text-align: center;
@@ -161,6 +182,7 @@
     <h1 class="logo-block"><a href="index.html"><img src="/logo-new.png" alt="Solutions Marketing VIP"></a></h1>
     <nav>
       <a href="index.html"><span class="en" lang="en">Home</span><span class="fr" lang="fr">Accueil</span></a>
+      <a href="websites.html"><span class="en" lang="en">Websites</span><span class="fr" lang="fr">Sites Web</span></a>
       <a href="blog-list.html"><span class="en" lang="en">Articles</span><span class="fr" lang="fr">Articles</span></a>
       <button class="toggle-btn" onclick="toggleLang()" id="langBtn" style="background:#B08D3E;color:#fff;border:none;padding:8px 18px;cursor:pointer;font-weight:bold;border-radius:3px;font-family:Georgia,serif;">FR</button>
     </nav>
@@ -191,7 +213,7 @@
         <li>No processing fees — you pay the exact amount quoted</li>
         <li>Money goes straight to our Wealthsimple business account</li>
         <li>Instant confirmation once deposited</li>
-        <li>Perfect for audits and retainers under $10,000</li>
+        <li>Perfect for audits, website builds, and retainers</li>
       </ul>
       
       <p style="margin-top: 18px;"><strong>Send payment to:</strong></p>
@@ -207,13 +229,13 @@
     </div>
     
     <div class="fr" lang="fr">
-      <h3>Interopérabilité par virement Interac</h3>
+      <h3>Virement Interac</h3>
       <p><strong>Directement à votre banque. Aucun tiers ne garde votre argent.</strong></p>
       <ul>
         <li>Aucuns frais de traitement — vous payez le montant exact coté</li>
         <li>L'argent va directement à notre compte d'entreprise Wealthsimple</li>
         <li>Confirmation instantanée une fois déposé</li>
-        <li>Parfait pour les audits et abonnements de moins de 10 000 $</li>
+        <li>Parfait pour les audits, construction de sites et abonnements</li>
       </ul>
       
       <p style="margin-top: 18px;"><strong>Envoyez le paiement à :</strong></p>
@@ -245,12 +267,19 @@
       
       <p style="margin-top: 18px;"><strong>Select your service:</strong></p>
       
-      <!-- THIS LINK IS WHERE YOU PASTE YOUR SQUARE CHECKOUT URL AFTER CREATING IT IN THE DASHBOARD -->
-      <!-- Replace the '#' below with your actual Square payment link -->
-      <a href="#" class="card-button">Health Check Audit ($300) →</a>
+      <!-- SEO AUDITS -->
+      <div class="website-grid">
+        <div class="website-item"><strong>Health Check Audit</strong>$300</div>
+        <div class="website-item"><strong>Complete Audit</strong>$1,200+</div>
+        <div class="website-item"><strong>Landing Page</strong>$900</div>
+        <div class="website-item"><strong>Business Site</strong>$2,800</div>
+        <div class="website-item"><strong>Site + SEO Kickstart</strong>$3,800</div>
+        <div class="website-item"><strong>Monitoring (monthly)</strong>$650</div>
+        <div class="website-item"><strong>Maintenance (monthly)</strong>$99–$199</div>
+      </div>
       
-      <div class="payment-note" style="margin-top: 22px;">
-        <strong>Important:</strong> After creating your Square checkout links (takes 5 minutes in the Square dashboard), paste them in the button code above. Each service gets its own link. Contact us if you need help generating these.
+      <div class="coming-soon">
+        <strong>Coming soon:</strong> We're finishing our online checkout system right now. For immediate payment, please use Interac e-Transfer (shown above) or ask us for a custom Square payment link for your specific invoice. We'll have this ready within 48 hours.
       </div>
     </div>
     
@@ -258,25 +287,32 @@
       <h3>Paiement par Carte de Crédit</h3>
       <p>Paiement sécurisé hébergé par Square. Vos données de carte ne touchent jamais notre site.</p>
       <ul>
-        <li>2.9% + 0,30 $ par transaction (taux canadien standard)</li>
-        <li>Versement automatique de Square à notre compte bancaire</li>
+        <li>2,9 % + 0,30 $ par transaction (taux canadien standard)</li>
+        <li>Square verse automatiquement à notre compte bancaire</li>
         <li>Réception numérique immédiate</li>
         <li>Fonctionne sur tous appareils, aucune connexion requise</li>
       </ul>
       
       <p style="margin-top: 18px;"><strong>Sélectionnez votre service :</strong></p>
       
-      <!-- THIS LINK IS WHERE YOU PASTE YOUR SQUARE CHECKOUT URL AFTER CREATING IT IN THE DASHBOARD -->
-      <!-- Remplacez le '#' ci-dessous par votre lien de paiement Square réel -->
-      <a href="#" class="card-button">Audit Santé de Site ($300) →</a>
+      <!-- AUDITS SEO -->
+      <div class="website-grid">
+        <div class="website-item"><strong>Vérification de Santé</strong>300 $</div>
+        <div class="website-item"><strong>Audit Complet</strong>1 200 $+</div>
+        <div class="website-item"><strong>Page d'Atterrissage</strong>900 $</div>
+        <div class="website-item"><strong>Site d'Affaires</strong>2 800 $</div>
+        <div class="website-item"><strong>Site + Départ SEO</strong>3 800 $</div>
+        <div class="website-item"><strong>Surveillance (mensuel)</strong>650 $</div>
+        <div class="website-item"><strong>Maintenance (mensuel)</strong>99–199 $</div>
+      </div>
       
-      <div class="payment-note" style="margin-top: 22px;">
-        <strong>Important :</strong> Après créer vos liens de paiement Square (5 minutes dans le tableau de bord), collez-les dans le bouton ci-dessus. Chaque service a son propre lien. Contactez-nous si vous avez besoin d'aide pour les générer.
+      <div class="coming-soon">
+        <strong>Bientôt disponible :</strong> Nous terminons actuellement notre système de paiement en ligne. Pour un paiement immédiat, veuillez utiliser le virement Interac (affiché ci-dessus) ou demandez-nous un lien de paiement personnalisé Square pour votre facture spécifique. Nous aurons ceci prêt dans les 48 heures.
       </div>
     </div>
   </div>
 
-  <!-- OPTIONAL: IN-PERSON SECTION (REMOVE IF NOT NEEDED) -->
+  <!-- OPTIONAL: IN-PERSON SECTION -->
   <div class="payment-option">
     <div class="tag"><span class="en" lang="en">In Person</span><span class="fr" lang="fr">En Personne</span></div>
     
