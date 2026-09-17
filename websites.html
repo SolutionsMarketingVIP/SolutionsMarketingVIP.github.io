@@ -69,6 +69,10 @@
   }
   .page-title h2 { font-size: 1.9rem; color: var(--dark); line-height: 1.3; }
   .page-title p { max-width: 640px; margin: 14px auto 0; font-size: 1rem; }
+  .guide-link {
+    max-width: 640px; margin: 16px auto 0; font-size: 0.95rem;
+  }
+  .guide-link a { color: var(--gold); font-weight: bold; }
 
   .content {
     max-width: 900px; margin: 10px auto 80px; padding: 0 24px;
@@ -248,6 +252,8 @@
     <h1 class="logo-block"><a href="index.html"><img src="/logo-new.png" alt="Solutions Marketing VIP"></a></h1>
     <nav>
       <a href="index.html"><span class="en" lang="en">Home</span><span class="fr" lang="fr">Accueil</span></a>
+      <a href="websites.html"><span class="en" lang="en">Websites</span><span class="fr" lang="fr">Sites Web</span></a>
+      <a href="website-types.html"><span class="en" lang="en">Guide</span><span class="fr" lang="fr">Guide</span></a>
       <a href="blog-list.html"><span class="en" lang="en">Articles</span><span class="fr" lang="fr">Articles</span></a>
       <button class="toggle-btn" onclick="toggleLang()" id="langBtn" style="background:#B08D3E;color:#fff;border:none;padding:8px 18px;cursor:pointer;font-weight:bold;border-radius:3px;font-family:Georgia,serif;">FR</button>
     </nav>
@@ -259,11 +265,13 @@
     <div class="eyebrow">Website Design</div>
     <h2>Professional Websites, Built to Rank</h2>
     <p>Hand-coded, bilingual, fast-loading websites for Montreal and Quebec businesses. No bloated templates, no trackers slowing you down, no surprises in the bill.</p>
+    <p class="guide-link">Not sure what type of website you need? <a href="website-types.html">Read our plain-language guide</a> comparing HTML, WordPress, and builders.</p>
   </div>
   <div class="fr" lang="fr">
     <div class="eyebrow">Conception de Sites Web</div>
     <h2>Des Sites Professionnels, Conçus pour Se Classer</h2>
     <p>Des sites web codés à la main, bilingues et rapides pour les entreprises de Montréal et du Québec. Aucun modèle gonflé, aucun traqueur qui vous ralentit, aucune surprise sur la facture.</p>
+    <p class="guide-link">Pas certain du type de site web dont vous avez besoin ? <a href="website-types.html">Lisez notre guide en langage clair</a> comparant HTML, WordPress et les créateurs de sites.</p>
   </div>
 </div>
 
@@ -535,29 +543,31 @@
     </div>
   </div>
 
-  <footer>
-    <p>&copy; 2026 Solutions Marketing VIP - <span class="en" lang="en">Professional websites. Privacy respected.</span><span class="fr" lang="fr">Sites web professionnels. Vie privée respectée.</span></p>
-  </footer>
+</div>
 
-  <script>
-  function toggleLang() {
-    var b = document.body;
-    var btn = document.getElementById('langBtn');
-    if (b.classList.contains('lang-en')) {
-      b.classList.remove('lang-en'); b.classList.add('lang-fr');
-      btn.textContent = 'EN';
-    } else {
-      b.classList.remove('lang-fr'); b.classList.add('lang-en');
-      btn.textContent = 'FR';
-    }
+<footer>
+  <p>&copy; 2026 Solutions Marketing VIP - <span class="en" lang="en">Professional websites. Privacy respected.</span><span class="fr" lang="fr">Sites web professionnels. Vie privée respectée.</span></p>
+</footer>
+
+<script>
+function toggleLang() {
+  var b = document.body;
+  var btn = document.getElementById('langBtn');
+  if (b.classList.contains('lang-en')) {
+    b.classList.remove('lang-en'); b.classList.add('lang-fr');
+    btn.textContent = 'EN';
+  } else {
+    b.classList.remove('lang-fr'); b.classList.add('lang-en');
+    btn.textContent = 'FR';
   }
+}
 
-  var header = document.getElementById("site-header");
-  window.addEventListener("scroll", function () {
-    if (window.scrollY > 40) header.classList.add("condensed");
-    else header.classList.remove("condensed");
-  }, { passive: true });
-  </script>
+var header = document.getElementById("site-header");
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 40) header.classList.add("condensed");
+  else header.classList.remove("condensed");
+}, { passive: true });
+</script>
 
 </body>
 </html>
