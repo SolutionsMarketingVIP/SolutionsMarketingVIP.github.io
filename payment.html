@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://solutionsmarketingvip.com/payment.html">
+<title>Payment Options | Solutions Marketing VIP</title>
+<meta name="description" content="Secure payment options for SEO audits and services. Interac e-Transfer or card via Square. No third-party wallets holding your money.">
+<style>
+  :root {
+    --gold: #B08D3E;
+    --gold-light: #D9C99A;
+    --dark: #23252B;
+    --cream: #F5F2EA;
+    --text: #3a3a40;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: var(--cream); color: var(--text); line-height: 1.7;
+  }
+
+  header {
+    background: var(--dark); color: #fff;
+    padding: 20px 0; border-bottom: 3px solid var(--gold);
+    position: sticky; top: 0; z-index: 50;
+    transition: padding 0.3s ease, box-shadow 0.3s ease;
+  }
+  header.condensed {
+    padding: 10px 0;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.45);
+  }
+  header .hwrap {
+    max-width: 900px; margin: 0 auto; padding: 0 24px;
+    display: flex; justify-content: space-between; align-items: center;
+    flex-wrap: wrap; gap: 10px;
+  }
+  header h1.logo-block { line-height: 0; }
+  header h1.logo-block a { display: inline-block; text-decoration: none; }
+  header h1.logo-block img {
+    height: 54px; width: auto; max-width: 240px;
+    display: block; border-radius: 3px;
+    transition: height 0.3s ease;
+  }
+  header.condensed h1.logo-block img { height: 40px; }
+  @media (max-width: 600px) {
+    header h1.logo-block img { height: 42px; max-width: 190px; }
+    header.condensed h1.logo-block img { height: 34px; }
+  }
+  header nav a, header nav button {
+    color: var(--gold-light); text-decoration: none;
+    margin-left: 14px; font-size: 0.95rem;
+    background: none; border: none; cursor: pointer;
+    font-family: inherit; padding: 0;
+    transition: color 0.25s ease;
+  }
+  header nav a:hover, header nav button:hover { color: #fff; }
+
+  .page-title {
+    max-width: 900px; margin: 0 auto; padding: 50px 24px 8px;
+    text-align: center;
+  }
+  .eyebrow {
+    color: var(--gold); font-size: 0.75rem; letter-spacing: 3px;
+    text-transform: uppercase; font-family: Arial, sans-serif;
+    margin-bottom: 6px;
+  }
+  .page-title h2 { font-size: 1.9rem; color: var(--dark); line-height: 1.3; }
+
+  .content {
+    max-width: 900px; margin: 10px auto 80px; padding: 0 24px;
+  }
+
+  .payment-option {
+    background: #fff; border: 1px solid #D8CFBA;
+    border-left: 5px solid var(--gold); border-radius: 5px;
+    padding: 32px 28px; margin-bottom: 28px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  .payment-option:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.10);
+  }
+  .payment-option h3 {
+    color: var(--dark); font-size: 1.35rem; margin-bottom: 12px;
+  }
+  .payment-option .tag {
+    background: var(--gold-light); color: var(--dark);
+    padding: 5px 14px; border-radius: 3px;
+    font-size: 0.75rem; font-weight: bold; letter-spacing: 1px;
+    display: inline-block; margin-bottom: 14px;
+  }
+  .payment-option ul {
+    list-style: none; margin: 18px 0 22px;
+  }
+  .payment-option li {
+    padding-left: 24px; position: relative; margin-bottom: 10px;
+    font-size: 0.97rem;
+  }
+  .payment-option li::before {
+    content: "✓"; color: var(--gold); font-weight: bold;
+    position: absolute; left: 0;
+  }
+  .payment-option .email {
+    background: var(--gold-light); color: var(--dark);
+    padding: 12px 18px; border-radius: 4px;
+    font-family: monospace; font-size: 1rem;
+    display: inline-block; margin: 18px 0;
+    font-weight: bold;
+  }
+  .payment-note {
+    background: rgba(176, 141, 62, 0.08);
+    border-left: 3px solid var(--gold);
+    padding: 18px 22px; margin: 22px 0;
+    font-size: 0.92rem;
+    border-radius: 3px;
+  }
+  .card-button {
+    display: inline-block;
+    background: var(--gold); color: #fff;
+    padding: 16px 32px; border-radius: 5px;
+    text-decoration: none; font-weight: bold;
+    font-size: 1.05rem; margin-top: 18px;
+    transition: background 0.25s ease, transform 0.25s ease;
+  }
+  .card-button:hover {
+    background: #9c7b33; transform: translateY(-1px);
+  }
+
+  footer {
+    background: var(--dark); color: #8a8a8a; text-align: center;
+    padding: 30px 20px; font-size: 0.85rem;
+    border-top: 3px solid var(--gold);
+    font-family: Arial, sans-serif;
+  }
+
+  .fr { display: none; }
+  body.lang-fr .en { display: none; }
+  body.lang-fr .fr { display: block; }
+
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .payment-option { animation: fadeInUp 0.7s ease both; }
+  .payment-option:nth-child(2) { animation-delay: 0.15s; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .payment-option { animation: none; }
+    html { scroll-behavior: auto; }
+  }
+</style>
+</head>
+<body class="lang-en">
+
+<header id="site-header">
+  <div class="hwrap">
+    <h1 class="logo-block"><a href="index.html"><img src="/logo-new.png" alt="Solutions Marketing VIP"></a></h1>
+    <nav>
+      <a href="index.html"><span class="en" lang="en">Home</span><span class="fr" lang="fr">Accueil</span></a>
+      <a href="blog-list.html"><span class="en" lang="en">Articles</span><span class="fr" lang="fr">Articles</span></a>
+      <button class="toggle-btn" onclick="toggleLang()" id="langBtn" style="background:#B08D3E;color:#fff;border:none;padding:8px 18px;cursor:pointer;font-weight:bold;border-radius:3px;font-family:Georgia,serif;">FR</button>
+    </nav>
+  </div>
+</header>
+
+<div class="page-title">
+  <div class="en" lang="en">
+    <div class="eyebrow">Secure Payments</div>
+    <h2>Two Ways to Pay</h2>
+  </div>
+  <div class="fr" lang="fr">
+    <div class="eyebrow">Paiements Sécurisés</div>
+    <h2>Deux Façons de Payer</h2>
+  </div>
+</div>
+
+<div class="content">
+
+  <!-- OPTION 1: INTERAC E-TRANSFER -->
+  <div class="payment-option">
+    <div class="tag"><span class="en" lang="en">Recommended</span><span class="fr" lang="fr">Recommandé</span></div>
+    
+    <div class="en" lang="en">
+      <h3>Interac e-Transfer</h3>
+      <p><strong>Direct to your bank. No third party holds your money.</strong></p>
+      <ul>
+        <li>No processing fees — you pay the exact amount quoted</li>
+        <li>Money goes straight to our Wealthsimple business account</li>
+        <li>Instant confirmation once deposited</li>
+        <li>Perfect for audits and retainers under $10,000</li>
+      </ul>
+      
+      <p style="margin-top: 18px;"><strong>Send payment to:</strong></p>
+      <div class="email">solutions.marketing.vip@proton.me</div>
+      
+      <p class="payment-note">
+        After you send, you'll receive a receipt and invoice within 24 hours. For amounts over $5,000, we'll confirm receipt and start your project immediately.
+      </p>
+      
+      <p style="font-size: 0.92rem; color: #666; margin-top: 16px;">
+        <em>Note: GST/QST added where applicable by law.</em>
+      </p>
+    </div>
+    
+    <div class="fr" lang="fr">
+      <h3>Interopérabilité par virement Interac</h3>
+      <p><strong>Directement à votre banque. Aucun tiers ne garde votre argent.</strong></p>
+      <ul>
+        <li>Aucuns frais de traitement — vous payez le montant exact coté</li>
+        <li>L'argent va directement à notre compte d'entreprise Wealthsimple</li>
+        <li>Confirmation instantanée une fois déposé</li>
+        <li>Parfait pour les audits et abonnements de moins de 10 000 $</li>
+      </ul>
+      
+      <p style="margin-top: 18px;"><strong>Envoyez le paiement à :</strong></p>
+      <div class="email">solutions.marketing.vip@proton.me</div>
+      
+      <p class="payment-note">
+        Après envoi, vous recevrez une facture en 24 heures. Pour des montants de plus de 5 000 $, nous confirmons la réception et lançons votre projet immédiatement.
+      </p>
+      
+      <p style="font-size: 0.92rem; color: #666; margin-top: 16px;">
+        <em>Note: TPS/TVH ajoutées où applicable par la loi.</em>
+      </p>
+    </div>
+  </div>
+
+  <!-- OPTION 2: CARD PAYMENT VIA SQUARE -->
+  <div class="payment-option">
+    <div class="tag"><span class="en" lang="en">Card Option</span><span class="fr" lang="fr">Carte</span></div>
+    
+    <div class="en" lang="en">
+      <h3>Pay by Credit Card</h3>
+      <p>Secure checkout hosted by Square. Your card data never touches our website.</p>
+      <ul>
+        <li>2.9% + $0.30 per transaction (standard Canadian rate)</li>
+        <li>Square deposits automatically to our bank account</li>
+        <li>You get a digital receipt immediately</li>
+        <li>Works on any device, no login required</li>
+      </ul>
+      
+      <p style="margin-top: 18px;"><strong>Select your service:</strong></p>
+      
+      <!-- THIS LINK IS WHERE YOU PASTE YOUR SQUARE CHECKOUT URL AFTER CREATING IT IN THE DASHBOARD -->
+      <!-- Replace the '#' below with your actual Square payment link -->
+      <a href="#" class="card-button">Health Check Audit ($300) →</a>
+      
+      <div class="payment-note" style="margin-top: 22px;">
+        <strong>Important:</strong> After creating your Square checkout links (takes 5 minutes in the Square dashboard), paste them in the button code above. Each service gets its own link. Contact us if you need help generating these.
+      </div>
+    </div>
+    
+    <div class="fr" lang="fr">
+      <h3>Paiement par Carte de Crédit</h3>
+      <p>Paiement sécurisé hébergé par Square. Vos données de carte ne touchent jamais notre site.</p>
+      <ul>
+        <li>2.9% + 0,30 $ par transaction (taux canadien standard)</li>
+        <li>Versement automatique de Square à notre compte bancaire</li>
+        <li>Réception numérique immédiate</li>
+        <li>Fonctionne sur tous appareils, aucune connexion requise</li>
+      </ul>
+      
+      <p style="margin-top: 18px;"><strong>Sélectionnez votre service :</strong></p>
+      
+      <!-- THIS LINK IS WHERE YOU PASTE YOUR SQUARE CHECKOUT URL AFTER CREATING IT IN THE DASHBOARD -->
+      <!-- Remplacez le '#' ci-dessous par votre lien de paiement Square réel -->
+      <a href="#" class="card-button">Audit Santé de Site ($300) →</a>
+      
+      <div class="payment-note" style="margin-top: 22px;">
+        <strong>Important :</strong> Après créer vos liens de paiement Square (5 minutes dans le tableau de bord), collez-les dans le bouton ci-dessus. Chaque service a son propre lien. Contactez-nous si vous avez besoin d'aide pour les générer.
+      </div>
+    </div>
+  </div>
+
+  <!-- OPTIONAL: IN-PERSON SECTION (REMOVE IF NOT NEEDED) -->
+  <div class="payment-option">
+    <div class="tag"><span class="en" lang="en">In Person</span><span class="fr" lang="fr">En Personne</span></div>
+    
+    <div class="en" lang="en">
+      <h3>In-Person Payment</h3>
+      <p>Met a client in Montreal? Take contactless tap payment on the spot.</p>
+      <ul>
+        <li>Tap, dip, or swipe accepted</li>
+        <li>Digital receipt emailed immediately</li>
+        <li>No cash handling</li>
+      </ul>
+      <p style="font-size: 0.92rem; color: #666; margin-top: 16px;">
+        <em>Contact us to arrange an in-person meeting for payment.</em>
+      </p>
+    </div>
+    
+    <div class="fr" lang="fr">
+      <h3>Paiement en Personne</h3>
+      <p>Rencontré un client à Montréal? Prenez le paiement sans contact sur place.</p>
+      <ul>
+        <li>Tap, insérez, ou glisser accepté</li>
+        <li>Réception numérique envoyée par courriel</li>
+        <li>Pas de gestion d'espèces</li>
+      </ul>
+      <p style="font-size: 0.92rem; color: #666; margin-top: 16px;">
+        <em>Contactez-nous pour organiser une rencontre en personne.</em>
+      </p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Solutions Marketing VIP - <span class="en" lang="en">Privacy-first payments. We never store your card data.</span><span class="fr" lang="fr">Paiements axés sur la confidentialité. Nous ne stockons jamais vos données de carte.</span></p>
+  </footer>
+
+  <script>
+  function toggleLang() {
+    var b = document.body;
+    var btn = document.getElementById('langBtn');
+    if (b.classList.contains('lang-en')) {
+      b.classList.remove('lang-en'); b.classList.add('lang-fr');
+      btn.textContent = 'EN';
+    } else {
+      b.classList.remove('lang-fr'); b.classList.add('lang-en');
+      btn.textContent = 'FR';
+    }
+  }
+
+  var header = document.getElementById("site-header");
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 40) header.classList.add("condensed");
+    else header.classList.remove("condensed");
+  }, { passive: true });
+  </script>
+
+</body>
+</html>
