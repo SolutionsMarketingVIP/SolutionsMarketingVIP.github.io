@@ -1,38 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="canonical" href="https://solutionsmarketingvip.com/">
-<meta property="og:title" content="Solutions Marketing VIP | SEO That Respects Your Data">
-<meta property="og:description" content="Montreal-area SEO audits and monitoring. Clear prices, no contracts, privacy-first. Your data stays yours.">
-<meta property="og:url" content="https://solutionsmarketingvip.com/">
-<meta name="msvalidate.01" content="708C401B1FC799E004AE5B7D9BF964B6" />
-<title>SEO Audits Montréal | Solutions Marketing VIP</title>
-<meta name="description" content="Montreal-based SEO audits and monitoring. Clear prices, no lock-in contracts, privacy-first infrastructure. Your data stays yours.">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "name": "Solutions Marketing VIP",
-  "url": "https://solutionsmarketingvip.com/",
-  "email": "solutions.marketing.vip@proton.me",
-  "areaServed": ["Montréal", "Laval", "Longueuil", "South Shore"],
-  "priceRange": "$300-$650",
-  "knowsLanguage": ["en", "fr"],
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Montréal",
-    "addressRegion": "QC",
-    "addressCountry": "CA"
-  }
-}
-</script>
+<link rel="canonical" href="https://solutionsmarketingvip.com/payment.html">
+<title>Payment Options | Solutions Marketing VIP</title>
+<meta name="description" content="Secure payment options for SEO audits and services. Interac e-Transfer or card via Square. No third-party wallets holding your money.">
 <style>
-  /* Confidentialité / Privacy: aucune police externe, aucun CDN,
-     aucun traqueur. Le JavaScript est 100% local : langue,
-     animations, compteurs. Il n'appelle nulle part. */
   :root {
     --gold: #B08D3E;
     --gold-light: #D9C99A;
@@ -44,16 +19,7 @@
   html { scroll-behavior: smooth; }
   body {
     font-family: Georgia, "Times New Roman", serif;
-    background: var(--cream);
-    color: var(--text);
-    line-height: 1.7;
-  }
-  .wrap { max-width: 900px; margin: 0 auto; padding: 0 24px; }
-
-  #progress-bar {
-    position: fixed; top: 0; left: 0; z-index: 100;
-    height: 3px; width: 0%;
-    background: var(--gold);
+    background: var(--cream); color: var(--text); line-height: 1.7;
   }
 
   header {
@@ -66,14 +32,11 @@
     padding: 10px 0;
     box-shadow: 0 4px 14px rgba(0,0,0,0.45);
   }
-  header .wrap {
+  header .hwrap {
+    max-width: 900px; margin: 0 auto; padding: 0 24px;
     display: flex; justify-content: space-between; align-items: center;
     flex-wrap: wrap; gap: 10px;
   }
-  header h1 { font-size: 1.3rem; letter-spacing: 2px; }
-  header h1 span { color: var(--gold-light); }
-
-  /* ===== LOGO ===== */
   header h1.logo-block { line-height: 0; }
   header h1.logo-block a { display: inline-block; text-decoration: none; }
   header h1.logo-block img {
@@ -86,8 +49,6 @@
     header h1.logo-block img { height: 42px; max-width: 190px; }
     header.condensed h1.logo-block img { height: 34px; }
   }
-  /* ===== END LOGO ===== */
-
   header nav a, header nav button {
     color: var(--gold-light); text-decoration: none;
     margin-left: 14px; font-size: 0.95rem;
@@ -96,694 +57,282 @@
     transition: color 0.25s ease;
   }
   header nav a:hover, header nav button:hover { color: #fff; }
-  .lang-active { color: #fff !important; font-weight: bold; }
 
-  .hero { padding: 70px 0 60px; text-align: center; }
+  .page-title {
+    max-width: 900px; margin: 0 auto; padding: 50px 24px 8px;
+    text-align: center;
+  }
   .eyebrow {
     color: var(--gold); font-size: 0.75rem; letter-spacing: 3px;
     text-transform: uppercase; font-family: Arial, sans-serif;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
   }
-  .hero h2 { font-size: 2.1rem; color: var(--dark); line-height: 1.3; margin-bottom: 16px; }
-  .hero h2 em { color: var(--gold); font-style: normal; }
-  .hero p { font-size: 1.1rem; max-width: 640px; margin: 0 auto 30px; }
-  .btn {
-    display: inline-block; background: var(--gold); color: #fff;
-    padding: 14px 34px; text-decoration: none; font-weight: bold;
-    border-radius: 3px; letter-spacing: 0.5px; margin: 6px;
-    position: relative; overflow: hidden;
-    transition: background 0.25s ease, transform 0.2s ease,
-                box-shadow 0.2s ease;
-  }
-  .btn:hover {
-    background: #997a33;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
-  }
-  .btn::before {
-    content: ""; position: absolute; top: 0; left: -80%;
-    width: 50%; height: 100%;
-    background: linear-gradient(115deg, transparent,
-               rgba(255,255,255,0.35), transparent);
-    transform: skewX(-20deg);
-    transition: left 0.6s ease;
-  }
-  .btn:hover::before { left: 130%; }
-  .btn-magnetic { transition: transform 0.15s ease-out, background 0.25s ease; }
+  .page-title h2 { font-size: 1.9rem; color: var(--dark); line-height: 1.3; }
 
-  section { padding: 46px 0; }
-  section:nth-of-type(even) { background: #fff; }
-  h3.section-title {
-    color: var(--dark); font-size: 1.45rem; text-align: center;
-    margin-bottom: 30px;
-    display: table; margin-left: auto; margin-right: auto;
-    position: relative; padding-bottom: 8px;
+  .content {
+    max-width: 900px; margin: 10px auto 80px; padding: 0 24px;
   }
-  .section-eyebrow {
-    color: var(--gold); font-size: 0.72rem; letter-spacing: 3px;
-    text-transform: uppercase; font-family: Arial, sans-serif;
-    text-align: center; display: table; margin: 0 auto 4px;
-  }
-  h3.section-title::after {
-    content: ""; position: absolute; left: 0; bottom: 0;
-    height: 2px; background: var(--gold);
-    width: 0; transition: width 0.8s ease 0.15s;
-  }
-  .visible h3.section-title::after { width: 100%; }
 
-  .cards { display: flex; gap: 24px; flex-wrap: wrap; justify-content: center; }
-  .card {
-    flex: 1; min-width: 230px; max-width: 270px;
-    background: var(--cream); border: 1px solid #D8CFBA;
-    border-top: 4px solid var(--gold);
-    padding: 22px; border-radius: 4px;
+  .payment-option {
+    background: #fff; border: 1px solid #D8CFBA;
+    border-left: 5px solid var(--gold); border-radius: 5px;
+    padding: 32px 28px; margin-bottom: 28px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
     transition: transform 0.25s ease, box-shadow 0.25s ease;
   }
-  .card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+  .payment-option:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.10);
   }
-  .card h4 { color: var(--dark); margin-bottom: 10px; font-size: 1.05rem; }
-  .card p { font-size: 0.95rem; }
-  .card .price { color: var(--gold); font-size: 1.3rem; font-weight: bold; margin-bottom: 8px; }
-  .card .tier-tag {
-    font-family: Arial, sans-serif; font-size: 0.7rem;
-    letter-spacing: 1.5px; text-transform: uppercase;
-    color: var(--dark); background: var(--gold-light);
-    display: inline-block; padding: 2px 10px; border-radius: 2px;
-    margin-bottom: 10px;
+  .payment-option h3 {
+    color: var(--dark); font-size: 1.35rem; margin-bottom: 12px;
   }
-  .cards-note {
-    text-align: center; font-size: 0.9rem; color: var(--text);
-    max-width: 560px; margin: 18px auto 0;
+  .payment-option .tag {
+    background: var(--gold-light); color: var(--dark);
+    padding: 5px 14px; border-radius: 3px;
+    font-size: 0.75rem; font-weight: bold; letter-spacing: 1px;
+    display: inline-block; margin-bottom: 14px;
   }
-
-  .visible .cards .card { animation: cardFade 0.6s ease both; }
-  .visible .cards .card:nth-child(2) { animation-delay: 0.15s; }
-  .visible .cards .card:nth-child(3) { animation-delay: 0.3s; }
-  .visible .cards .card:nth-child(4) { animation-delay: 0.45s; }
-  @keyframes cardFade { from { opacity: 0; } to { opacity: 1; } }
-
-  .stats-band { background: var(--dark); text-align: center; padding: 40px 0; }
-  .stats-band .wrap {
-    display: flex; justify-content: center; flex-wrap: wrap; gap: 34px;
+  .payment-option ul {
+    list-style: none; margin: 18px 0 22px;
   }
-  .stat { min-width: 130px; }
-  .stat-num {
-    font-size: 2.3rem; font-weight: bold; color: var(--gold-light);
-    line-height: 1.2;
+  .payment-option li {
+    padding-left: 24px; position: relative; margin-bottom: 10px;
+    font-size: 0.97rem;
   }
-  .stat-label { color: #aaa; font-size: 0.85rem; letter-spacing: 0.4px; }
-
-  ul.clean { list-style: none; max-width: 640px; margin: 0 auto; }
-  ul.clean li {
-    padding: 10px 0 10px 30px; position: relative;
-    border-bottom: 1px solid #e5dfd0;
+  .payment-option li::before {
+    content: "✓"; color: var(--gold); font-weight: bold;
+    position: absolute; left: 0;
   }
-  ul.clean li:before {
-    content: "◆"; color: var(--gold); position: absolute;
-    left: 0; font-size: 0.8rem; top: 13px;
+  .payment-option .email {
+    background: var(--gold-light); color: var(--dark);
+    padding: 12px 18px; border-radius: 4px;
+    font-family: monospace; font-size: 1rem;
+    display: inline-block; margin: 18px 0;
+    font-weight: bold;
   }
-
-  .privacy-box {
-    background: var(--dark); color: #ddd; padding: 30px;
-    border-radius: 4px; border-left: 5px solid var(--gold);
-    max-width: 720px; margin: 0 auto;
+  .payment-note {
+    background: rgba(176, 141, 62, 0.08);
+    border-left: 3px solid var(--gold);
+    padding: 18px 22px; margin: 22px 0;
+    font-size: 0.92rem;
+    border-radius: 3px;
   }
-  .privacy-box strong { color: var(--gold-light); }
+  .card-button {
+    display: inline-block;
+    background: var(--gold); color: #fff;
+    padding: 16px 32px; border-radius: 5px;
+    text-decoration: none; font-weight: bold;
+    font-size: 1.05rem; margin-top: 18px;
+    transition: background 0.25s ease, transform 0.25s ease;
+  }
+  .card-button:hover {
+    background: #9c7b33; transform: translateY(-1px);
+  }
+  .coming-soon {
+    background: rgba(176, 141, 62, 0.12);
+    border-left: 3px solid var(--gold);
+    padding: 18px 22px; margin: 22px 0;
+    font-size: 0.92rem;
+    border-radius: 3px;
+  }
 
   footer {
     background: var(--dark); color: #8a8a8a; text-align: center;
-    padding: 30px 0; font-size: 0.85rem;
+    padding: 30px 20px; font-size: 0.85rem;
     border-top: 3px solid var(--gold);
+    font-family: Arial, sans-serif;
   }
-  footer a { color: var(--gold-light); text-decoration: none; }
 
-  body[data-lang="en"] [lang="fr"].block { display: none; }
-  body[data-lang="fr"] [lang="en"].block { display: none; }
+  .fr { display: none; }
+  body.lang-fr .en { display: none; }
+  body.lang-fr .fr { display: block; }
 
   @keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(24px); }
+    from { opacity: 0; transform: translateY(20px); }
     to   { opacity: 1; transform: translateY(0); }
   }
-  .hero .wrap { animation: fadeInUp 0.9s ease both; }
-
-  .reveal {
-    opacity: 0;
-    transform: translateY(24px);
-    transition: opacity 0.7s ease, transform 0.7s ease;
-  }
-  .reveal.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  @keyframes langFade {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-  }
-  body.langswap .block { animation: langFade 0.35s ease; }
+  .payment-option { animation: fadeInUp 0.7s ease both; }
+  .payment-option:nth-child(2) { animation-delay: 0.15s; }
 
   @media (prefers-reduced-motion: reduce) {
-    .reveal, .hero .wrap { transition: none; animation: none; opacity: 1; transform: none; }
-    .visible .cards .card { animation: none; }
-    h3.section-title::after { transition: none; width: 100%; }
-    .btn::before { display: none; }
+    .payment-option { animation: none; }
     html { scroll-behavior: auto; }
   }
 </style>
 </head>
-<body data-lang="en">
+<body class="lang-en">
 
-<div id="progress-bar"></div>
-
-   <header id="site-header">
-     <div class="wrap">
-       <h1 class="logo-block"><a href="index.html"><img src="/logo-new.png" alt="Solutions Marketing VIP"></a></h1>
-       <nav>
-         <a href="blog-list.html">Blog</a>
-         <a href="payment.html"><span lang="en" class="block">Payment</span><span lang="fr" class="block">Paiement</span></a>
-         <button id="btn-en" class="lang-active" onclick="setLang('en')">EN</button>
-         <button id="btn-fr" onclick="setLang('fr')">FR</button>
-       </nav>
-     </div>
-   </header>
-
-<!-- ==================== ENGLISH ==================== -->
-<div lang="en" class="block">
-  <div class="hero wrap">
-    <div class="eyebrow">SEO Audits &amp; Monitoring · Montréal</div>
-    <h2 id="hero-title-en">Be found first by people already<br>searching for <em>what you offer.</em></h2>
-    <p>SEO audits and monitoring for Montreal-area businesses.
-       Clear prices, no contracts, and your data stays yours.
-       The way it should be.</p>
-    <a class="btn btn-magnetic" href="#contact-en">Get Your Free Estimate</a>
+<header id="site-header">
+  <div class="hwrap">
+    <h1 class="logo-block"><a href="index.html"><img src="/logo-new.png" alt="Solutions Marketing VIP"></a></h1>
+    <nav>
+      <a href="index.html"><span class="en" lang="en">Home</span><span class="fr" lang="fr">Accueil</span></a>
+      <a href="blog-list.html"><span class="en" lang="en">Articles</span><span class="fr" lang="fr">Articles</span></a>
+      <button class="toggle-btn" onclick="toggleLang()" id="langBtn" style="background:#B08D3E;color:#fff;border:none;padding:8px 18px;cursor:pointer;font-weight:bold;border-radius:3px;font-family:Georgia,serif;">FR</button>
+    </nav>
   </div>
+</header>
 
-  <div class="stats-band">
-    <div class="wrap">
-      <div class="stat">
-        <div class="stat-num"><span class="stat-prefix">$</span><span class="stat-count" data-target="850">0</span></div>
-        <div class="stat-label">Setup fees elsewhere</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num"><span class="stat-count" data-target="12">0</span></div>
-        <div class="stat-label">Months of contract elsewhere</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num"><span class="stat-count" data-target="100">0</span><span class="stat-suffix">/100</span></div>
-        <div class="stat-label">Health score we measure</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num">0</div>
-        <div class="stat-label">Trackers on this page</div>
-      </div>
-    </div>
+<div class="page-title">
+  <div class="en" lang="en">
+    <div class="eyebrow">Secure Payments</div>
+    <h2>Two Ways to Pay</h2>
   </div>
-
-  <section id="services-en">
-    <div class="wrap">
-      <div class="section-eyebrow">Services</div>
-      <h3 class="section-title">Three Audits. One Honest Price Sheet.</h3>
-      <div class="cards">
-        <div class="card">
-          <div class="tier-tag">Tier 1</div>
-          <div class="price">$300</div>
-          <h4>Health Check</h4>
-          <p>For sites under 50 pages. Full diagnostic with a health
-             score out of 100, top 5 issues ranked by impact, and
-             plain-language fix instructions. Yours to keep,
-             whoever you hire.</p>
-        </div>
-        <div class="card">
-          <div class="tier-tag">Tier 2</div>
-          <div class="price">From $1,200</div>
-          <h4>Complete Audit</h4>
-          <p>50 to 5,000 pages. Technical and content fixing,
-             competitor comparison, video walkthrough, and a
-             prioritized roadmap. $1,200 covers the first 100 pages,
-             then $0.75 per page.</p>
-        </div>
-        <div class="card">
-          <div class="tier-tag">Tier 3</div>
-          <div class="price">Custom Quote</div>
-          <h4>Enterprise Audit</h4>
-          <p>For sites over 5,000 pages. Everything in the Complete
-             Audit plus log file analysis and crawl budget
-             optimization. Quotes start at $4,500 after we review
-             your site's structure.</p>
-        </div>
-        <div class="card">
-          <div class="tier-tag">Monthly</div>
-          <div class="price">$650/mo</div>
-          <h4>Monitoring &amp; Repair</h4>
-          <p>We fix issues, re-audit every month, and hand you a
-             one-page scorecard showing your score climb.
-             Cancel anytime. We earn the renewal.</p>
-        </div>
-      </div>
-      <p class="cards-note">Exact price depends on page count — and you'll
-         see the exact number before you commit a dollar.
-         No surprises, ever.</p>
-    </div>
-  </section>
-
-  <section>
-    <div class="wrap">
-      <div class="section-eyebrow">Philosophy</div>
-      <h3 class="section-title">Why Businesses Choose Us</h3>
-      <ul class="clean">
-        <li><strong>No contracts, no setup fees, no exit fees.</strong>
-            The market norm is 12-month lock-ins and $850+ setup fees.
-            We charge for work, not paperwork.</li>
-        <li><strong>You see the number climb.</strong> Every month,
-            the same audit, the same score, on a chart you understand.
-            Not vague promises. Measured progress.</li>
-        <li><strong>We never promise #1 on Google.</strong>
-            Anyone who does is selling snake oil. We remove every penalty
-            your site carries and show you the evidence.</li>
-        <li><strong>Everything we build is yours.</strong> Reports,
-            documents, accounts. You keep them all, always.
-            Leaving costs nothing.</li>
-        <li><strong>Fair middle pricing.</strong> Not the cheapest
-            bidder, not the corporate agency bill. Expert quality
-            at a price a small business can sustain.</li>
-      </ul>
-    </div>
-  </section>
-
-  <section>
-    <div class="wrap">
-      <div class="section-eyebrow">Our Promise</div>
-      <h3 class="section-title">Privacy Is Our Infrastructure</h3>
-      <div class="privacy-box">
-        <p>Most marketing providers run everything through advertising
-        giants, because their business model <em>is</em> advertising.
-        We run on <strong>Swiss encrypted services</strong>, our audits
-        run on <strong>our own machines</strong>, and this very website
-        loads <strong>zero trackers, zero third-party fonts, zero
-        analytics</strong>. Nothing phones home. This page practices
-        what we preach.</p>
-        <p style="margin-top:14px">Your business data should never be
-        someone else's product. With us, it never is.</p>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="wrap">
-      <div class="section-eyebrow">FAQ</div>
-      <h3 class="section-title">Common Questions</h3>
-      <ul class="clean">
-        <li><strong>Why pay for an audit when others offer free ones?</strong>
-            Free audits are sales pitches in disguise, built to funnel
-            you into contracts. A paid audit owes you honesty.</li>
-        <li><strong>Why do bigger sites cost less per page?</strong>
-            Because our crawler automates what other agencies bill by
-            the hour. Automation should make things cheaper,
-            not just faster.</li>
-        <li><strong>Do I need to rebuild my website?</strong> No. Most
-            fixes happen inside your existing admin, whether that's
-            Shopify, WordPress, or anything else you already own.</li>
-        <li><strong>What happens after an audit?</strong> You get 30 days
-            of email support for follow-up questions. Many clients then
-            choose monthly monitoring so we implement the fixes instead
-            of just pointing them out.</li>
-        <li><strong>What if I want to stop?</strong> You stop. No fees,
-            no hostage data. Everything produced for you was always yours.</li>
-      </ul>
-    </div>
-  </section>
-
-  <section>
-    <div class="wrap" style="text-align:center">
-      <div class="section-eyebrow">Insights</div>
-      <h3 class="section-title">From Our Blog</h3>
-      <p style="max-width:640px;margin:0 auto 18px">
-         <strong>Your Business Data, Their Business Model:</strong>
-         what Microsoft's Recall, Gmail scanning, and Meta's trackers
-         really mean for your business, sorted fact from fiction.</p>
-      <a class="btn" href="blog-list.html">Read the blog</a>
-    </div>
-  </section>
-
-  <section id="contact-en">
-    <div class="wrap" style="text-align:center">
-      <div class="section-eyebrow">Contact</div>
-      <h3 class="section-title">Let's Talk</h3>
-      <a class="btn" href="documents.html">Free Guides</a>
-      <a class="btn" href="case-studies.html">Case Studies</a>
-      <a class="btn" href="payment.html">Pay an Invoice</a>
-      <p style="max-width:560px;margin:18px auto 24px">
-        Serving Montreal, Laval, Longueuil and the South Shore.
-        Tell us your website. We'll tell you honestly whether we
-        can help.</p>
-      <a class="btn btn-magnetic" href="mailto:solutions.marketing.vip@proton.me">solutions.marketing.vip@proton.me</a>
-    </div>
-  </section>
-
-  <footer>
-    <div class="wrap">
-      <p>Solutions Marketing VIP · Montreal, Quebec</p>
-      <p style="margin-top:6px">
-        No trackers on this site. This page practices what it preaches.</p>
-    </div>
-  </footer>
+  <div class="fr" lang="fr">
+    <div class="eyebrow">Paiements Sécurisés</div>
+    <h2>Deux Façons de Payer</h2>
+  </div>
 </div>
 
-<!-- ==================== FRANÇAIS ==================== -->
-<div lang="fr" class="block">
-  <div class="hero wrap">
-    <div class="eyebrow">Audits SEO et suivi · Montréal</div>
-    <h2 id="hero-title-fr">Être trouvé en premier par les gens qui<br>cherchent déjà <em>ce que vous offrez.</em></h2>
-    <p>Audits SEO et suivi pour les entreprises de la grande région de
-       Montréal. Prix clairs, sans contrat, et vos données restent les
-       vôtres. Comme il se doit.</p>
-    <a class="btn btn-magnetic" href="#contact-fr">Obtenez votre estimation gratuite</a>
+<div class="content">
+
+  <!-- OPTION 1: INTERAC E-TRANSFER -->
+  <div class="payment-option">
+    <div class="tag"><span class="en" lang="en">Recommended</span><span class="fr" lang="fr">Recommandé</span></div>
+    
+    <div class="en" lang="en">
+      <h3>Interac e-Transfer</h3>
+      <p><strong>Direct to your bank. No third party holds your money.</strong></p>
+      <ul>
+        <li>No processing fees — you pay the exact amount quoted</li>
+        <li>Money goes straight to our Wealthsimple business account</li>
+        <li>Instant confirmation once deposited</li>
+        <li>Perfect for audits and retainers under $10,000</li>
+      </ul>
+      
+      <p style="margin-top: 18px;"><strong>Send payment to:</strong></p>
+      <div class="email">solutions.marketing.vip@proton.me</div>
+      
+      <p class="payment-note">
+        After you send, you'll receive a receipt and invoice within 24 hours. For amounts over $5,000, we'll confirm receipt and start your project immediately.
+      </p>
+      
+      <p style="font-size: 0.92rem; color: #666; margin-top: 16px;">
+        <em>Note: GST/QST added where applicable by law.</em>
+      </p>
+    </div>
+    
+    <div class="fr" lang="fr">
+      <h3>Virement Interac</h3>
+      <p><strong>Directement à votre banque. Aucun tiers ne garde votre argent.</strong></p>
+      <ul>
+        <li>Aucuns frais de traitement — vous payez le montant exact coté</li>
+        <li>L'argent va directement à notre compte d'entreprise Wealthsimple</li>
+        <li>Confirmation instantanée une fois déposé</li>
+        <li>Parfait pour les audits et abonnements de moins de 10 000 $</li>
+      </ul>
+      
+      <p style="margin-top: 18px;"><strong>Envoyez le paiement à :</strong></p>
+      <div class="email">solutions.marketing.vip@proton.me</div>
+      
+      <p class="payment-note">
+        Après envoi, vous recevrez une facture en 24 heures. Pour des montants de plus de 5 000 $, nous confirmons la réception et lançons votre projet immédiatement.
+      </p>
+      
+      <p style="font-size: 0.92rem; color: #666; margin-top: 16px;">
+        <em>Note: TPS/TVH ajoutées où applicable par la loi.</em>
+      </p>
+    </div>
   </div>
 
-  <div class="stats-band">
-    <div class="wrap">
-      <div class="stat">
-        <div class="stat-num"><span class="stat-prefix">$</span><span class="stat-count" data-target="850">0</span></div>
-        <div class="stat-label">Frais d'installation ailleurs</div>
+  <!-- OPTION 2: CARD PAYMENT VIA SQUARE -->
+  <div class="payment-option">
+    <div class="tag"><span class="en" lang="en">Card Option</span><span class="fr" lang="fr">Carte</span></div>
+    
+    <div class="en" lang="en">
+      <h3>Pay by Credit Card</h3>
+      <p>Secure checkout hosted by Square. Your card data never touches our website.</p>
+      <ul>
+        <li>2.9% + $0.30 per transaction (standard Canadian rate)</li>
+        <li>Square deposits automatically to our bank account</li>
+        <li>You get a digital receipt immediately</li>
+        <li>Works on any device, no login required</li>
+      </ul>
+      
+      <p style="margin-top: 18px;"><strong>Select your service:</strong></p>
+      
+      <a href="#" class="card-button">Health Check Audit ($300) →</a>
+      
+      <div class="coming-soon">
+        <strong>Coming soon:</strong> We're finishing our online payment setup right now. For immediate payment, please use Interac e-Transfer (shown above) or ask us for a payment link for your specific invoice. We'll have this ready within 48 hours.
       </div>
-      <div class="stat">
-        <div class="stat-num"><span class="stat-count" data-target="12">0</span></div>
-        <div class="stat-label">Mois de contrat ailleurs</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num"><span class="stat-count" data-target="100">0</span><span class="stat-suffix">/100</span></div>
-        <div class="stat-label">Score de santé mesuré</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num">0</div>
-        <div class="stat-label">Traceurs sur cette page</div>
+    </div>
+    
+    <div class="fr" lang="fr">
+      <h3>Paiement par Carte de Crédit</h3>
+      <p>Paiement sécurisé hébergé par Square. Vos données de carte ne touchent jamais notre site.</p>
+      <ul>
+        <li>2.9% + 0,30 $ par transaction (taux canadien standard)</li>
+        <li>Versement automatique de Square à notre compte bancaire</li>
+        <li>Réception numérique immédiate</li>
+        <li>Fonctionne sur tous appareils, aucune connexion requise</li>
+      </ul>
+      
+      <p style="margin-top: 18px;"><strong>Sélectionnez votre service :</strong></p>
+      
+      <a href="#" class="card-button">Audit Santé de Site ($300) →</a>
+      
+      <div class="coming-soon">
+        <strong>Bientôt disponible :</strong> Nous terminons actuellement notre configuration de paiements en ligne. Pour un paiement immédiat, veuillez utiliser le virement Interac (affiché ci-dessus) ou demandez-nous un lien de paiement pour votre facture spécifique. Nous aurons ceci prêt dans les 48 heures.
       </div>
     </div>
   </div>
 
-  <section>
-    <div class="wrap">
-      <div class="section-eyebrow">Services</div>
-      <h3 class="section-title">Trois audits. Une grille de prix honnête.</h3>
-      <div class="cards">
-        <div class="card">
-          <div class="tier-tag">Palier 1</div>
-          <div class="price">300&nbsp;$</div>
-          <h4>Vérification santé</h4>
-          <p>Pour les sites de moins de 50 pages. Diagnostic complet
-             avec score de santé sur 100, les 5 principaux problèmes
-             classés par impact et des consignes de correction en
-             langage clair. À vous de le garder, quel que soit
-             l'expert que vous engagez.</p>
-        </div>
-        <div class="card">
-          <div class="tier-tag">Palier 2</div>
-          <div class="price">À partir de 1 200&nbsp;$</div>
-          <h4>Audit complet</h4>
-          <p>50 à 5 000 pages. Correction technique et de contenu,
-             comparaison avec vos concurrents, vidéo explicative et
-             plan d'action priorisé. Le 1 200&nbsp;$ couvre les
-             100 premières pages, ensuite 0,75&nbsp;$ par page.</p>
-        </div>
-        <div class="card">
-          <div class="tier-tag">Palier 3</div>
-          <div class="price">Sur devis</div>
-          <h4>Audit d'entreprise</h4>
-          <p>Pour les sites de plus de 5 000 pages. Tout ce que
-             comporte l'audit complet, plus l'analyse des fichiers
-             journaux et l'optimisation du budget d'exploration.
-             Les devis commencent à 4 500&nbsp;$ après l'examen de
-             la structure de votre site.</p>
-        </div>
-        <div class="card">
-          <div class="tier-tag">Mensuel</div>
-          <div class="price">650&nbsp;$/mois</div>
-          <h4>Suivi et correction</h4>
-          <p>Nous corrigeons les problèmes, refaisons l'audit chaque
-             mois et vous remettons une page bilan montrant la
-             progression de votre score. Annulez quand vous voulez.
-             Chaque renouvellement se mérite.</p>
-        </div>
-      </div>
-      <p class="cards-note">Le prix exact dépend du nombre de pages — et vous
-         verrez le montant exact avant d'engager un seul dollar.
-         Aucune surprise, jamais.</p>
-    </div>
-  </section>
-
-  <section>
-    <div class="wrap">
-      <div class="section-eyebrow">Philosophie</div>
-      <h3 class="section-title">Pourquoi les entreprises nous choisissent</h3>
-      <ul class="clean">
-        <li><strong>Pas de contrats, pas de frais d'installation, pas de
-            frais de sortie.</strong> La norme du marché : des
-            engagements de 12 mois et des frais initiaux de 850&nbsp;$
-            et plus. Nous, on facture du travail, pas de la paperasse.</li>
-        <li><strong>Vous voyez le chiffre monter.</strong> Chaque mois,
-            le même audit, le même score, sur un graphique que vous
-            comprenez. Pas de promesses vagues. Du progrès mesuré.</li>
-        <li><strong>On ne promet jamais la 1re place sur Google.</strong>
-            Quiconque le fait vend de l'huile de serpent. Nous
-            retirons chaque pénalité que porte votre site et nous vous
-            en montrons la preuve.</li>
-        <li><strong>Tout ce qu'on construit vous appartient.</strong>
-            Rapports, documents, comptes. Vous les gardez tous,
-            toujours. Partir ne coûte rien.</li>
-        <li><strong>Un juste prix du milieu.</strong> Ni le soumissionnaire
-            le moins cher, ni la facture d'agence corporative. Une
-            qualité d'expert à un prix soutenable pour une PME.</li>
+  <!-- OPTIONAL: IN-PERSON SECTION (KEEP IT) -->
+  <div class="payment-option">
+    <div class="tag"><span class="en" lang="en">In Person</span><span class="fr" lang="fr">En Personne</span></div>
+    
+    <div class="en" lang="en">
+      <h3>In-Person Payment</h3>
+      <p>Met a client in Montreal? Take contactless tap payment on the spot.</p>
+      <ul>
+        <li>Tap, dip, or swipe accepted</li>
+        <li>Digital receipt emailed immediately</li>
+        <li>No cash handling</li>
       </ul>
+      <p style="font-size: 0.92rem; color: #666; margin-top: 16px;">
+        <em>Contact us to arrange an in-person meeting for payment.</em>
+      </p>
     </div>
-  </section>
-
-  <section>
-    <div class="wrap">
-      <div class="section-eyebrow">Notre promesse</div>
-      <h3 class="section-title">La confidentialité, c'est notre infrastructure</h3>
-      <div class="privacy-box">
-        <p>La plupart des fournisseurs en marketing font passer tout
-        leur travail par les géants de la publicité, parce que leur
-        modèle d'affaires <em>est</em> la publicité. Nous, nous
-        travaillons sur des <strong>services suisses chiffrés</strong>,
-        nos audits tournent sur <strong>nos propres machines</strong>,
-        et ce site même charge <strong>zéro traqueur, zéro police
-        tierce, zéro CDN, zéro analyse</strong>. Rien qui appelle
-        la maison. Cette page pratique ce qu'elle prêche.</p>
-        <p style="margin-top:14px">Les données de votre entreprise ne
-        devraient jamais devenir le produit de quelqu'un d'autre.
-        Avec nous, elles ne le deviennent jamais.</p>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="wrap">
-      <div class="section-eyebrow">FAQ</div>
-      <h3 class="section-title">Questions fréquentes</h3>
-      <ul class="clean">
-        <li><strong>Pourquoi payer un audit quand d'autres l'offrent
-            gratuitement&nbsp;?</strong> Les audits gratuits sont des
-            argumentaires de vente déguisés, conçus pour vous enfermer
-            dans un contrat. Un audit payé vous doit la franchise.</li>
-        <li><strong>Pourquoi les grands sites coûtent-ils moins cher
-            par page&nbsp;?</strong> Parce que notre robot d'analyse
-            automatise ce que les autres agences facturent à l'heure.
-            L'automatisation devrait rendre les choses moins chères,
-            pas seulement plus rapides.</li>
-        <li><strong>Faut-il refaire mon site web&nbsp;?</strong> Non.
-            La plupart des correctifs se font dans votre admin
-            existant, que ce soit Shopify, WordPress ou toute autre
-            plateforme que vous possédez déjà.</li>
-        <li><strong>Que se passe-t-il après un audit&nbsp;?</strong> Vous
-            obtenez 30 jours de support par courriel pour vos questions
-            de suivi. Plusieurs clients optent ensuite pour le suivi
-            mensuel afin que nous mettions les correctifs en œuvre
-            plutôt que de simplement les signaler.</li>
-        <li><strong>Et si je veux arrêter&nbsp;?</strong> Vous arrêtez.
-            Aucuns frais, aucune donnée retenue en otage. Tout ce qui
-            a été produit pour vous vous a toujours appartenu.</li>
+    
+    <div class="fr" lang="fr">
+      <h3>Paiement en Personne</h3>
+      <p>Rencontré un client à Montréal? Prenez le paiement sans contact sur place.</p>
+      <ul>
+        <li>Tap, insérez, ou glisser accepté</li>
+        <li>Réception numérique envoyée par courriel</li>
+        <li>Pas de gestion d'espèces</li>
       </ul>
+      <p style="font-size: 0.92rem; color: #666; margin-top: 16px;">
+        <em>Contactez-nous pour organiser une rencontre en personne.</em>
+      </p>
     </div>
-  </section>
-
-  <section>
-    <div class="wrap" style="text-align:center">
-      <div class="section-eyebrow">Nos articles</div>
-      <h3 class="section-title">Notre blogue</h3>
-      <p style="max-width:640px;margin:0 auto 18px">
-         <strong>Les données de votre entreprise, leur modèle
-         d'affaires :</strong> ce que le Recall de Microsoft,
-         le balayage de Gmail et les traceurs de Meta signifient
-         vraiment pour votre entreprise, le vrai du faux.</p>
-      <a class="btn" href="blog-list.html">Lire le blogue</a>
-    </div>
-  </section>
-
-  <section id="contact-fr">
-    <div class="wrap" style="text-align:center">
-      <div class="section-eyebrow">Contact</div>
-      <h3 class="section-title">Parlons-en</h3>
-      <a class="btn" href="documents.html">Guides gratuits</a>
-      <a class="btn" href="case-studies.html">Études de cas</a>
-      <a class="btn" href="payment.html">Payer une facture</a>
-      <p style="max-width:560px;margin:18px auto 24px">
-        Au service de Montréal, Laval, Longueuil et la Rive-Sud.
-        Dites-nous votre site web. On vous dira honnêtement si on
-        peut vous aider.</p>
-      <a class="btn btn-magnetic" href="mailto:solutions.marketing.vip@proton.me">solutions.marketing.vip@proton.me</a>
-    </div>
-  </section>
+  </div>
 
   <footer>
-    <div class="wrap">
-      <p>Solutions Marketing VIP · Montréal, Québec</p>
-      <p style="margin-top:6px">
-        Aucun traqueur sur ce site. Cette page pratique ce qu'elle prêche.</p>
-    </div>
+    <p>&copy; 2026 Solutions Marketing VIP - <span class="en" lang="en">Privacy-first payments. We never store your card data.</span><span class="fr" lang="fr">Paiements axés sur la confidentialité. Nous ne stockons jamais vos données de carte.</span></p>
   </footer>
-</div>
 
-<script>
-function setLang(l) {
-  document.body.dataset.lang = l;
-  document.documentElement.lang = l;
-  document.getElementById("btn-en").className = l === "en" ? "lang-active" : "";
-  document.getElementById("btn-fr").className = l === "fr" ? "lang-active" : "";
-  try { localStorage.setItem("preflang", l); } catch (e) {}
-  document.body.classList.remove("langswap");
-  void document.body.offsetWidth;
-  document.body.classList.add("langswap");
-}
-
-/* ===== Typewriter: the gold phrase types itself once ===== */
-function typeHeroPhrase() {
-  var lang = document.body.dataset.lang || "en";
-  var h2 = document.getElementById(lang === "fr" ? "hero-title-fr" : "hero-title-en");
-  if (!h2) return;
-  var em = h2.querySelector("em");
-  if (!em) return;
-  var text = em.textContent;
-  em.textContent = "";
-  var i = 0;
-  var timer = setInterval(function () {
-    em.textContent += text.charAt(i);
-    i++;
-    if (i >= text.length) clearInterval(timer);
-  }, 45);
-}
-
-/* ===== Counters: numbers climb into view ===== */
-function animateCounters() {
-  var nums = document.querySelectorAll(".stat-count");
-  for (var i = 0; i < nums.length; i++) {
-    (function (el) {
-      var target = parseInt(el.getAttribute("data-target"), 10) || 0;
-      var start = null;
-      var dur = 1200;
-      function step(ts) {
-        if (!start) start = ts;
-        var p = Math.min((ts - start) / dur, 1);
-        el.textContent = Math.round(target * p);
-        if (p < 1) requestAnimationFrame(step);
-      }
-      requestAnimationFrame(step);
-    })(nums[i]);
+  <script>
+  function toggleLang() {
+    var b = document.body;
+    var btn = document.getElementById('langBtn');
+    if (b.classList.contains('lang-en')) {
+      b.classList.remove('lang-en'); b.classList.add('lang-fr');
+      btn.textContent = 'EN';
+    } else {
+      b.classList.remove('lang-fr'); b.classList.add('lang-en');
+      btn.textContent = 'FR';
+    }
   }
-}
 
-/* ===== Local animations: nothing external is called ===== */
-(function () {
-  var reduced = false;
-  try {
-    reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  } catch (e) {}
-  var finePointer = false;
-  try {
-    finePointer = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
-  } catch (e) {}
-
-  /* Scroll progress bar */
-  var bar = document.getElementById("progress-bar");
-  function updateBar() {
-    var h = document.documentElement.scrollHeight - window.innerHeight;
-    var p = h > 0 ? (window.scrollY / h) * 100 : 0;
-    bar.style.width = p + "%";
-  }
-  window.addEventListener("scroll", updateBar, { passive: true });
-  updateBar();
-
-  /* Condensing header on scroll */
   var header = document.getElementById("site-header");
   window.addEventListener("scroll", function () {
     if (window.scrollY > 40) header.classList.add("condensed");
     else header.classList.remove("condensed");
   }, { passive: true });
-
-  /* Magnetic hero buttons (desktop pointer only) */
-  if (finePointer && !reduced) {
-    var mags = document.querySelectorAll(".btn-magnetic");
-    for (var mi = 0; mi < mags.length; mi++) {
-      (function (btn) {
-        btn.addEventListener("pointermove", function (e) {
-          var r = btn.getBoundingClientRect();
-          var dx = ((e.clientX - r.left) / r.width - 0.5) * 12;
-          var dy = ((e.clientY - r.top) / r.height - 0.5) * 8;
-          btn.style.transform = "translate(" + dx + "px," + dy + "px)";
-        });
-        btn.addEventListener("pointerleave", function () {
-          btn.style.transform = "";
-        });
-      })(mags[mi]);
-    }
-  }
-
-  /* Section reveals */
-  var targets = document.querySelectorAll("section");
-  for (var i = 0; i < targets.length; i++) targets[i].classList.add("reveal");
-
-  if (!("IntersectionObserver" in window) || reduced) {
-    for (var j = 0; j < targets.length; j++) targets[j].classList.add("visible");
-    return;
-  }
-
-  var obs = new IntersectionObserver(function (entries) {
-    for (var k = 0; k < entries.length; k++) {
-      if (entries[k].isIntersecting) {
-        entries[k].target.classList.add("visible");
-        obs.unobserve(entries[k].target);
-      }
-    }
-  }, { threshold: 0.12 });
-  for (var m = 0; m < targets.length; m++) obs.observe(targets[m]);
-
-  var countersDone = false;
-  var bands = document.querySelectorAll(".stats-band");
-  var obs2 = new IntersectionObserver(function (entries) {
-    for (var k = 0; k < entries.length; k++) {
-      if (entries[k].isIntersecting && !countersDone) {
-        countersDone = true;
-        if (reduced) {
-          var nums = document.querySelectorAll(".stat-count");
-          for (var n = 0; n < nums.length; n++) {
-            nums[n].textContent = nums[n].getAttribute("data-target");
-          }
-        } else {
-          animateCounters();
-        }
-        obs2.disconnect();
-      }
-    }
-  }, { threshold: 0.4 });
-  for (var b = 0; b < bands.length; b++) obs2.observe(bands[b]);
-
-  if (!reduced) {
-    setTimeout(typeHeroPhrase, 700);
-  }
-})();
-</script>
+  </script>
 
 </body>
 </html>
