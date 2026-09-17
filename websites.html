@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://solutionsmarketingvip.com/websites.html">
+<title>Website Design Montreal | Solutions Marketing VIP</title>
+<meta name="description" content="Professional bilingual website design in Montreal. SEO-ready, privacy-first HTML sites from $900. Clear pricing, clear terms, no surprises.">
+<style>
+  :root {
+    --gold: #B08D3E;
+    --gold-light: #D9C99A;
+    --dark: #23252B;
+    --cream: #F5F2EA;
+    --text: #3a3a40;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: var(--cream); color: var(--text); line-height: 1.7;
+  }
+
+  header {
+    background: var(--dark); color: #fff;
+    padding: 20px 0; border-bottom: 3px solid var(--gold);
+    position: sticky; top: 0; z-index: 50;
+    transition: padding 0.3s ease, box-shadow 0.3s ease;
+  }
+  header.condensed {
+    padding: 10px 0;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.45);
+  }
+  header .hwrap {
+    max-width: 900px; margin: 0 auto; padding: 0 24px;
+    display: flex; justify-content: space-between; align-items: center;
+    flex-wrap: wrap; gap: 10px;
+  }
+  header h1.logo-block { line-height: 0; }
+  header h1.logo-block a { display: inline-block; text-decoration: none; }
+  header h1.logo-block img {
+    height: 54px; width: auto; max-width: 240px;
+    display: block; border-radius: 3px;
+    transition: height 0.3s ease;
+  }
+  header.condensed h1.logo-block img { height: 40px; }
+  @media (max-width: 600px) {
+    header h1.logo-block img { height: 42px; max-width: 190px; }
+    header.condensed h1.logo-block img { height: 34px; }
+  }
+  header nav a, header nav button {
+    color: var(--gold-light); text-decoration: none;
+    margin-left: 14px; font-size: 0.95rem;
+    background: none; border: none; cursor: pointer;
+    font-family: inherit; padding: 0;
+    transition: color 0.25s ease;
+  }
+  header nav a:hover, header nav button:hover { color: #fff; }
+
+  .page-title {
+    max-width: 900px; margin: 0 auto; padding: 50px 24px 8px;
+    text-align: center;
+  }
+  .eyebrow {
+    color: var(--gold); font-size: 0.75rem; letter-spacing: 3px;
+    text-transform: uppercase; font-family: Arial, sans-serif;
+    margin-bottom: 6px;
+  }
+  .page-title h2 { font-size: 1.9rem; color: var(--dark); line-height: 1.3; }
+  .page-title p { max-width: 640px; margin: 14px auto 0; font-size: 1rem; }
+
+  .content {
+    max-width: 900px; margin: 10px auto 80px; padding: 0 24px;
+  }
+
+  .section-heading {
+    text-align: center; margin: 60px 0 10px;
+  }
+  .section-heading .eyebrow { margin-bottom: 4px; }
+  .section-heading h3 { font-size: 1.5rem; color: var(--dark); }
+
+  .tier-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px; margin-top: 28px;
+  }
+  .tier {
+    background: #fff; border: 1px solid #D8CFBA;
+    border-top: 5px solid var(--gold); border-radius: 5px;
+    padding: 30px 26px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    display: flex; flex-direction: column;
+  }
+  .tier:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.10);
+  }
+  .tier.featured {
+    border: 2px solid var(--gold);
+    box-shadow: 0 8px 22px rgba(176, 141, 62, 0.25);
+  }
+  .tier .badge {
+    background: var(--gold); color: #fff;
+    padding: 5px 14px; border-radius: 3px;
+    font-size: 0.72rem; font-weight: bold; letter-spacing: 1px;
+    display: inline-block; margin-bottom: 14px;
+    font-family: Arial, sans-serif; text-transform: uppercase;
+    align-self: flex-start;
+  }
+  .tier h4 {
+    color: var(--dark); font-size: 1.2rem; margin-bottom: 4px;
+  }
+  .tier .price {
+    color: var(--gold); font-size: 2rem; font-weight: bold;
+    margin: 10px 0 2px; font-family: Arial, sans-serif;
+  }
+  .tier .price-note { font-size: 0.82rem; color: #777; margin-bottom: 16px; }
+  .tier ul { list-style: none; margin: 0 0 22px; }
+  .tier li {
+    padding-left: 24px; position: relative; margin-bottom: 9px;
+    font-size: 0.93rem;
+  }
+  .tier li::before {
+    content: "✓"; color: var(--gold); font-weight: bold;
+    position: absolute; left: 0;
+  }
+  .tier .cta {
+    display: block; text-align: center;
+    background: var(--gold); color: #fff;
+    padding: 14px 20px; border-radius: 5px;
+    text-decoration: none; font-weight: bold;
+    font-size: 1rem; margin-top: auto;
+    transition: background 0.25s ease, transform 0.25s ease;
+  }
+  .tier .cta:hover {
+    background: #9c7b33; transform: translateY(-1px);
+  }
+
+  .plan-row {
+    background: #fff; border: 1px solid #D8CFBA;
+    border-left: 5px solid var(--gold); border-radius: 5px;
+    padding: 28px 26px; margin-bottom: 24px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    display: flex; flex-wrap: wrap; justify-content: space-between;
+    align-items: center; gap: 18px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  .plan-row:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.10);
+  }
+  .plan-row .plan-info { flex: 1 1 340px; }
+  .plan-row h4 { color: var(--dark); font-size: 1.2rem; margin-bottom: 4px; }
+  .plan-row .plan-price {
+    color: var(--gold); font-size: 1.7rem; font-weight: bold;
+    font-family: Arial, sans-serif;
+  }
+  .plan-row .plan-price span { font-size: 0.85rem; color: #777; font-weight: normal; }
+  .plan-row ul { list-style: none; margin: 12px 0 0; }
+  .plan-row li {
+    padding-left: 24px; position: relative; margin-bottom: 7px;
+    font-size: 0.92rem;
+  }
+  .plan-row li::before {
+    content: "✓"; color: var(--gold); font-weight: bold;
+    position: absolute; left: 0;
+  }
+  .plan-row .plan-cta {
+    background: var(--dark); color: var(--gold-light);
+    padding: 13px 26px; border-radius: 5px;
+    text-decoration: none; font-weight: bold; font-size: 0.95rem;
+    white-space: nowrap;
+    transition: background 0.25s ease, color 0.25s ease;
+  }
+  .plan-row .plan-cta:hover { background: #000; color: #fff; }
+
+  .terms-box {
+    background: rgba(176, 141, 62, 0.08);
+    border-left: 3px solid var(--gold);
+    padding: 20px 24px; margin: 26px 0;
+    font-size: 0.92rem; border-radius: 3px;
+  }
+  .terms-box strong { color: var(--dark); }
+
+  .process-step {
+    background: #fff; border: 1px solid #D8CFBA; border-radius: 5px;
+    padding: 22px 26px; margin-bottom: 16px;
+    box-shadow: 0 3px 9px rgba(0,0,0,0.05);
+    display: flex; gap: 18px; align-items: flex-start;
+  }
+  .process-step .step-num {
+    background: var(--dark); color: var(--gold-light);
+    width: 40px; height: 40px; min-width: 40px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: bold; font-family: Arial, sans-serif; font-size: 1.05rem;
+  }
+  .process-step h4 { color: var(--dark); font-size: 1.05rem; margin-bottom: 4px; }
+  .process-step p { font-size: 0.94rem; }
+
+  .guarantee {
+    background: var(--dark); color: #fff;
+    border-radius: 5px; padding: 30px 28px; margin-top: 30px;
+    border-left: 5px solid var(--gold);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  }
+  .guarantee h3 { color: var(--gold-light); font-size: 1.25rem; margin-bottom: 10px; }
+  .guarantee p { font-size: 0.95rem; color: #cfcfd4; }
+  .guarantee ul { list-style: none; margin-top: 14px; }
+  .guarantee li {
+    padding-left: 24px; position: relative; margin-bottom: 8px;
+    font-size: 0.93rem; color: #e8e8ec;
+  }
+  .guarantee li::before {
+    content: "✓"; color: var(--gold); font-weight: bold;
+    position: absolute; left: 0;
+  }
+
+  footer {
+    background: var(--dark); color: #8a8a8a; text-align: center;
+    padding: 30px 20px; font-size: 0.85rem;
+    border-top: 3px solid var(--gold);
+    font-family: Arial, sans-serif;
+  }
+
+  .fr { display: none; }
+  body.lang-fr .en { display: none; }
+  body.lang-fr .fr { display: block; }
+
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .tier, .plan-row, .process-step { animation: fadeInUp 0.7s ease both; }
+  .tier:nth-child(2) { animation-delay: 0.15s; }
+  .tier:nth-child(3) { animation-delay: 0.3s; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .tier, .plan-row, .process-step { animation: none; }
+    html { scroll-behavior: auto; }
+  }
+</style>
+</head>
+<body class="lang-en">
+
+<header id="site-header">
+  <div class="hwrap">
+    <h1 class="logo-block"><a href="index.html"><img src="/logo-new.png" alt="Solutions Marketing VIP"></a></h1>
+    <nav>
+      <a href="index.html"><span class="en" lang="en">Home</span><span class="fr" lang="fr">Accueil</span></a>
+      <a href="blog-list.html"><span class="en" lang="en">Articles</span><span class="fr" lang="fr">Articles</span></a>
+      <button class="toggle-btn" onclick="toggleLang()" id="langBtn" style="background:#B08D3E;color:#fff;border:none;padding:8px 18px;cursor:pointer;font-weight:bold;border-radius:3px;font-family:Georgia,serif;">FR</button>
+    </nav>
+  </div>
+</header>
+
+<div class="page-title">
+  <div class="en" lang="en">
+    <div class="eyebrow">Website Design</div>
+    <h2>Professional Websites, Built to Rank</h2>
+    <p>Hand-coded, bilingual, fast-loading websites for Montreal and Quebec businesses. No bloated templates, no trackers slowing you down, no surprises in the bill.</p>
+  </div>
+  <div class="fr" lang="fr">
+    <div class="eyebrow">Conception de Sites Web</div>
+    <h2>Des Sites Professionnels, Conçus pour Se Classer</h2>
+    <p>Des sites web codés à la main, bilingues et rapides pour les entreprises de Montréal et du Québec. Aucun modèle gonflé, aucun traqueur qui vous ralentit, aucune surprise sur la facture.</p>
+  </div>
+</div>
+
+<div class="content">
+
+  <!-- ===== BUILD PACKAGES ===== -->
+  <div class="section-heading">
+    <div class="en" lang="en"><div class="eyebrow">Build Packages</div><h3>Choose Your Package</h3></div>
+    <div class="fr" lang="fr"><div class="eyebrow">Forfaits de Création</div><h3>Choisissez Votre Forfait</h3></div>
+  </div>
+
+  <div class="tier-grid">
+
+    <!-- TIER 1: LANDING PAGE -->
+    <div class="tier">
+      <div class="en" lang="en">
+        <h4>Landing Page</h4>
+        <div class="price">$900</div>
+        <div class="price-note">one-time, plus taxes</div>
+        <ul>
+          <li>Single focused page</li>
+          <li>Mobile and tablet ready</li>
+          <li>Contact form or click-to-call</li>
+          <li>Fast loading, clean code</li>
+          <li>2 revision rounds included</li>
+          <li>Delivered in 10 business days</li>
+        </ul>
+        <a href="mailto:solutions.marketing.vip@proton.me?subject=Landing%20Page%20Quote" class="cta">Get Started</a>
+      </div>
+      <div class="fr" lang="fr">
+        <h4>Page d'Atterrissage</h4>
+        <div class="price">900 $</div>
+        <div class="price-note">paiement unique, plus taxes</div>
+        <ul>
+          <li>Une page ciblée</li>
+          <li>Adaptée aux mobiles et tablettes</li>
+          <li>Formulaire de contact ou clic-pour-appeler</li>
+          <li>Chargement rapide, code propre</li>
+          <li>2 rondes de révisions incluses</li>
+          <li>Livrée en 10 jours ouvrables</li>
+        </ul>
+        <a href="mailto:solutions.marketing.vip@proton.me?subject=Soumission%20Page%20d%27Atterrissage" class="cta">Commencer</a>
+      </div>
+    </div>
+
+    <!-- TIER 2: BUSINESS SITE -->
+    <div class="tier">
+      <div class="en" lang="en">
+        <h4>Business Site</h4>
+        <div class="price">$2,800</div>
+        <div class="price-note">one-time, plus taxes</div>
+        <ul>
+          <li>5 to 8 pages</li>
+          <li>Bilingual English and French</li>
+          <li>SEO-ready structure and meta tags</li>
+          <li>Zero trackers, zero Google fonts</li>
+          <li>Image optimization included</li>
+          <li>Google Search Console and Bing setup</li>
+          <li>2 revision rounds per page</li>
+          <li>Delivered in 3 to 4 weeks</li>
+        </ul>
+        <a href="mailto:solutions.marketing.vip@proton.me?subject=Business%20Site%20Quote" class="cta">Get Started</a>
+      </div>
+      <div class="fr" lang="fr">
+        <h4>Site d'Affaires</h4>
+        <div class="price">2 800 $</div>
+        <div class="price-note">paiement unique, plus taxes</div>
+        <ul>
+          <li>5 à 8 pages</li>
+          <li>Bilingue anglais et français</li>
+          <li>Structure et balises méta optimisées SEO</li>
+          <li>Aucun traqueur, aucune police Google</li>
+          <li>Optimisation des images incluse</li>
+          <li>Configuration de Google Search Console et Bing</li>
+          <li>2 rondes de révisions par page</li>
+          <li>Livré en 3 à 4 semaines</li>
+        </ul>
+        <a href="mailto:solutions.marketing.vip@proton.me?subject=Soumission%20Site%20d%27Affaires" class="cta">Commencer</a>
+      </div>
+    </div>
+
+    <!-- TIER 3: SITE + SEO KICKSTART -->
+    <div class="tier featured">
+      <div class="en" lang="en">
+        <span class="badge">Most Popular</span>
+        <h4>Site + SEO Kickstart</h4>
+        <div class="price">$3,800</div>
+        <div class="price-note">one-time, plus taxes</div>
+        <ul>
+          <li>Everything in Business Site</li>
+          <li>Full technical SEO audit included</li>
+          <li>Keyword research for your market</li>
+          <li>Directory submissions (Bing, Yelp)</li>
+          <li>Sitemap submitted to search engines</li>
+          <li>Local SEO setup for Montreal searches</li>
+          <li>First month of maintenance included</li>
+        </ul>
+        <a href="mailto:solutions.marketing.vip@proton.me?subject=Site%20%2B%20SEO%20Kickstart%20Quote" class="cta">Get Started</a>
+      </div>
+      <div class="fr" lang="fr">
+        <span class="badge">Le Plus Populaire</span>
+        <h4>Site + Départ SEO</h4>
+        <div class="price">3 800 $</div>
+        <div class="price-note">paiement unique, plus taxes</div>
+        <ul>
+          <li>Tout ce qui est inclus dans Site d'Affaires</li>
+          <li>Audit SEO technique complet inclus</li>
+          <li>Recherche de mots-clés pour votre marché</li>
+          <li>Inscriptions aux annuaires (Bing, Yelp)</li>
+          <li>Plan de site soumis aux moteurs de recherche</li>
+          <li>Configuration SEO locale pour Montréal</li>
+          <li>Premier mois de maintenance inclus</li>
+        </ul>
+        <a href="mailto:solutions.marketing.vip@proton.me?subject=Soumission%20Site%20%2B%20SEO" class="cta">Commencer</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="terms-box">
+    <div class="en" lang="en">
+      <strong>Clear terms:</strong> 50% deposit to reserve your project start date, remaining balance before your site goes live. You receive full ownership of your website files once final payment is complete. Prices exclude GST and QST. No hidden monthly fees unless you choose a maintenance plan.
+    </div>
+    <div class="fr" lang="fr">
+      <strong>Conditions claires :</strong> acompte de 50 % pour réserver votre date de début de projet, solde avant la mise en ligne de votre site. Vous recevez la pleine propriété des fichiers de votre site une fois le paiement final complété. Les prix excluent la TPS et la TVQ. Aucuns frais mensuels cachés, sauf si vous choisissez un forfait de maintenance.
+    </div>
+  </div>
+
+  <!-- ===== MAINTENANCE PLANS ===== -->
+  <div class="section-heading">
+    <div class="en" lang="en"><div class="eyebrow">After Launch</div><h3>Maintenance Plans</h3></div>
+    <div class="fr" lang="fr"><div class="eyebrow">Après le Lancement</div><h3>Forfaits de Maintenance</h3></div>
+  </div>
+
+  <div class="plan-row">
+    <div class="plan-info">
+      <div class="en" lang="en">
+        <h4>Essential Care</h4>
+        <div class="plan-price">$99<span>/month</span></div>
+        <ul>
+          <li>Security and platform updates</li>
+          <li>Monthly backups of your site</li>
+          <li>Uptime monitoring, alerts within minutes</li>
+          <li>1 hour of small changes per month</li>
+          <li>Cancel anytime, no penalty</li>
+        </ul>
+      </div>
+      <div class="fr" lang="fr">
+        <h4>Soins Essentiels</h4>
+        <div class="plan-price">99 $<span>/mois</span></div>
+        <ul>
+          <li>Mises à jour de sécurité et de plateforme</li>
+          <li>Sauvegardes mensuelles de votre site</li>
+          <li>Surveillance de disponibilité, alertes en quelques minutes</li>
+          <li>1 heure de petites modifications par mois</li>
+          <li>Annulez en tout temps, sans pénalité</li>
+        </ul>
+      </div>
+    </div>
+    <a href="mailto:solutions.marketing.vip@proton.me?subject=Essential%20Care%20Plan" class="plan-cta"><span class="en" lang="en">Choose Plan</span><span class="fr" lang="fr">Choisir ce Forfait</span></a>
+  </div>
+
+  <div class="plan-row">
+    <div class="plan-info">
+      <div class="en" lang="en">
+        <h4>VIP Care</h4>
+        <div class="plan-price">$199<span>/month</span></div>
+        <ul>
+          <li>Everything in Essential Care</li>
+          <li>3 hours of changes per month</li>
+          <li>Quarterly SEO progress report</li>
+          <li>Priority support, same-day response</li>
+          <li>New blog post published monthly (your content reviewed and formatted)</li>
+        </ul>
+      </div>
+      <div class="fr" lang="fr">
+        <h4>Soins VIP</h4>
+        <div class="plan-price">199 $<span>/mois</span></div>
+        <ul>
+          <li>Tout ce qui est dans Soins Essentiels</li>
+          <li>3 heures de modifications par mois</li>
+          <li>Rapport de progrès SEO trimestriel</li>
+          <li>Support prioritaire, réponse le jour même</li>
+          <li>Nouvel article de blog publié chaque mois (votre contenu révisé et mis en forme)</li>
+        </ul>
+      </div>
+    </div>
+    <a href="mailto:solutions.marketing.vip@proton.me?subject=VIP%20Care%20Plan" class="plan-cta"><span class="en" lang="en">Choose Plan</span><span class="fr" lang="fr">Choisir ce Forfait</span></a>
+  </div>
+
+  <!-- ===== PROCESS ===== -->
+  <div class="section-heading">
+    <div class="en" lang="en"><div class="eyebrow">How It Works</div><h3>From First Call to Launch</h3></div>
+    <div class="fr" lang="fr"><div class="eyebrow">Comment Ça Fonctionne</div><h3>du Premier Appel au Lancement</h3></div>
+  </div>
+
+  <div class="process-step">
+    <div class="step-num">1</div>
+    <div class="en" lang="en">
+      <h4>Free Consultation</h4>
+      <p>We discuss your business goals, your customers, and what your website needs to achieve. You receive a written quote with a fixed price. No hourly surprises.</p>
+    </div>
+    <div class="fr" lang="fr">
+      <h4>Consultation Gratuite</h4>
+      <p>Nous discutons de vos objectifs d'affaires, de vos clients et de ce que votre site doit accomplir. Vous recevez une soumission écrite à prix fixe. Aucune surprise horaire.</p>
+    </div>
+  </div>
+
+  <div class="process-step">
+    <div class="step-num">2</div>
+    <div class="en" lang="en">
+      <h4>Design and Build</h4>
+      <p>You approve the design before a single line of production code is written. We build in English and French at the same time, so neither language feels like an afterthought.</p>
+    </div>
+    <div class="fr" lang="fr">
+      <h4>Conception et Construction</h4>
+      <p>Vous approuvez le design avant qu'une seule ligne de code de production soit écrite. Nous construisons en anglais et en français en même temps, pour qu'aucune langue ne soit une réflexion après coup.</p>
+    </div>
+  </div>
+
+  <div class="process-step">
+    <div class="step-num">3</div>
+    <div class="en" lang="en">
+      <h4>Review and Refine</h4>
+      <p>Two full revision rounds are included. You see the site on your phone, your tablet, and your computer before anything goes public.</p>
+    </div>
+    <div class="fr" lang="fr">
+      <h4>Révision et Raffinement</h4>
+      <p>Deux rondes de révisions complètes sont incluses. Vous voyez le site sur votre téléphone, votre tablette et votre ordinateur avant toute publication.</p>
+    </div>
+  </div>
+
+  <div class="process-step">
+    <div class="step-num">4</div>
+    <div class="en" lang="en">
+      <h4>Launch and Handover</h4>
+      <p>Your site goes live on your domain, with your name on the registry. Full ownership transfers to you the moment your final payment is complete. You are never locked in with us.</p>
+    </div>
+    <div class="fr" lang="fr">
+      <h4>Lancement et Remise</h4>
+      <p>Votre site est mis en ligne sur votre domaine, à votre nom au registre. La pleine propriété vous est transférée dès que votre paiement final est complété. Vous n'êtes jamais enfermé avec nous.</p>
+    </div>
+  </div>
+
+  <!-- ===== GUARANTEE BOX ===== -->
+  <div class="guarantee">
+    <div class="en" lang="en">
+      <h3>What We Promise (and What We Don't)</h3>
+      <p>We believe in honesty over hype. Here is exactly what you get from us:</p>
+      <ul>
+        <li>Clean, fast, hand-written code that loads quickly on any connection</li>
+        <li>A website that respects your visitors: no trackers, no data collection, no third-party scripts phoning home</li>
+        <li>Technical SEO best practices applied to every page we build</li>
+        <li>Fixed pricing agreed before work starts</li>
+        <li>Responsive support after launch</li>
+      </ul>
+      <p style="margin-top:14px;font-size:0.88rem;color:#a9a9b0;">What we cannot promise: specific search rankings on Google or Bing. No honest provider can. Search engines decide rankings based on hundreds of factors, and anyone guaranteeing you a number one position is not telling the truth. What we guarantee is professional work that gives your site its best possible chance to rank.</p>
+    </div>
+    <div class="fr" lang="fr">
+      <h3>Ce Que Nous Promettons (et Ce Que Nous Ne Promettons Pas)</h3>
+      <p>Nous croyons en l'honnêteté plutôt qu'au battage médiatique. Voici exactement ce que vous obtenez de nous :</p>
+      <ul>
+        <li>Un code propre, rapide et écrit à la main qui se charge rapidement sur toute connexion</li>
+        <li>Un site qui respecte vos visiteurs : aucun traqueur, aucune collecte de données, aucun script tiers qui communique à l'insu de votre connaissance</li>
+        <li>Les meilleures pratiques SEO techniques appliquées à chaque page que nous construisons</li>
+        <li>Un prix fixe convenu avant le début des travaux</li>
+        <li>Un support réactif après le lancement</li>
+      </ul>
+      <p style="margin-top:14px;font-size:0.88rem;color:#a9a9b0;">Ce que nous ne pouvons pas promettre : des positions précises sur Google ou Bing. Aucun fournisseur honnête ne le peut. Les moteurs de recherche déterminent les classements selon des centaines de facteurs, et quiconque vous garantit la première position ne dit pas la vérité. Ce que nous garantissons, c'est un travail professionnel qui donne à votre site la meilleure chance possible de bien se classer.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Solutions Marketing VIP - <span class="en" lang="en">Professional websites. Privacy respected.</span><span class="fr" lang="fr">Sites web professionnels. Vie privée respectée.</span></p>
+  </footer>
+
+  <script>
+  function toggleLang() {
+    var b = document.body;
+    var btn = document.getElementById('langBtn');
+    if (b.classList.contains('lang-en')) {
+      b.classList.remove('lang-en'); b.classList.add('lang-fr');
+      btn.textContent = 'EN';
+    } else {
+      b.classList.remove('lang-fr'); b.classList.add('lang-en');
+      btn.textContent = 'FR';
+    }
+  }
+
+  var header = document.getElementById("site-header");
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 40) header.classList.add("condensed");
+    else header.classList.remove("condensed");
+  }, { passive: true });
+  </script>
+
+</body>
+</html>
