@@ -85,7 +85,10 @@
   <div class="wrap">
     <h1 class="logo-block"><a href="index.html"><img src="/logo-new.png" alt="Solutions Marketing VIP"></a></h1>
     <nav>
-      <a href="index.html" id="home"></a>
+      <a href="index.html"><span lang="en">Home</span><span lang="fr">Accueil</span></a>
+      <a href="websites.html"><span lang="en">Websites</span><span lang="fr">Sites Web</span></a>
+      <a href="website-types.html"><span lang="en">Guide</span><span lang="fr">Guide</span></a>
+      <a href="blog-list.html"><span lang="en">Articles</span><span lang="fr">Articles</span></a>
       <button id="btn-en" class="lang-active" onclick="setLang('en')">EN</button>
       <button id="btn-fr" onclick="setLang('fr')">FR</button>
     </nav>
@@ -407,7 +410,6 @@
 function setLang(l) {
   document.body.dataset.lang = l;
   document.documentElement.lang = l;
-  document.getElementById("home").textContent = l === "fr" ? "Accueil" : "Home";
   document.getElementById("btn-en").className = l === "en" ? "lang-active" : "";
   document.getElementById("btn-fr").className = l === "fr" ? "lang-active" : "";
   try { localStorage.setItem("preflang", l); } catch (e) {}
