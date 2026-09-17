@@ -92,16 +92,22 @@
     position: relative; z-index: 10;
   }
   .stat {
-    background: #fff; border: 1px solid #D8CFBA;
+    background: var(--dark); border: 1px solid #3a3d46;
     border-top: 4px solid var(--gold); border-radius: 5px;
     padding: 20px 14px; text-align: center;
-    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+    color: #fff;
   }
   .stat .num {
     font-size: 1.8rem; font-weight: bold; color: var(--gold);
     font-family: Arial, sans-serif; line-height: 1.1;
   }
-  .stat .lbl { font-size: 0.8rem; color: #777; margin-top: 6px; }
+  .stat .lbl { font-size: 0.8rem; color: #cfcfd4; margin-top: 6px; }
+  .stat .num.pop { animation: statPop 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.4) both; }
+  @keyframes statPop {
+    0% { transform: scale(0.4); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+  }
 
   .content {
     max-width: 900px; margin: 30px auto 80px; padding: 0 24px;
@@ -157,10 +163,7 @@
     border-radius: 5px; padding: 32px 28px; margin-top: 26px;
     border-left: 5px solid var(--gold);
     box-shadow: 0 6px 18px rgba(0,0,0,0.25);
-    display: flex; flex-wrap: wrap; align-items: center;
-    justify-content: space-between; gap: 20px;
   }
-  .monthly-band .mb-info { flex: 1 1 320px; }
   .monthly-band .tier-label {
     color: var(--gold); font-size: 0.78rem; font-weight: bold;
     letter-spacing: 2px; text-transform: uppercase;
@@ -171,9 +174,9 @@
     color: var(--gold); font-size: 1.6rem; font-weight: bold;
     font-family: Arial, sans-serif; margin-bottom: 10px;
   }
-  .monthly-band p { font-size: 0.93rem; color: #cfcfd4; }
+  .monthly-band p { font-size: 0.93rem; color: #cfcfd4; margin-bottom: 16px; }
   .monthly-band a {
-    background: var(--gold); color: #fff;
+    display: inline-block; background: var(--gold); color: #fff;
     padding: 14px 28px; border-radius: 5px;
     text-decoration: none; font-weight: bold; font-size: 0.98rem;
     white-space: nowrap;
@@ -213,7 +216,6 @@
     margin-bottom: 6px;
   }
   .promise h3 { color: var(--gold-light); font-size: 1.35rem; margin-bottom: 12px; }
-  .promise p { font-size: 0.96rem; color: #cfcfd4; margin-bottom: 10px; }
   .promise ul { list-style: none; margin-top: 10px; }
   .promise li {
     padding-left: 24px; position: relative; margin-bottom: 9px;
@@ -259,15 +261,13 @@
     from { opacity: 0; transform: translateY(20px); }
     to   { opacity: 1; transform: translateY(0); }
   }
-  .tier, .philo-item, .stat, .faq-item { animation: fadeInUp 0.7s ease both; }
-  .stat:nth-child(2) { animation-delay: 0.1s; }
-  .stat:nth-child(3) { animation-delay: 0.2s; }
-  .stat:nth-child(4) { animation-delay: 0.3s; }
+  .tier, .philo-item, .faq-item { animation: fadeInUp 0.7s ease both; }
   .tier:nth-child(2) { animation-delay: 0.15s; }
   .tier:nth-child(3) { animation-delay: 0.3s; }
 
   @media (prefers-reduced-motion: reduce) {
-    .tier, .philo-item, .stat, .faq-item { animation: none; }
+    .tier, .philo-item, .faq-item { animation: none; }
+    .stat .num.pop { animation: none; }
     html { scroll-behavior: auto; }
   }
 </style>
@@ -302,22 +302,22 @@
   </div>
 </div>
 
-<!-- STATS STRIP -->
+<!-- STATS STRIP (animated counters) -->
 <div class="stats-strip">
   <div class="stat">
-    <div class="num">$0</div>
+    <div class="num count" data-target="850" data-prefix="$">$0</div>
     <div class="lbl"><span class="en" lang="en">Setup fees elsewhere</span><span class="fr" lang="fr">Frais d'installation ailleurs</span></div>
   </div>
   <div class="stat">
-    <div class="num">0</div>
-    <div class="lbl"><span class="en" lang="en">Months locked in</span><span class="fr" lang="fr">Mois enfermés</span></div>
+    <div class="num count" data-target="12">0</div>
+    <div class="lbl"><span class="en" lang="en">Months of contract elsewhere</span><span class="fr" lang="fr">Mois de contrat ailleurs</span></div>
   </div>
   <div class="stat">
-    <div class="num">0/100</div>
-    <div class="lbl"><span class="en" lang="en">Starting health score</span><span class="fr" lang="fr">Score de santé de départ</span></div>
+    <div class="num" id="stat-static-1">0/100</div>
+    <div class="lbl"><span class="en" lang="en">Health score we measure</span><span class="fr" lang="fr">Score de santé que nous mesurons</span></div>
   </div>
   <div class="stat">
-    <div class="num">0</div>
+    <div class="num" id="stat-static-2">0</div>
     <div class="lbl"><span class="en" lang="en">Trackers on this page</span><span class="fr" lang="fr">Traqueurs sur cette page</span></div>
   </div>
 </div>
@@ -386,28 +386,26 @@
   </div>
 
   <div class="monthly-band">
-    <div class="mb-info">
-      <div class="en" lang="en">
-        <div class="tier-label">Monthly</div>
-        <h4>Monitoring &amp; Repair</h4>
-        <div class="mb-price">$550–650<span>/mo</span></div>
-        <p>We fix issues, re-audit every month, and hand you a one-page scorecard showing your score climb. Cancel anytime. We earn the renewal.</p>
-        <a href="mailto:solutions.marketing.vip@proton.me?subject=Monitoring%20%26%20Repair" class="btn">Start Monitoring</a>
-      </div>
-      <div class="fr" lang="fr">
-        <div class="tier-label">Mensuel</div>
-        <h4>Surveillance &amp; Réparation</h4>
-        <div class="mb-price">550–650 $<span>/mois</span></div>
-        <p>Nous corrigeons les problèmes, réauditons chaque mois, et vous remettons un rapport d'une page montrant votre score monter. Annulez en tout temps. Nous méritons le renouvellement.</p>
-        <a href="mailto:solutions.marketing.vip@proton.me?subject=Surveillance%20%26%20R%C3%A9paration" class="btn">Démarrer Surveillance</a>
-      </div>
+    <div class="en" lang="en">
+      <div class="tier-label">Monthly</div>
+      <h4>Monitoring &amp; Repair</h4>
+      <div class="mb-price">$550–650<span>/mo</span></div>
+      <p>We fix issues, re-audit every month, and hand you a one-page scorecard showing your score climb. Cancel anytime. We earn the renewal.</p>
+      <a href="mailto:solutions.marketing.vip@proton.me?subject=Monitoring%20and%20Repair">Start Monitoring</a>
+    </div>
+    <div class="fr" lang="fr">
+      <div class="tier-label">Mensuel</div>
+      <h4>Surveillance &amp; Réparation</h4>
+      <div class="mb-price">550–650 $<span>/mois</span></div>
+      <p>Nous corrigeons les problèmes, réauditons chaque mois, et vous remettons un rapport d'une page montrant votre score monter. Annulez en tout temps. Nous méritons le renouvellement.</p>
+      <a href="mailto:solutions.marketing.vip@proton.me?subject=Surveillance%20et%20R%C3%A9paration">Démarrer la Surveillance</a>
     </div>
   </div>
 
-  <p class="price-note">
-    <div class="en" lang="en">Exact price depends on page count — and you'll see the exact number before you commit a dollar. No surprises, ever.</div>
-    <div class="fr" lang="fr">Le prix exact dépend du nombre de pages — et vous verrez le chiffre exact avant de vous engager pour un seul dollar. Aucune surprise, jamais.</div>
-  </p>
+  <div class="price-note">
+    <span class="en" lang="en">Exact price depends on page count. You see the exact number before you commit a dollar. No surprises, ever.</span>
+    <span class="fr" lang="fr">Le prix exact dépend du nombre de pages. Vous verrez le chiffre exact avant de vous engager pour un seul dollar. Aucune surprise, jamais.</span>
+  </div>
 
   <!-- PHILOSOPHY -->
   <div class="section-heading">
@@ -502,6 +500,19 @@
     <div class="faq-item">
       <details>
         <summary>
+          <span class="en" lang="en">Why do bigger sites cost less per page?</span>
+          <span class="fr" lang="fr">Pourquoi les grands sites coûtent-ils moins cher par page ?</span>
+        </summary>
+        <div class="faq-body">
+          <div class="en" lang="en">Because our crawler automates what other agencies bill by the hour. Automation should make things cheaper, not just faster.</div>
+          <div class="fr" lang="fr">Parce que notre robot d'analyse automatise ce que les autres agences facturent à l'heure. L'automatisation devrait rendre les choses moins chères, pas seulement plus rapides.</div>
+        </div>
+      </details>
+    </div>
+
+    <div class="faq-item">
+      <details>
+        <summary>
           <span class="en" lang="en">Do I need to rebuild my website?</span>
           <span class="fr" lang="fr">Faut-il refaire mon site web ?</span>
         </summary>
@@ -563,6 +574,54 @@ window.addEventListener("scroll", function () {
   if (window.scrollY > 40) header.classList.add("condensed");
   else header.classList.remove("condensed");
 }, { passive: true });
+
+/* ===== ANIMATED STAT COUNTERS ===== */
+(function () {
+  var counters = document.querySelectorAll(".num.count");
+  var statics = [document.getElementById("stat-static-1"), document.getElementById("stat-static-2")];
+  var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  function easeOutCubic(p) { return 1 - Math.pow(1 - p, 3); }
+
+  function runCount(el) {
+    var target = parseInt(el.getAttribute("data-target"), 10) || 0;
+    var prefix = el.getAttribute("data-prefix") || "";
+    var duration = 1600;
+    var start = null;
+    if (reduced) { el.textContent = prefix + target.toLocaleString(); return; }
+    function frame(ts) {
+      if (start === null) start = ts;
+      var progress = Math.min((ts - start) / duration, 1);
+      var val = Math.round(target * easeOutCubic(progress));
+      el.textContent = prefix + val.toLocaleString();
+      if (progress < 1) requestAnimationFrame(frame);
+    }
+    requestAnimationFrame(frame);
+  }
+
+  function finishAll() {
+    counters.forEach(runCount);
+    statics.forEach(function (s) { if (s) s.classList.add("pop"); });
+  }
+
+  if ("IntersectionObserver" in window && !reduced) {
+    var seen = false;
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting && !seen) {
+          seen = true;
+          counters.forEach(runCount);
+          statics.forEach(function (s) { if (s) s.classList.add("pop"); });
+          observer.disconnect();
+        }
+      });
+    }, { threshold: 0.35 });
+    var strip = document.querySelector(".stats-strip");
+    if (strip) observer.observe(strip);
+  } else {
+    finishAll();
+  }
+})();
 </script>
 
 </body>
