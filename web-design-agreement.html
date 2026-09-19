@@ -30,13 +30,23 @@
   .sig-label { font-size: 0.85rem; color: #777; margin-bottom: 8px; }
   .sig-line { border-bottom: 1px solid var(--text); min-height: 36px; margin-bottom: 8px; }
   .disclaimer { background: rgba(176, 141, 62, 0.08); padding: 14px 18px; border-radius: 4px; font-size: 0.88rem; margin-top: 28px; }
+  .lang-switch {
+    position: fixed; bottom: 20px; right: 20px; z-index: 100;
+    background: var(--gold); color: #fff; border: none;
+    padding: 10px 20px; cursor: pointer; font-weight: bold;
+    border-radius: 4px; font-family: Georgia, serif; font-size: 0.95rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+  }
+  .lang-switch:hover { background: #9c7b33; }
   .fr { display: none; }
   body.lang-fr .en { display: none; }
   body.lang-fr .fr { display: block; }
-  @media print { body { padding: 0; } .wrapper { box-shadow: none; border: none; } }
+  @media print { body { padding: 0; } .wrapper { box-shadow: none; border: none; } .lang-switch { display: none; } }
 </style>
 </head>
 <body class="lang-en">
+
+<button class="lang-switch" onclick="toggleLang()" id="langBtn">FR</button>
 
 <div class="wrapper">
   <h1><span class="en">Web Design Service Agreement</span><span class="fr">Contrat de Services de Conception de Site Web</span></h1>
@@ -92,18 +102,25 @@
     </div>
 
     <div class="section">
-      <div class="section-title">8. No Ranking Guarantee</div>
+      <div class="section-title">8. Confidentiality and Data Protection</div>
+      <div class="clause">All Client business information, files, documents, and credentials shared with the Developer are treated as strictly confidential. The Developer will never sell, rent, trade, or otherwise disclose Client information to any third party.</div>
+      <div class="clause">Client documents are stored using end-to-end encryption, under a storage provider that is technically unable to decrypt the contents. The Developer never collects or stores credit card data; all card payments are processed by Square, and bank transfers are received directly by Interac e-Transfer.</div>
+      <div class="clause">Personal information is collected, used, and retained in accordance with Quebec's Law 25 (Act respecting the protection of personal information in the private sector). Upon written request after project completion and final payment, the Developer will permanently delete all Client files from storage.</div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">9. No Ranking Guarantee</div>
       <div class="clause">Search engine rankings, traffic levels, and revenue outcomes are influenced by hundreds of factors outside the Developer's control, including Google's algorithms, competitor activity, and market conditions. Developer guarantees professional work quality but cannot and does not guarantee specific search positions, traffic numbers, or business results. Any provider claiming guaranteed rankings is not acting ethically.</div>
     </div>
 
     <div class="section">
-      <div class="section-title">9. Termination</div>
+      <div class="section-title">10. Termination</div>
       <div class="clause">If Client terminates this agreement after work has begun, Developer retains the deposit plus payment for completed milestones proportional to work performed. Remaining balance is forfeited.</div>
       <div class="clause">If Developer terminates for cause (Client non-payment, abusive behavior, breach of contract), the same formula applies: deposit kept plus compensation for completed work.</div>
     </div>
 
     <div class="section">
-      <div class="section-title">10. Jurisdiction</div>
+      <div class="section-title">11. Jurisdiction</div>
       <div class="clause">This agreement is governed by the laws of the Province of Quebec and the federal laws of Canada applicable therein. Any legal proceedings arising from this agreement shall be conducted in the courts of Montreal, Quebec.</div>
     </div>
 
@@ -189,18 +206,25 @@
     </div>
 
     <div class="section">
-      <div class="section-title">8. Pas de Garantie de Classement</div>
+      <div class="section-title">8. Confidentialité et Protection des Données</div>
+      <div class="clause">Toutes les informations d'affaires, fichiers, documents et identifiants partagés avec le Développeur sont traités de manière strictement confidentielle. Le Développeur ne vendra, ne louera, n'échangera et ne divulguera jamais les renseignements du Client à un tiers, peu importe les circonstances.</div>
+      <div class="clause">Les documents du Client sont stockés à l'aide du chiffrement de bout en bout, chez un fournisseur de stockage qui est techniquement incapable de déchiffrer le contenu. Le Développeur ne collecte ni ne conserve jamais de données de carte de crédit ; tous les paiements par carte sont traités par Square, et les virements bancaires sont reçus directement par virement Interac.</div>
+      <div class="clause">Les renseignements personnels sont collectés, utilisés et conservés conformément à la Loi 25 du Québec (Loi sur la protection des renseignements personnels dans le secteur privé). Sur demande écrite après la fin du projet et le paiement final, le Développeur supprimera définitivement tous les fichiers du Client de son stockage.</div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">9. Pas de Garantie de Classement</div>
       <div class="clause">Les positions sur les moteurs de recherche, les niveaux de trafic et les résultats de revenus sont influencés par des centaines de facteurs hors du contrôle du Développeur, incluant les algorithmes de Google, l'activité des concurrents et les conditions du marché. Le Développeur garantit la qualité professionnelle du travail mais ne peut ni ne garantit des positions précises de recherche, des chiffres de trafic ou des résultats commerciaux. Tout fournisseur affirmant garantir des classements n'agit pas éthiquement.</div>
     </div>
 
     <div class="section">
-      <div class="section-title">9. Résiliation</div>
+      <div class="section-title">10. Résiliation</div>
       <div class="clause">Si le Client résilie cet accord après le début des travaux, le Développeur conserve l'acompte plus le paiement pour les étapes complétées proportionnelles au travail effectué. Le solde restant est perdu.</div>
       <div class="clause">Si le Développeur résilie pour cause (non-paiement du Client, comportement abusif, rupture de contrat), la même formule s'applique : acompte conservé plus compensation pour le travail complété.</div>
     </div>
 
     <div class="section">
-      <div class="section-title">10. Juridiction</div>
+      <div class="section-title">11. Juridiction</div>
       <div class="clause">Le présent accord est régi par les lois de la Province de Québec et les lois fédérales du Canada applicables en celle-ci. Toute procédure juridique découlant du présent accord doit être conduite devant les tribunaux de Montréal, Québec.</div>
     </div>
 
@@ -245,10 +269,13 @@
 <script>
 function toggleLang() {
   var b = document.body;
+  var btn = document.getElementById('langBtn');
   if (b.classList.contains('lang-en')) {
     b.classList.remove('lang-en'); b.classList.add('lang-fr');
+    btn.textContent = 'EN';
   } else {
-    b.classList.remove('fr'); b.classList.add('lang-en');
+    b.classList.remove('lang-fr'); b.classList.add('lang-en');
+    btn.textContent = 'FR';
   }
 }
 </script>
