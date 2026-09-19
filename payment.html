@@ -73,6 +73,23 @@
     max-width: 900px; margin: 10px auto 80px; padding: 0 24px;
   }
 
+  .security-box {
+    background: var(--dark); color: #e8e6df;
+    border: 1px solid var(--gold);
+    border-left: 5px solid var(--gold); border-radius: 5px;
+    padding: 26px 28px; margin-bottom: 28px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  }
+  .security-box h3 {
+    color: var(--gold-light); font-size: 1.2rem; margin-bottom: 14px;
+  }
+  .security-box p { font-size: 0.95rem; margin-bottom: 12px; padding-left: 26px; position: relative; }
+  .security-box p:last-child { margin-bottom: 0; }
+  .security-box p::before {
+    content: "🔒"; position: absolute; left: 0; top: 2px; font-size: 0.9rem;
+  }
+  .security-box strong { color: #fff; }
+
   .payment-option {
     background: #fff; border: 1px solid #D8CFBA;
     border-left: 5px solid var(--gold); border-radius: 5px;
@@ -202,6 +219,20 @@
 </div>
 
 <div class="content">
+
+  <!-- SECURITY ASSURANCE BOX -->
+  <div class="security-box">
+    <div class="en" lang="en">
+      <h3>How your payment and your documents are protected</h3>
+      <p><strong>Payments:</strong> Processed through Interac e-Transfer or Square. Card data never touches our servers and is encrypted in transit. We hold no card numbers, ever.</p>
+      <p><strong>Your documents:</strong> Stored with end-to-end encryption under Swiss privacy laws. The storage provider cannot decrypt or surrender your files, even under legal pressure. Access stays strictly with our company, we never sell client information to anyone, and your data is handled in compliance with Quebec's Law 25.</p>
+    </div>
+    <div class="fr" lang="fr">
+      <h3>Comment vos paiements et vos documents sont protégés</h3>
+      <p><strong>Paiements :</strong> Traités par virement Interac ou Square. Les données de carte ne touchent jamais nos serveurs et sont chiffrées en transit. Nous ne conservons aucun numéro de carte, jamais.</p>
+      <p><strong>Vos documents :</strong> Stockés avec chiffrement de bout en bout sous les lois suisses sur la vie privée. Le fournisseur de stockage ne peut ni déchiffrer ni remettre vos fichiers, même sous pression légale. L'accès reste strictement réservé à notre entreprise, nous ne vendons jamais les renseignements de nos clients, et vos données sont traitées conformément à la Loi 25 du Québec.</p>
+    </div>
+  </div>
 
   <!-- OPTION 1: INTERAC E-TRANSFER -->
   <div class="payment-option">
