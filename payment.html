@@ -21,7 +21,6 @@
     font-family: Georgia, "Times New Roman", serif;
     background: var(--cream); color: var(--text); line-height: 1.7;
   }
-
   header {
     background: var(--dark); color: #fff;
     padding: 20px 0; border-bottom: 3px solid var(--gold);
@@ -57,7 +56,6 @@
     transition: color 0.25s ease;
   }
   header nav a:hover, header nav button:hover { color: #fff; }
-
   .page-title {
     max-width: 900px; margin: 0 auto; padding: 50px 24px 8px;
     text-align: center;
@@ -68,11 +66,9 @@
     margin-bottom: 6px;
   }
   .page-title h2 { font-size: 1.9rem; color: var(--dark); line-height: 1.3; }
-
   .content {
     max-width: 900px; margin: 10px auto 80px; padding: 0 24px;
   }
-
   .security-box {
     background: var(--dark); color: #e8e6df;
     border: 1px solid var(--gold);
@@ -89,7 +85,6 @@
     content: "🔒"; position: absolute; left: 0; top: 2px; font-size: 0.9rem;
   }
   .security-box strong { color: #fff; }
-
   .payment-option {
     background: #fff; border: 1px solid #D8CFBA;
     border-left: 5px solid var(--gold); border-radius: 5px;
@@ -167,25 +162,21 @@
     transform: translateY(-2px);
   }
   .website-item strong { display: block; font-size: 1.1rem; margin-bottom: 4px; }
-
   footer {
     background: var(--dark); color: #8a8a8a; text-align: center;
     padding: 30px 20px; font-size: 0.85rem;
     border-top: 3px solid var(--gold);
     font-family: Arial, sans-serif;
   }
-
   .fr { display: none; }
   body.lang-fr .en { display: none; }
   body.lang-fr .fr { display: block; }
-
   @keyframes fadeInUp {
     from { opacity: 0; transform: translateY(20px); }
     to   { opacity: 1; transform: translateY(0); }
   }
   .payment-option { animation: fadeInUp 0.7s ease both; }
   .payment-option:nth-child(2) { animation-delay: 0.15s; }
-
   @media (prefers-reduced-motion: reduce) {
     .payment-option { animation: none; }
     html { scroll-behavior: auto; }
@@ -200,8 +191,12 @@
     <nav>
       <a href="index.html"><span class="en" lang="en">Home</span><span class="fr" lang="fr">Accueil</span></a>
       <a href="websites.html"><span class="en" lang="en">Websites</span><span class="fr" lang="fr">Sites Web</span></a>
+      <a href="services.html"><span class="en" lang="en">Services</span><span class="fr" lang="fr">Services</span></a>
       <a href="website-types.html"><span class="en" lang="en">Guide</span><span class="fr" lang="fr">Guide</span></a>
+      <a href="sectors.html"><span class="en" lang="en">Industries</span><span class="fr" lang="fr">Secteurs</span></a>
       <a href="blog-list.html"><span class="en" lang="en">Articles</span><span class="fr" lang="fr">Articles</span></a>
+      <a href="case-studies.html"><span class="en" lang="en">Case Studies</span><span class="fr" lang="fr">Études de cas</span></a>
+      <a href="payment.html"><span class="en" lang="en">Payment</span><span class="fr" lang="fr">Paiement</span></a>
       <button class="toggle-btn" onclick="toggleLang()" id="langBtn" style="background:#B08D3E;color:#fff;border:none;padding:8px 18px;cursor:pointer;font-weight:bold;border-radius:3px;font-family:Georgia,serif;">FR</button>
     </nav>
   </div>
@@ -278,7 +273,7 @@
       </p>
 
       <p style="font-size: 0.92rem; color: #666; margin-top: 16px;">
-        <em>Note: TPS/TVH ajoutées où applicable par la loi.</em>
+        <em>Note: TPS/TVQ ajoutées où applicable par la loi.</em>
       </p>
     </div>
   </div>
