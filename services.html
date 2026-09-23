@@ -58,9 +58,8 @@
     transition: height 0.3s ease;
   }
   header.condensed h1.logo-block img { height: 40px; }
-  @media (max-width: 600px) {
-    header h1.logo-block img { height: 42px; max-width: 190px; }
-    header.condensed h1.logo-block img { height: 34px; }
+  header nav {
+    display: flex; align-items: center; flex-wrap: wrap; gap: 4px 0;
   }
   header nav a, header nav button {
     color: var(--gold-light); text-decoration: none;
@@ -70,6 +69,32 @@
     transition: color 0.25s ease;
   }
   header nav a:hover, header nav button:hover { color: #fff; }
+
+  /* MOBILE HEADER FIX: stack logo above nav, centered */
+  @media (max-width: 720px) {
+    header .hwrap {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+    }
+    header h1.logo-block img {
+      height: 44px; max-width: 200px; margin: 0 auto;
+    }
+    header.condensed h1.logo-block img { height: 36px; }
+    header nav {
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 8px 0;
+    }
+    header nav a, header nav button {
+      margin-left: 0;
+      padding: 6px 10px;
+      font-size: 0.88rem;
+      text-align: center;
+    }
+  }
+
   .page-title {
     max-width: 900px; margin: 0 auto; padding: 50px 24px 8px;
     text-align: center;
