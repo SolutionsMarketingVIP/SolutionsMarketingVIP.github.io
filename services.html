@@ -5,28 +5,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="canonical" href="https://solutionsmarketingvip.com/services.html">
-<title>Maintenance &amp; Recurring Services Montreal | Solutions Marketing VIP</title>
-<meta name="description" content="Managed hosting, content updates, Law 25 compliance, local SEO and newsletters for Montreal businesses. Clear prices, cancel with notice, no hostage data.">
+<title>Maintenance & Recurring Services Montreal | Solutions Marketing VIP</title>
+<meta name="description" content="Managed hosting, Law 25 compliance, maintenance plans, and local SEO bundles for Montreal businesses. Clear prices, cancel with written notice, everything stacks.">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "Website Maintenance and Managed Services",
-  "description": "Managed hosting, content updates, privacy compliance, local SEO and newsletter services for Montreal and Quebec businesses.",
+  "@type": "WebPage",
+  "name": "Maintenance & Recurring Services",
+  "description": "Managed hosting, compliance shield, maintenance plans, local dominance bundle, and newsletter system for Quebec businesses.",
   "url": "https://solutionsmarketingvip.com/services.html",
-  "provider": {
-    "@type": "ProfessionalService",
-    "name": "Solutions Marketing VIP",
-    "url": "https://solutionsmarketingvip.com/",
-    "email": "solutions.marketing.vip@proton.me",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Montréal",
-      "addressRegion": "QC",
-      "addressCountry": "CA"
-    }
-  },
-  "areaServed": ["Montréal", "Québec", "Canada"]
+  "inLanguage": ["en-CA", "fr-CA"],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://solutionsmarketingvip.com/services.html"
+  }
 }
 </script>
 <style>
@@ -49,7 +41,10 @@
     position: sticky; top: 0; z-index: 50;
     transition: padding 0.3s ease, box-shadow 0.3s ease;
   }
-  header.condensed { padding: 10px 0; box-shadow: 0 4px 14px rgba(0,0,0,0.45); }
+  header.condensed {
+    padding: 10px 0;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.45);
+  }
   header .hwrap {
     max-width: 900px; margin: 0 auto; padding: 0 24px;
     display: flex; justify-content: space-between; align-items: center;
@@ -59,7 +54,8 @@
   header h1.logo-block a { display: inline-block; text-decoration: none; }
   header h1.logo-block img {
     height: 54px; width: auto; max-width: 240px;
-    display: block; border-radius: 3px; transition: height 0.3s ease;
+    display: block; border-radius: 3px;
+    transition: height 0.3s ease;
   }
   header.condensed h1.logo-block img { height: 40px; }
   @media (max-width: 600px) {
@@ -75,62 +71,80 @@
   }
   header nav a:hover, header nav button:hover { color: #fff; }
   .page-title {
-    max-width: 900px; margin: 0 auto; padding: 50px 24px 8px; text-align: center;
+    max-width: 900px; margin: 0 auto; padding: 50px 24px 8px;
+    text-align: center;
   }
   .eyebrow {
     color: var(--gold); font-size: 0.75rem; letter-spacing: 3px;
-    text-transform: uppercase; font-family: Arial, sans-serif; margin-bottom: 6px;
+    text-transform: uppercase; font-family: Arial, sans-serif;
+    margin-bottom: 6px;
   }
   .page-title h2 { font-size: 1.9rem; color: var(--dark); line-height: 1.3; }
-  .page-title p { max-width: 640px; margin: 14px auto 0; font-size: 1rem; }
-  .content { max-width: 900px; margin: 10px auto 80px; padding: 0 24px; }
-  .section-heading { text-align: center; margin: 60px 0 10px; }
-  .section-heading h3 { font-size: 1.5rem; color: var(--dark); }
-  .plan-row {
+  .page-title p { max-width: 660px; margin: 14px auto 0; font-size: 1rem; }
+  .content {
+    max-width: 900px; margin: 10px auto 80px; padding: 0 24px;
+  }
+  .service-card {
     background: #fff; border: 1px solid #D8CFBA;
     border-left: 5px solid var(--gold); border-radius: 5px;
-    padding: 28px 26px; margin-bottom: 24px;
+    padding: 30px 28px; margin-bottom: 26px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-    display: flex; flex-wrap: wrap; justify-content: space-between;
-    align-items: center; gap: 18px;
     transition: transform 0.25s ease, box-shadow 0.25s ease;
   }
-  .plan-row:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,0,0,0.10); }
-  .plan-row .plan-info { flex: 1 1 340px; }
-  .plan-row h4 { color: var(--dark); font-size: 1.2rem; margin-bottom: 4px; }
-  .plan-row .plan-price {
-    color: var(--gold); font-size: 1.7rem; font-weight: bold;
+  .service-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.10);
+  }
+  .service-card h3 { color: var(--dark); font-size: 1.35rem; margin-bottom: 6px; }
+  .price-badge {
+    background: var(--dark); color: var(--gold-light);
+    padding: 6px 16px; border-radius: 3px;
+    font-size: 0.95rem; font-weight: bold;
+    display: inline-block; margin-bottom: 14px;
     font-family: Arial, sans-serif;
   }
-  .plan-row .plan-price span { font-size: 0.85rem; color: #777; font-weight: normal; }
-  .plan-row .plan-tag {
-    color: var(--gold); font-size: 0.72rem; font-weight: bold;
-    letter-spacing: 2px; text-transform: uppercase;
-    font-family: Arial, sans-serif; margin-bottom: 4px;
+  .service-card p { font-size: 0.97rem; margin-bottom: 12px; }
+  .plist { list-style: none; margin: 14px 0; }
+  .plist li {
+    padding-left: 26px; position: relative; margin-bottom: 9px;
+    font-size: 0.95rem;
   }
-  .plan-row ul { list-style: none; margin: 12px 0 0; }
-  .plan-row li {
-    padding-left: 24px; position: relative; margin-bottom: 7px; font-size: 0.92rem;
-  }
-  .plan-row li::before {
+  .plist li::before {
     content: "✓"; color: var(--gold); font-weight: bold;
     position: absolute; left: 0;
   }
-  .plan-row .plan-cta {
-    background: var(--dark); color: var(--gold-light);
-    padding: 13px 26px; border-radius: 5px;
-    text-decoration: none; font-weight: bold; font-size: 0.95rem;
-    white-space: nowrap;
+  .plist strong { color: var(--dark); }
+  .policy-box {
+    background: var(--dark); color: #e8e6df;
+    border: 1px solid var(--gold);
+    border-left: 5px solid var(--gold); border-radius: 5px;
+    padding: 26px 28px; margin: 36px 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  }
+  .policy-box h3 { color: var(--gold-light); font-size: 1.2rem; margin-bottom: 14px; }
+  .policy-box ul { list-style: none; }
+  .policy-box li {
+    padding-left: 26px; position: relative; margin-bottom: 10px;
+    font-size: 0.95rem;
+  }
+  .policy-box li::before {
+    content: "🔒"; position: absolute; left: 0; font-size: 0.9rem;
+  }
+  .policy-box strong { color: #fff; }
+  .cta-band {
+    background: var(--gold); text-align: center;
+    padding: 36px 24px; border-radius: 5px; margin-top: 40px;
+    box-shadow: 0 6px 18px rgba(176, 141, 62, 0.4);
+  }
+  .cta-band h3 { color: #fff; font-size: 1.4rem; margin-bottom: 10px; }
+  .cta-band p { color: #fdf8ec; font-size: 0.98rem; margin-bottom: 18px; }
+  .cta-band a {
+    display: inline-block; background: var(--dark); color: var(--gold-light);
+    padding: 15px 34px; border-radius: 5px; text-decoration: none;
+    font-weight: bold; font-size: 1.02rem;
     transition: background 0.25s ease, color 0.25s ease;
   }
-  .plan-row .plan-cta:hover { background: #000; color: #fff; }
-  .terms-box {
-    background: rgba(176, 141, 62, 0.08);
-    border-left: 3px solid var(--gold);
-    padding: 20px 24px; margin: 26px 0;
-    font-size: 0.92rem; border-radius: 3px;
-  }
-  .terms-box strong { color: var(--dark); }
+  .cta-band a:hover { background: #000; color: #fff; }
   footer {
     background: var(--dark); color: #8a8a8a; text-align: center;
     padding: 30px 20px; font-size: 0.85rem;
@@ -144,13 +158,13 @@
     from { opacity: 0; transform: translateY(20px); }
     to   { opacity: 1; transform: translateY(0); }
   }
-  .plan-row { animation: fadeInUp 0.7s ease both; }
-  .plan-row:nth-child(2) { animation-delay: 0.1s; }
-  .plan-row:nth-child(3) { animation-delay: 0.2s; }
-  .plan-row:nth-child(4) { animation-delay: 0.3s; }
-  .plan-row:nth-child(5) { animation-delay: 0.4s; }
+  .service-card, .policy-box { animation: fadeInUp 0.7s ease both; }
+  .service-card:nth-child(2) { animation-delay: 0.1s; }
+  .service-card:nth-child(3) { animation-delay: 0.2s; }
+  .service-card:nth-child(4) { animation-delay: 0.3s; }
+  .service-card:nth-child(5) { animation-delay: 0.4s; }
   @media (prefers-reduced-motion: reduce) {
-    .plan-row { animation: none; }
+    .service-card, .policy-box { animation: none; }
     html { scroll-behavior: auto; }
   }
 </style>
@@ -168,6 +182,7 @@
       <a href="sectors.html"><span class="en" lang="en">Industries</span><span class="fr" lang="fr">Secteurs</span></a>
       <a href="blog-list.html"><span class="en" lang="en">Articles</span><span class="fr" lang="fr">Articles</span></a>
       <a href="case-studies.html"><span class="en" lang="en">Case Studies</span><span class="fr" lang="fr">Études de cas</span></a>
+      <a href="payment.html"><span class="en" lang="en">Payment</span><span class="fr" lang="fr">Paiement</span></a>
       <button class="toggle-btn" onclick="toggleLang()" id="langBtn" style="background:#B08D3E;color:#fff;border:none;padding:8px 18px;cursor:pointer;font-weight:bold;border-radius:3px;font-family:Georgia,serif;">FR</button>
     </nav>
   </div>
@@ -175,192 +190,188 @@
 
 <div class="page-title">
   <div class="en" lang="en">
-    <div class="eyebrow">After Launch · Care Plans</div>
+    <div class="eyebrow">Recurring Services</div>
     <h2>Sustainability Through Stability</h2>
     <p>Great websites deserve long-term partners, not one-time transactions. Clear prices, cancel with written notice, and your data is always yours. Everything below stacks — start with what you need, add more when it pays for itself.</p>
   </div>
   <div class="fr" lang="fr">
-    <div class="eyebrow">Après le Lancement · Forfaits de Suivi</div>
+    <div class="eyebrow">Services Récurrents</div>
     <h2>Durabilité Grâce à la Stabilité</h2>
-    <p>Les grands sites web méritent des partenaires à long terme, pas des transactions éphémères. Prix clairs, résiliation par préavis écrit, et vos données restent toujours les vôtres. Tout peut se cumuler — commencez par ce dont vous avez besoin, ajoutez quand ça se rentabilise.</p>
+    <p>Les grands sites web méritent des partenaires à long terme, pas des transactions éphémères. Prix clairs, résiliation par préavis écrit, et vos données restent toujours les vôtres. Tout se cumule — commencez par ce dont vous avez besoin, ajoutez quand ça se rentabilise.</p>
   </div>
 </div>
 
 <div class="content">
 
-  <div class="section-heading">
-    <div class="en" lang="en"><div class="eyebrow">Recurring Services</div><h3>Pick Your Peace of Mind</h3></div>
-    <div class="fr" lang="fr"><div class="eyebrow">Services Récurrents</div><h3>Choisissez Votre Tranquillité</h3></div>
-  </div>
-
-  <!-- MANAGED HOSTING -->
-  <div class="plan-row">
-    <div class="plan-info">
-      <div class="en" lang="en">
-        <div class="plan-tag">Hosting</div>
-        <h4>Managed Hosting</h4>
-        <div class="plan-price">$385<span>/year ($32/month)</span></div>
-        <ul>
-          <li>24/7 uptime monitoring with alerts within minutes</li>
-          <li>Daily automated backups</li>
-          <li>SSL certificate (HTTPS) included and renewed</li>
-          <li>Monthly status email confirming availability</li>
-          <li>99.9% uptime target — if we miss it, that month is free</li>
-          <li>Full site files on request — no hostage situations, ever</li>
-        </ul>
-      </div>
-      <div class="fr" lang="fr">
-        <div class="plan-tag">Hébergement</div>
-        <h4>Hébergement Géré</h4>
-        <div class="plan-price">385 $<span>/an (32 $/mois)</span></div>
-        <ul>
-          <li>Surveillance de disponibilité 24 h/24 avec alertes en minutes</li>
-          <li>Sauvegardes automatisées quotidiennes</li>
-          <li>Certificat SSL (HTTPS) inclus et renouvelé</li>
-          <li>Courriel mensuel confirmant la disponibilité</li>
-          <li>Objectif 99,9 % — si on manque l'objectif, le mois est gratuit</li>
-          <li>Fichiers complets sur demande — jamais de prise en otage</li>
-        </ul>
-      </div>
-    </div>
-    <a href="mailto:solutions.marketing.vip@proton.me?subject=Managed%20Hosting" class="plan-cta"><span class="en" lang="en">Choose Plan</span><span class="fr" lang="fr">Choisir ce Forfait</span></a>
-  </div>
-
-  <!-- COMPLIANCE SHIELD -->
-  <div class="plan-row">
-    <div class="plan-info">
-      <div class="en" lang="en">
-        <div class="plan-tag">Legal Compliance</div>
-        <h4>Compliance Shield</h4>
-        <div class="plan-price">$250<span>/year</span></div>
-        <ul>
-          <li>Bilingual EN/FR privacy policy page, built into your site</li>
-          <li>Covers Québec Law 25, PIPEDA, and where applicable GDPR/CCPA</li>
-          <li>Functional cookie consent banner, auto-detects visitor language</li>
-          <li>Annual legal review and updates as laws change</li>
-          <li>Works with our zero-tracker architecture — nothing to hide</li>
-        </ul>
-      </div>
-      <div class="fr" lang="fr">
-        <div class="plan-tag">Conformité Légale</div>
-        <h4>Compliance Shield</h4>
-        <div class="plan-price">250 $<span>/an</span></div>
-        <ul>
-          <li>Politique de confidentialité bilingue EN/FR, intégrée à votre site</li>
-          <li>Couverture Loi 25 du Québec, LPRPDE, et RGPD/CCPA le cas échéant</li>
-          <li>Bannière de consentement aux témoins, détection automatique de la langue</li>
-          <li>Révision et mise à jour annuelles selon l'évolution des lois</li>
-          <li>Compatible avec notre architecture sans traqueurs — rien à cacher</li>
-        </ul>
-      </div>
-    </div>
-    <a href="mailto:solutions.marketing.vip@proton.me?subject=Compliance%20Shield" class="plan-cta"><span class="en" lang="en">Choose Plan</span><span class="fr" lang="fr">Choisir ce Forfait</span></a>
-  </div>
-
-  <!-- ESSENTIAL / VIP -->
-  <div class="plan-row">
-    <div class="plan-info">
-      <div class="en" lang="en">
-        <div class="plan-tag">Maintenance</div>
-        <h4>Essential Care / VIP Care</h4>
-        <div class="plan-price">$99–$199<span>/month</span></div>
-        <ul>
-          <li><strong>Essential ($99):</strong> up to 4 content updates monthly, 48h turnaround, backups, uptime alerts</li>
-          <li><strong>VIP ($199):</strong> priority support, same-day response, plus quarterly site health report</li>
-          <li>Menu changes, new photos, seasonal promos, holiday hours</li>
-          <li>Unused requests don't roll over — no surprise invoices</li>
-          <li>Cancel anytime, no penalty</li>
-        </ul>
-      </div>
-      <div class="fr" lang="fr">
-        <div class="plan-tag">Maintenance</div>
-        <h4>Soins Essentiels / Soins VIP</h4>
-        <div class="plan-price">99 $–199 $<span>/mois</span></div>
-        <ul>
-          <li><strong>Essentiel (99 $) :</strong> jusqu'à 4 mises à jour de contenu par mois, sous 48 h, sauvegardes, alertes de disponibilité</li>
-          <li><strong>VIP (199 $) :</strong> support prioritaire, réponse le jour même, plus rapport trimestriel de santé du site</li>
-          <li>Changements de menu, nouvelles photos, promotions saisonnières, heures des fêtes</li>
-          <li>Les demandes inutilisées ne sont pas reportées — aucune surprise sur la facture</li>
-          <li>Annulez en tout temps, sans pénalité</li>
-        </ul>
-      </div>
-    </div>
-    <a href="mailto:solutions.marketing.vip@proton.me?subject=Maintenance%20Plan" class="plan-cta"><span class="en" lang="en">Choose Plan</span><span class="fr" lang="fr">Choisir ce Forfait</span></a>
-  </div>
-
-  <!-- LOCAL DOMINANCE -->
-  <div class="plan-row">
-    <div class="plan-info">
-      <div class="en" lang="en">
-        <div class="plan-tag">Local SEO</div>
-        <h4>Local Dominance Bundle</h4>
-        <div class="plan-price">$349<span>/month</span></div>
-        <ul>
-          <li>Everything in VIP Care, included</li>
-          <li>Professional responses to all your Google reviews within 48h</li>
-          <li>Google Business Profile maintained + 20+ local directories synced</li>
-          <li>Quarterly SEO rank tracking report with one actionable recommendation</li>
-          <li>For businesses that live and die by local search</li>
-        </ul>
-      </div>
-      <div class="fr" lang="fr">
-        <div class="plan-tag">SEO Local</div>
-        <h4>Pack Domination Locale</h4>
-        <div class="plan-price">349 $<span>/mois</span></div>
-        <ul>
-          <li>Tout ce qui est dans Soins VIP, inclus</li>
-          <li>Réponses professionnelles à tous vos avis Google sous 48 h</li>
-          <li>Fiche d'établissement Google maintenue + 20 répertoires locaux synchronisés</li>
-          <li>Rapport trimestriel de classement SEO avec une recommandation actionnable</li>
-          <li>Pour les entreprises qui vivent du référencement local</li>
-        </ul>
-      </div>
-    </div>
-    <a href="mailto:solutions.marketing.vip@proton.me?subject=Local%20Dominance%20Bundle" class="plan-cta"><span class="en" lang="en">Choose Plan</span><span class="fr" lang="fr">Choisir ce Forfait</span></a>
-  </div>
-
-  <!-- NEWSLETTER -->
-  <div class="plan-row">
-    <div class="plan-info">
-      <div class="en" lang="en">
-        <div class="plan-tag">Marketing</div>
-        <h4>Newsletter System</h4>
-        <div class="plan-price">$150<span>/month</span></div>
-        <ul>
-          <li>Privacy-first signup form built into your site</li>
-          <li>Monthly newsletter created and sent for you (up to 2,000 subscribers)</li>
-          <li>No third-party data selling — your subscriber list stays yours</li>
-          <li>CSV export of your full subscriber list, anytime</li>
-        </ul>
-      </div>
-      <div class="fr" lang="fr">
-        <div class="plan-tag">Marketing</div>
-        <h4>Système de Courriels</h4>
-        <div class="plan-price">150 $<span>/mois</span></div>
-        <ul>
-          <li>Formulaire d'inscription privé intégré à votre site</li>
-          <li>Newsletter mensuelle créée et envoyée pour vous (jusqu'à 2 000 abonnés)</li>
-          <li>Aucune vente de données à des tiers — votre liste reste la vôtre</li>
-          <li>Export CSV de votre liste complète d'abonnés, en tout temps</li>
-        </ul>
-      </div>
-    </div>
-    <a href="mailto:solutions.marketing.vip@proton.me?subject=Newsletter%20System" class="plan-cta"><span class="en" lang="en">Choose Plan</span><span class="fr" lang="fr">Choisir ce Forfait</span></a>
-  </div>
-
-  <div class="terms-box">
+  <!-- SERVICE 1: MANAGED HOSTING -->
+  <div class="service-card">
     <div class="en" lang="en">
-      <strong>Clear terms:</strong> All services cancel with written notice by email (30 days; 60 days for Local Dominance due to SEO continuity). Hosting bills annually in advance — no refunds on unused months, but your files always transfer free. If you ever leave, you receive everything: files, subscriber lists, reports. No hostage data, no exit fees.
+      <h3>Managed Hosting</h3>
+      <span class="price-badge">$385 / year</span>
+      <p>We host your site on fast, reliable servers and take care of everything technical. You never touch a hosting dashboard, never worry about SSL certificates, and never wonder if your site is up.</p>
+      <ul class="plist">
+        <li><strong>Fast loading pages</strong> — servers tuned for the hand-coded sites we build</li>
+        <li><strong>SSL certificate included and renewed</strong> — your visitors see the padlock, always</li>
+        <li><strong>Daily backups</strong> — your site can be restored quickly if anything ever goes wrong</li>
+        <li><strong>Uptime monitoring</strong> — if your site goes down, we know before you do</li>
+        <li><strong>Domain and DNS management handled for you</strong></li>
+      </ul>
     </div>
     <div class="fr" lang="fr">
-      <strong>Conditions claires :</strong> Tous les services se résilient par préavis écrit par courriel (30 jours ; 60 jours pour le Pack Domination Locale pour la continuité SEO). L'hébergement se facture annuellement d'avance — aucun remboursement sur les mois inutilisés, mais vos fichiers sont toujours transférés gratuitement. Si vous partez un jour, vous recevez tout : fichiers, listes d'abonnés, rapports. Aucune donnée retenue en otage, aucuns frais de sortie.
+      <h3>Hébergement Géré</h3>
+      <span class="price-badge">385 $ / année</span>
+      <p>Nous hébergeons votre site sur des serveurs rapides et fiables et nous occupons de tout le technique. Vous ne touchez jamais à un tableau d'hébergement, ne vous inquiétez jamais des certificats SSL et ne vous demandez jamais si votre site est en ligne.</p>
+      <ul class="plist">
+        <li><strong>Pages à chargement rapide</strong> — serveurs optimisés pour les sites codés à la main que nous construisons</li>
+        <li><strong>Certificat SSL inclus et renouvelé</strong> — vos visiteurs voient le cadenas, toujours</li>
+        <li><strong>Sauvegardes quotidiennes</strong> — votre site peut être restauré rapidement si quelque chose tourne mal</li>
+        <li><strong>Surveillance de disponibilité</strong> — si votre site tombe, nous le savons avant vous</li>
+        <li><strong>Gestion du domaine et du DNS assurée pour vous</strong></li>
+      </ul>
     </div>
+  </div>
+
+  <!-- SERVICE 2: COMPLIANCE SHIELD -->
+  <div class="service-card">
+    <div class="en" lang="en">
+      <h3>Compliance Shield</h3>
+      <span class="price-badge">$250 / year</span>
+      <p>Quebec's Law 25 imposes real obligations on every business with a website — privacy officer, incident reporting, consent management. We keep your site compliant with Law 25, GDPR, and CCPA, so you never think about it again.</p>
+      <ul class="plist">
+        <li><strong>Law 25 compliance</strong> — the Quebec requirements, handled and kept current</li>
+        <li><strong>Privacy policy drafted and maintained</strong> in both English and French</li>
+        <li><strong>Cookie and tracker consent management</strong> — done properly, without slowing your site</li>
+        <li><strong>GDPR and CCPA coverage</strong> — for visitors from Europe and California</li>
+        <li><strong>Annual compliance review</strong> — when the law changes, your site changes with it</li>
+      </ul>
+    </div>
+    <div class="fr" lang="fr">
+      <h3>Bouclier Conformité</h3>
+      <span class="price-badge">250 $ / année</span>
+      <p>La Loi 25 du Québec impose de véritables obligations à toute entreprise ayant un site web — responsable de la vie privée, signalement d'incidents, gestion du consentement. Nous gardons votre site conforme à la Loi 25, au RGPD et au CCPA, pour que vous n'y pensiez plus jamais.</p>
+      <ul class="plist">
+        <li><strong>Conformité Loi 25</strong> — les exigences québécoises, appliquées et maintenues à jour</li>
+        <li><strong>Politique de confidentialité rédigée et maintenue</strong> en anglais et en français</li>
+        <li><strong>Gestion du consentement aux témoins et traceurs</strong> — bien faite, sans ralentir votre site</li>
+        <li><strong>Couverture RGPD et CCPA</strong> — pour les visiteurs d'Europe et de Californie</li>
+        <li><strong>Revue de conformité annuelle</strong> — quand la loi change, votre site change avec elle</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- SERVICE 3: MAINTENANCE -->
+  <div class="service-card">
+    <div class="en" lang="en">
+      <h3>Maintenance — Essential &amp; VIP Care</h3>
+      <span class="price-badge">$99–$199 / month</span>
+      <p>Your website stays healthy, updated, and improving — without you lifting a finger. Two tiers depending on how much ongoing attention your site needs.</p>
+      <p><strong>Essential Care ($99/month):</strong> security and platform updates, monthly backups, uptime monitoring with alerts within minutes, and 1 hour of small changes per month.</p>
+      <p><strong>VIP Care ($199/month):</strong> everything in Essential Care, 3 hours of changes per month, quarterly SEO progress report, priority same-day support, and a new blog post published monthly from your content.</p>
+      <p style="font-size:0.9rem;color:#777;">Cancel anytime, no penalty.</p>
+    </div>
+    <div class="fr" lang="fr">
+      <h3>Maintenance — Soins Essentiels &amp; VIP</h3>
+      <span class="price-badge">99–199 $ / mois</span>
+      <p>Votre site reste sain, à jour et en amélioration — sans lever le petit doigt. Deux paliers selon l'attention continue dont votre site a besoin.</p>
+      <p><strong>Soins Essentiels (99 $/mois) :</strong> mises à jour de sécurité et de plateforme, sauvegardes mensuelles, surveillance de disponibilité avec alertes en quelques minutes, et 1 heure de petites modifications par mois.</p>
+      <p><strong>Soins VIP (199 $/mois) :</strong> tout ce qui est dans les Soins Essentiels, 3 heures de modifications par mois, rapport de progrès SEO trimestriel, support prioritaire réponse le jour même, et un nouvel article de blog publié chaque mois à partir de votre contenu.</p>
+      <p style="font-size:0.9rem;color:#777;">Annulez en tout temps, sans pénalité.</p>
+    </div>
+  </div>
+
+  <!-- SERVICE 4: LOCAL DOMINANCE -->
+  <div class="service-card">
+    <div class="en" lang="en">
+      <h3>Local Dominance Bundle</h3>
+      <span class="price-badge">$349 / month</span>
+      <p>For businesses that want to own their local search results in Montreal. An ongoing local SEO program that compounds — every month builds on the last.</p>
+      <ul class="plist">
+        <li><strong>Google Business Profile management</strong> — kept complete, current, and active</li>
+        <li><strong>Local search optimization</strong> — your site tuned for the searches your neighbors actually type</li>
+        <li><strong>Review generation support</strong> — more reviews, answered professionally</li>
+        <li><strong>Localized content creation</strong> — pages and posts targeting your service areas</li>
+        <li><strong>Monthly progress reporting</strong> — you see what the work produces</li>
+      </ul>
+      <p style="font-size:0.9rem;color:#777;">60 days written notice for cancellation.</p>
+    </div>
+    <div class="fr" lang="fr">
+      <h3>Pack Domination Locale</h3>
+      <span class="price-badge">349 $ / mois</span>
+      <p>Pour les entreprises qui veulent dominer leurs résultats de recherche locaux à Montréal. Un programme SEO local continu qui se capitalise — chaque mois s'appuie sur le précédent.</p>
+      <ul class="plist">
+        <li><strong>Gestion du profil d'entreprise Google</strong> — complet, à jour et actif</li>
+        <li><strong>Optimisation de recherche locale</strong> — votre site réglé pour les recherches que vos voisins tapent réellement</li>
+        <li><strong>Support à la génération d'avis</strong> — plus d'avis, répondus professionnellement</li>
+        <li><strong>Création de contenu localisé</strong> — pages et articles ciblant vos zones de service</li>
+        <li><strong>Rapport de progrès mensuel</strong> — vous voyez ce que le travail produit</li>
+      </ul>
+      <p style="font-size:0.9rem;color:#777;">Préavis écrit de 60 jours pour résiliation.</p>
+    </div>
+  </div>
+
+  <!-- SERVICE 5: NEWSLETTER -->
+  <div class="service-card">
+    <div class="en" lang="en">
+      <h3>Newsletter System</h3>
+      <span class="price-badge">Custom quote</span>
+      <p>Your best customers are the ones you already have. A newsletter keeps them coming back — announcements, seasonal offers, useful content — without renting your audience from a social platform.</p>
+      <ul class="plist">
+        <li><strong>Privacy-respecting email system</strong> — no advertising platform reading your list</li>
+        <li><strong>Template design matching your brand</strong></li>
+        <li><strong>Bilingual campaigns</strong> — English and French subscribers treated as equals</li>
+        <li><strong>Scheduled sends and performance summaries</strong></li>
+      </ul>
+      <p style="font-size:0.9rem;color:#777;">Pricing depends on list size and frequency — ask for a quote.</p>
+    </div>
+    <div class="fr" lang="fr">
+      <h3>Système de Courriels</h3>
+      <span class="price-badge">Sur devis</span>
+      <p>Vos meilleurs clients sont ceux que vous avez déjà. Un infolettre les fait revenir — annonces, offres saisonnières, contenu utile — sans louer votre audience à une plateforme sociale.</p>
+      <ul class="plist">
+        <li><strong>Système de courriels respectant la vie privée</strong> — aucune plateforme publicitaire ne lit votre liste</li>
+        <li><strong>Conception de gabarit à votre image</strong></li>
+        <li><strong>Infolettres bilingues</strong> — abonnés anglais et français traités en égaux</li>
+        <li><strong>Envois planifiés et bilans de performance</strong></li>
+      </ul>
+      <p style="font-size:0.9rem;color:#777;">Le prix dépend de la taille de la liste et de la fréquence — demandez une soumission.</p>
+    </div>
+  </div>
+
+  <!-- POLICY BOX -->
+  <div class="policy-box">
+    <div class="en" lang="en">
+      <h3>The Rules, in Plain Language</h3>
+      <ul>
+        <li><strong>No lock-in games.</strong> Recurring services are cancelled by written notice — 30 days standard, 60 days for the Local Dominance Bundle.</li>
+        <li><strong>Your contracts are stored encrypted,</strong> end-to-end, under Swiss privacy laws. Not in a drawer, not in someone's inbox.</li>
+        <li><strong>Your data is always yours.</strong> Leave and everything produced for you goes with you. No hostage situations.</li>
+        <li><strong>Prices are the prices.</strong> GST/QST added where applicable by law. No surprise renewals.</li>
+        <li><strong>Everything stacks.</strong> Start with one service, add others when they pay for themselves.</li>
+      </ul>
+    </div>
+    <div class="fr" lang="fr">
+      <h3>Les Règles, en Langage Clair</h3>
+      <ul>
+        <li><strong>Aucun jeu d'enfermement.</strong> Les services récurrents se résilient par préavis écrit — 30 jours standard, 60 jours pour le Pack Domination Locale.</li>
+        <li><strong>Vos contrats sont stockés chiffrés,</strong> de bout en bout, sous les lois suisses sur la vie privée. Pas dans un tiroir, pas dans la boîte de quelqu'un.</li>
+        <li><strong>Vos données restent toujours les vôtres.</strong> Partez, et tout ce qui a été produit pour vous vous suit. Aucune situation d'otage.</li>
+        <li><strong>Les prix sont les prix.</strong> TPS/TVQ ajoutées où applicable par la loi. Aucun renouvellement surprise.</li>
+        <li><strong>Tout se cumule.</strong> Commencez avec un service, ajoutez-en d'autres quand ils se rentabilisent.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-band">
+    <h3><span class="en" lang="en">Ready to Stack Your Peace of Mind?</span><span class="fr" lang="fr">Prêt à Empiler Votre Tranquillité ?</span></h3>
+    <p><span class="en" lang="en">Every service above can start this week. Pay by Interac e-Transfer — direct to our bank, no third party holding your money.</span><span class="fr" lang="fr">Chaque service ci-dessus peut débuter cette semaine. Paiement par virement Interac — direct à notre banque, aucun tiers ne retient votre argent.</span></p>
+    <a href="payment.html"><span class="en" lang="en">See Payment Options</span><span class="fr" lang="fr">Voir les Options de Paiement</span></a>
   </div>
 
 </div>
 
 <footer>
-  <p>&copy; 2026 Solutions Marketing VIP - <span class="en" lang="en">Maintenance &amp; recurring services. Privacy respected.</span><span class="fr" lang="fr">Maintenance et services récurrents. Vie privée respectée.</span></p>
+  <p>&copy; 2026 Solutions Marketing VIP - <span class="en" lang="en">Maintenance & recurring services. Privacy respected.</span><span class="fr" lang="fr">Maintenance et services récurrents. Vie privée respectée.</span></p>
 </footer>
 
 <script>
