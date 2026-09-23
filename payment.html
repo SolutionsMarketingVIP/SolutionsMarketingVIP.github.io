@@ -6,7 +6,17 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="canonical" href="https://solutionsmarketingvip.com/payment.html">
 <title>Payment Options | Solutions Marketing VIP</title>
-<meta name="description" content="Secure payment options for SEO audits, website builds, and monitoring services. Interac e-Transfer currently active. Card payments via Square coming soon. No third-party wallets holding your money.">
+<meta name="description" content="Pay by Interac e-Transfer, credit card via Square, or in person in Montreal. All service prices listed clearly. TPS/TVQ where applicable by law.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Payment Options",
+  "description": "Interac e-Transfer, credit card via Square, and in-person payments for Montreal web services.",
+  "url": "https://solutionsmarketingvip.com/payment.html",
+  "inLanguage": ["en-CA", "fr-CA"]
+}
+</script>
 <style>
   :root {
     --gold: #B08D3E;
@@ -44,9 +54,8 @@
     transition: height 0.3s ease;
   }
   header.condensed h1.logo-block img { height: 40px; }
-  @media (max-width: 600px) {
-    header h1.logo-block img { height: 42px; max-width: 190px; }
-    header.condensed h1.logo-block img { height: 34px; }
+  header nav {
+    display: flex; align-items: center; flex-wrap: wrap; gap: 4px 0;
   }
   header nav a, header nav button {
     color: var(--gold-light); text-decoration: none;
@@ -56,6 +65,32 @@
     transition: color 0.25s ease;
   }
   header nav a:hover, header nav button:hover { color: #fff; }
+
+  /* MOBILE HEADER FIX */
+  @media (max-width: 720px) {
+    header .hwrap {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+    }
+    header h1.logo-block img {
+      height: 44px; max-width: 200px; margin: 0 auto;
+    }
+    header.condensed h1.logo-block img { height: 36px; }
+    header nav {
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 8px 0;
+    }
+    header nav a, header nav button {
+      margin-left: 0;
+      padding: 6px 10px;
+      font-size: 0.88rem;
+      text-align: center;
+    }
+  }
+
   .page-title {
     max-width: 900px; margin: 0 auto; padding: 50px 24px 8px;
     text-align: center;
@@ -66,102 +101,93 @@
     margin-bottom: 6px;
   }
   .page-title h2 { font-size: 1.9rem; color: var(--dark); line-height: 1.3; }
+  .page-title p { max-width: 660px; margin: 14px auto 0; font-size: 1rem; }
   .content {
     max-width: 900px; margin: 10px auto 80px; padding: 0 24px;
   }
-  .security-box {
-    background: var(--dark); color: #e8e6df;
-    border: 1px solid var(--gold);
-    border-left: 5px solid var(--gold); border-radius: 5px;
-    padding: 26px 28px; margin-bottom: 28px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-  }
-  .security-box h3 {
-    color: var(--gold-light); font-size: 1.2rem; margin-bottom: 14px;
-  }
-  .security-box p { font-size: 0.95rem; margin-bottom: 12px; padding-left: 26px; position: relative; }
-  .security-box p:last-child { margin-bottom: 0; }
-  .security-box p::before {
-    content: "🔒"; position: absolute; left: 0; top: 2px; font-size: 0.9rem;
-  }
-  .security-box strong { color: #fff; }
-  .payment-option {
+  .pay-card {
     background: #fff; border: 1px solid #D8CFBA;
     border-left: 5px solid var(--gold); border-radius: 5px;
-    padding: 32px 28px; margin-bottom: 28px;
+    padding: 30px 28px; margin-bottom: 26px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.06);
     transition: transform 0.25s ease, box-shadow 0.25s ease;
   }
-  .payment-option:hover {
+  .pay-card:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.10);
   }
-  .payment-option h3 {
-    color: var(--dark); font-size: 1.35rem; margin-bottom: 12px;
+  .pay-card h3 { color: var(--dark); font-size: 1.35rem; margin-bottom: 6px; }
+  .pay-card.recommended { border-left-color: var(--gold); border: 2px solid var(--gold); }
+  .rec-badge {
+    display: inline-block; background: var(--gold); color: #fff;
+    font-size: 0.72rem; letter-spacing: 2px; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 3px;
+    font-family: Arial, sans-serif; margin-bottom: 10px; font-weight: bold;
   }
-  .payment-option .tag {
-    background: var(--gold-light); color: var(--dark);
-    padding: 5px 14px; border-radius: 3px;
-    font-size: 0.75rem; font-weight: bold; letter-spacing: 1px;
-    display: inline-block; margin-bottom: 14px;
+  .pay-card p { font-size: 0.97rem; margin-bottom: 12px; }
+  .plist { list-style: none; margin: 14px 0; }
+  .plist li {
+    padding-left: 26px; position: relative; margin-bottom: 9px;
+    font-size: 0.95rem;
   }
-  .payment-option ul {
-    list-style: none; margin: 18px 0 22px;
-  }
-  .payment-option li {
-    padding-left: 24px; position: relative; margin-bottom: 10px;
-    font-size: 0.97rem;
-  }
-  .payment-option li::before {
+  .plist li::before {
     content: "✓"; color: var(--gold); font-weight: bold;
     position: absolute; left: 0;
   }
-  .payment-option .email {
-    background: var(--gold-light); color: var(--dark);
-    padding: 12px 18px; border-radius: 4px;
-    font-family: monospace; font-size: 1rem;
-    display: inline-block; margin: 18px 0;
-    font-weight: bold;
+  .plist strong { color: var(--dark); }
+  .email-box {
+    background: var(--dark); color: var(--gold-light);
+    padding: 14px 20px; border-radius: 5px; display: inline-block;
+    margin: 10px 0; font-family: Arial, sans-serif; font-size: 1rem;
+    border: 1px solid var(--gold);
   }
-  .payment-note {
-    background: rgba(176, 141, 62, 0.08);
-    border-left: 3px solid var(--gold);
-    padding: 18px 22px; margin: 22px 0;
-    font-size: 0.92rem;
-    border-radius: 3px;
+  .tax-note {
+    font-size: 0.9rem; color: #777; font-style: italic;
   }
-  .card-button {
-    display: inline-block;
-    background: var(--gold); color: #fff;
-    padding: 16px 32px; border-radius: 5px;
-    text-decoration: none; font-weight: bold;
-    font-size: 1.05rem; margin-top: 18px;
-    transition: background 0.25s ease, transform 0.25s ease;
+  .grid-section { margin-top: 44px; }
+  .grid-section h3 {
+    color: var(--dark); font-size: 1.35rem; margin-bottom: 8px;
   }
-  .card-button:hover {
-    background: #9c7b33; transform: translateY(-1px);
+  .grid-section > .en > p, .grid-section > .fr > p { font-size: 0.95rem; margin-bottom: 18px; }
+  table.price-grid {
+    width: 100%; border-collapse: collapse; background: #fff;
+    border: 1px solid #D8CFBA; border-radius: 5px; overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
   }
-  .coming-soon {
-    background: rgba(176, 141, 62, 0.12);
-    border-left: 3px solid var(--gold);
-    padding: 18px 22px; margin: 22px 0;
-    font-size: 0.92rem;
-    border-radius: 3px;
+  table.price-grid th {
+    background: var(--dark); color: var(--gold-light);
+    padding: 12px 16px; text-align: left; font-size: 0.9rem;
+    font-family: Arial, sans-serif; letter-spacing: 1px; text-transform: uppercase;
   }
-  .website-grid {
-    display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 16px; margin-top: 18px;
-  }
-  .website-item {
-    background: var(--gold-light); color: var(--dark);
-    padding: 14px 18px; border-radius: 4px;
+  table.price-grid td {
+    padding: 12px 16px; border-bottom: 1px solid #EAE3D2;
     font-size: 0.95rem;
-    transition: transform 0.25s ease;
   }
-  .website-item:hover {
-    transform: translateY(-2px);
+  table.price-grid tr:last-child td { border-bottom: none; }
+  table.price-grid td.price {
+    font-weight: bold; color: var(--dark); white-space: nowrap;
   }
-  .website-item strong { display: block; font-size: 1.1rem; margin-bottom: 4px; }
+  table.price-grid tr.recurring td { background: #FBF7EC; }
+  .grid-tag {
+    display: inline-block; background: var(--gold); color: #fff;
+    font-size: 0.68rem; letter-spacing: 1px; text-transform: uppercase;
+    padding: 2px 8px; border-radius: 3px; margin-left: 8px;
+    font-family: Arial, sans-serif; font-weight: bold; vertical-align: middle;
+  }
+  .cta-band {
+    background: var(--gold); text-align: center;
+    padding: 36px 24px; border-radius: 5px; margin-top: 44px;
+    box-shadow: 0 6px 18px rgba(176, 141, 62, 0.4);
+  }
+  .cta-band h3 { color: #fff; font-size: 1.4rem; margin-bottom: 10px; }
+  .cta-band p { color: #fdf8ec; font-size: 0.98rem; margin-bottom: 18px; }
+  .cta-band a {
+    display: inline-block; background: var(--dark); color: var(--gold-light);
+    padding: 15px 34px; border-radius: 5px; text-decoration: none;
+    font-weight: bold; font-size: 1.02rem;
+    transition: background 0.25s ease, color 0.25s ease;
+  }
+  .cta-band a:hover { background: #000; color: #fff; }
   footer {
     background: var(--dark); color: #8a8a8a; text-align: center;
     padding: 30px 20px; font-size: 0.85rem;
@@ -175,11 +201,14 @@
     from { opacity: 0; transform: translateY(20px); }
     to   { opacity: 1; transform: translateY(0); }
   }
-  .payment-option { animation: fadeInUp 0.7s ease both; }
-  .payment-option:nth-child(2) { animation-delay: 0.15s; }
+  .pay-card, .grid-section { animation: fadeInUp 0.7s ease both; }
+  .grid-section { animation-delay: 0.2s; }
   @media (prefers-reduced-motion: reduce) {
-    .payment-option { animation: none; }
+    .pay-card, .grid-section { animation: none; }
     html { scroll-behavior: auto; }
+  }
+  @media (max-width: 600px) {
+    table.price-grid th, table.price-grid td { padding: 10px 10px; font-size: 0.85rem; }
   }
 </style>
 </head>
@@ -205,181 +234,187 @@
 <div class="page-title">
   <div class="en" lang="en">
     <div class="eyebrow">Secure Payments</div>
-    <h2>Currently: e-Transfer Only</h2>
+    <h2>Ways to Pay</h2>
+    <p>Choose what works for you. Every method below settles directly to our business bank account — no payment ever sits with an undisclosed third party.</p>
   </div>
   <div class="fr" lang="fr">
     <div class="eyebrow">Paiements Sécurisés</div>
-    <h2>Actuellement : Virement Seulement</h2>
+    <h2>Façons de Payer</h2>
+    <p>Choisissez ce qui vous convient. Chaque méthode ci-dessous se règle directement sur notre compte d'entreprise — aucun paiement ne reste chez un tiers non identifié.</p>
   </div>
 </div>
 
 <div class="content">
 
-  <!-- SECURITY ASSURANCE BOX -->
-  <div class="security-box">
+  <!-- METHOD 1: INTERAC (RECOMMENDED) -->
+  <div class="pay-card recommended">
     <div class="en" lang="en">
-      <h3>How your payment and your documents are protected</h3>
-      <p><strong>Payments:</strong> Currently processed through Interac e-Transfer only, directly with our bank. Card data never touches our servers and is encrypted in transit. We hold no card numbers, ever.</p>
-      <p><strong>Your documents:</strong> Stored with end-to-end encryption under Swiss privacy laws. The storage provider cannot decrypt or surrender your files, even under legal pressure. Access stays strictly with our company, we never sell client information to anyone, and your data is handled in compliance with Quebec's Law 25.</p>
-    </div>
-    <div class="fr" lang="fr">
-      <h3>Comment vos paiements et vos documents sont protégés</h3>
-      <p><strong>Paiements :</strong> Actuellement traités uniquement par virement Interac, directement avec notre banque. Les données de carte ne touchent jamais nos serveurs et sont chiffrées en transit. Nous ne conservons aucun numéro de carte, jamais.</p>
-      <p><strong>Vos documents :</strong> Stockés avec chiffrement de bout en bout sous les lois suisses sur la vie privée. Le fournisseur de stockage ne peut ni déchiffrer ni remettre vos fichiers, même sous pression légale. L'accès reste strictement réservé à notre entreprise, nous ne vendons jamais les renseignements de nos clients, et vos données sont traitées conformément à la Loi 25 du Québec.</p>
-    </div>
-  </div>
-
-  <!-- ACTIVE METHOD: INTERAC E-TRANSFER -->
-  <div class="payment-option">
-    <div class="tag"><span class="en" lang="en">Currently Active</span><span class="fr" lang="fr">Actuellement Disponible</span></div>
-
-    <div class="en" lang="en">
+      <span class="rec-badge">Recommended</span>
       <h3>Interac e-Transfer</h3>
       <p><strong>Direct to your bank. No third party holds your money.</strong></p>
-      <ul>
+      <ul class="plist">
         <li>No processing fees — you pay the exact amount quoted</li>
         <li>Money goes straight to our Wealthsimple business account</li>
         <li>Instant confirmation once deposited</li>
-        <li>Perfect for audits, website builds, and retainers</li>
+        <li>Perfect for audits, website builds, and all recurring services</li>
       </ul>
-
-      <p style="margin-top: 18px;"><strong>Send payment to:</strong></p>
-      <div class="email">solutions.marketing.vip@proton.me</div>
-
-      <p class="payment-note">
-        This is currently our only active payment method. After you send, you'll receive a receipt and invoice within 24 hours. For amounts over $5,000, we'll confirm receipt and start your project immediately.
-      </p>
-
-      <p style="font-size: 0.92rem; color: #666; margin-top: 16px;">
-        <em>Note: GST/QST added where applicable by law.</em>
-      </p>
+      <p><strong>Send payment to:</strong></p>
+      <div class="email-box">solutions.marketing.vip@proton.me</div>
+      <p>After you send, you'll receive a receipt and invoice within 24 hours. For amounts over $5,000, we confirm receipt and start your project immediately.</p>
+      <p class="tax-note">GST/QST added where applicable by law.</p>
     </div>
-
     <div class="fr" lang="fr">
+      <span class="rec-badge">Recommandé</span>
       <h3>Virement Interac</h3>
       <p><strong>Directement à votre banque. Aucun tiers ne garde votre argent.</strong></p>
-      <ul>
-        <li>Aucuns frais de traitement — vous payez le montant exact cité</li>
+      <ul class="plist">
+        <li>Aucuns frais de traitement — vous payez le montant exact coté</li>
         <li>L'argent va directement à notre compte d'entreprise Wealthsimple</li>
         <li>Confirmation instantanée une fois déposé</li>
-        <li>Parfait pour les audits, construction de sites et abonnements</li>
+        <li>Parfait pour les audits, construction de sites et tous les services récurrents</li>
       </ul>
-
-      <p style="margin-top: 18px;"><strong>Envoyez le paiement à :</strong></p>
-      <div class="email">solutions.marketing.vip@proton.me</div>
-
-      <p class="payment-note">
-        Il s'agit actuellement de notre seule méthode de paiement active. Après envoi, vous recevrez une facture en 24 heures. Pour des montants de plus de 5 000 $, nous confirmons la réception et lançons votre projet immédiatement.
-      </p>
-
-      <p style="font-size: 0.92rem; color: #666; margin-top: 16px;">
-        <em>Note: TPS/TVQ ajoutées où applicable par la loi.</em>
-      </p>
+      <p><strong>Envoyez le paiement à :</strong></p>
+      <div class="email-box">solutions.marketing.vip@proton.me</div>
+      <p>Après envoi, vous recevez une facture en 24 heures. Pour des montants de plus de 5 000 $, nous confirmons la réception et lançons votre projet immédiatement.</p>
+      <p class="tax-note">TPS/TVQ ajoutées où applicable par la loi.</p>
     </div>
   </div>
 
-  <!-- OPTION 2: CARD PAYMENT VIA SQUARE (PENDING) -->
-  <div class="payment-option">
-    <div class="tag"><span class="en" lang="en">Coming Soon</span><span class="fr" lang="fr">Bientôt Disponible</span></div>
-
+  <!-- METHOD 2: CARD -->
+  <div class="pay-card">
     <div class="en" lang="en">
-      <h3>Credit Card (Square)</h3>
-      <p>Secure checkout hosted by Square. Your card data will never touch our website.</p>
-      <ul>
+      <h3>Pay by Credit Card</h3>
+      <p>Secure checkout hosted by Square. Your card data never touches our website.</p>
+      <ul class="plist">
         <li>2.9% + $0.30 per transaction (standard Canadian rate)</li>
         <li>Square deposits automatically to our bank account</li>
         <li>You get a digital receipt immediately</li>
         <li>Works on any device, no login required</li>
       </ul>
-
-      <p style="margin-top: 18px;"><strong>Our pricing for reference:</strong></p>
-
-      <!-- PRICING REFERENCE -->
-      <div class="website-grid">
-        <div class="website-item"><strong>Health Check Audit</strong>$300</div>
-        <div class="website-item"><strong>Complete Audit</strong>$1,200+</div>
-        <div class="website-item"><strong>Landing Page</strong>$900</div>
-        <div class="website-item"><strong>Business Site</strong>$2,800</div>
-        <div class="website-item"><strong>Site + SEO Kickstart</strong>$3,800</div>
-        <div class="website-item"><strong>Monitoring (monthly)</strong>$650</div>
-        <div class="website-item"><strong>Maintenance (monthly)</strong>$99–$199</div>
-      </div>
-
-      <div class="coming-soon">
-        <strong>Card payments are temporarily unavailable:</strong> We are currently waiting on Square to confirm our account has been fully activated. Until then, <strong>Interac e-Transfer is the only way to pay</strong>. We'll update this page as soon as card payments go live. Any service above can be paid right now by e-Transfer at the address shown above.
-      </div>
+      <p><strong>To pay by card,</strong> contact us and we'll send you a custom Square payment link for your exact invoice — for any service in the price list below.</p>
     </div>
-
     <div class="fr" lang="fr">
-      <h3>Carte de Crédit (Square)</h3>
-      <p>Paiement sécurisé hébergé par Square. Vos données de carte ne toucheront jamais notre site.</p>
-      <ul>
+      <h3>Paiement par Carte de Crédit</h3>
+      <p>Paiement sécurisé hébergé par Square. Vos données de carte ne touchent jamais notre site.</p>
+      <ul class="plist">
         <li>2,9 % + 0,30 $ par transaction (taux canadien standard)</li>
-        <li>Square verse automatiquement à notre compte bancaire</li>
+        <li>Square verse automatiquement sur notre compte bancaire</li>
         <li>Reçu numérique immédiat</li>
         <li>Fonctionne sur tous les appareils, aucune connexion requise</li>
       </ul>
-
-      <p style="margin-top: 18px;"><strong>Nos prix, pour référence :</strong></p>
-
-      <!-- RÉFÉRENCE DE PRIX -->
-      <div class="website-grid">
-        <div class="website-item"><strong>Vérification de Santé</strong>300 $</div>
-        <div class="website-item"><strong>Audit Complet</strong>1 200 $+</div>
-        <div class="website-item"><strong>Page d'Atterrissage</strong>900 $</div>
-        <div class="website-item"><strong>Site d'Affaires</strong>2 800 $</div>
-        <div class="website-item"><strong>Site + Départ SEO</strong>3 800 $</div>
-        <div class="website-item"><strong>Surveillance (mensuel)</strong>650 $</div>
-        <div class="website-item"><strong>Maintenance (mensuel)</strong>99–199 $</div>
-      </div>
-
-      <div class="coming-soon">
-        <strong>Les paiements par carte sont temporairement indisponibles :</strong> Nous attendons présentement que Square confirme l'activation complète de notre compte. D'ici là, <strong>le virement Interac est la seule façon de payer</strong>. Nous mettrons cette page à jour dès que les paiements par carte seront actifs. N'importe quel service ci-dessus peut être payé dès maintenant par virement à l'adresse indiquée plus haut.
-      </div>
+      <p><strong>Pour payer par carte,</strong> contactez-nous et nous vous enverrons un lien de paiement Square personnalisé pour votre facture exacte — pour tout service de la grille de prix ci-dessous.</p>
     </div>
   </div>
 
-  <!-- IN-PERSON SECTION (PENDING SQUARE) -->
-  <div class="payment-option">
-    <div class="tag"><span class="en" lang="en">In Person</span><span class="fr" lang="fr">En Personne</span></div>
-
+  <!-- METHOD 3: IN PERSON -->
+  <div class="pay-card">
     <div class="en" lang="en">
       <h3>In-Person Payment</h3>
-      <p>Meeting a client in Montreal? Contactless tap payments will be available on the spot.</p>
-      <ul>
+      <p>Meeting a client in Montreal? Take contactless tap payment on the spot.</p>
+      <ul class="plist">
         <li>Tap, dip, or swipe accepted</li>
         <li>Digital receipt emailed immediately</li>
         <li>No cash handling</li>
       </ul>
-      <p class="payment-note">
-        In-person card payments use the same Square account and will be available once it is fully activated. Until then, in-person meetings can be settled by Interac e-Transfer on the spot.
-      </p>
-      <p style="font-size: 0.92rem; color: #666; margin-top: 16px;">
-        <em>Contact us to arrange an in-person meeting for payment.</em>
-      </p>
+      <p class="tax-note">Contact us to arrange an in-person meeting for payment.</p>
     </div>
-
     <div class="fr" lang="fr">
       <h3>Paiement en Personne</h3>
-      <p>Vous rencontrez un client à Montréal ? Les paiements sans contact seront disponibles sur place.</p>
-      <ul>
-        <li>Paiement sans contact, insertion ou glissement accepté</li>
-        <li>Reçu numérique envoyé par courriel</li>
-        <li>Pas de gestion d'espèces</li>
+      <p>Vous rencontrez un client à Montréal ? Prenez le paiement sans contact sur place.</p>
+      <ul class="plist">
+        <li>Tap, insertion ou glissement acceptés</li>
+        <li>Reçu numérique envoyé immédiatement</li>
+        <li>Aucune manipulation d'espèces</li>
       </ul>
-      <p class="payment-note">
-        Les paiements par carte en personne utilisent le même compte Square et seront disponibles dès son activation complète. En attendant, les rencontres en personne peuvent être réglées sur place par virement Interac.
-      </p>
-      <p style="font-size: 0.92rem; color: #666; margin-top: 16px;">
-        <em>Contactez-nous pour organiser une rencontre en personne.</em>
-      </p>
+      <p class="tax-note">Contactez-nous pour organiser une rencontre en personne pour le paiement.</p>
     </div>
+  </div>
+
+  <!-- FULL PRICE GRID -->
+  <div class="grid-section">
+    <div class="en" lang="en">
+      <h3>The Full Price List</h3>
+      <p>Every service, every price, on one sheet. Gold-tagged rows are recurring services — cancel by written notice, stack them freely.</p>
+    </div>
+    <div class="fr" lang="fr">
+      <h3>La Grille Complète des Prix</h3>
+      <p>Tous les services, tous les prix, sur une seule feuille. Les lignes dorées sont des services récurrents — résiliables par préavis écrit, cumulables librement.</p>
+    </div>
+    <table class="price-grid">
+      <thead>
+        <tr>
+          <th><span class="en" lang="en">Service</span><span class="fr" lang="fr">Service</span></th>
+          <th><span class="en" lang="en">Price</span><span class="fr" lang="fr">Prix</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="en" lang="en">Health Check Audit</span><span class="fr" lang="fr">Vérification Santé</span></td>
+          <td class="price">$300</td>
+        </tr>
+        <tr>
+          <td><span class="en" lang="en">Complete Audit</span><span class="fr" lang="fr">Audit Complet</span></td>
+          <td class="price">$1,200+</td>
+        </tr>
+        <tr>
+          <td><span class="en" lang="en">Enterprise Audit</span><span class="fr" lang="fr">Audit d'Entreprise</span></td>
+          <td class="price"><span class="en" lang="en">Quote</span><span class="fr" lang="fr">Sur devis</span></td>
+        </tr>
+        <tr class="recurring">
+          <td><span class="en" lang="en">Monitoring &amp; Repair</span><span class="fr" lang="fr">Suivi et Correction</span><span class="grid-tag">Recurring</span></td>
+          <td class="price">$550–650/mo</td>
+        </tr>
+        <tr>
+          <td><span class="en" lang="en">Landing Page</span><span class="fr" lang="fr">Page d'Atterrissage</span></td>
+          <td class="price">$900</td>
+        </tr>
+        <tr>
+          <td><span class="en" lang="en">Business Site</span><span class="fr" lang="fr">Site d'Affaires</span></td>
+          <td class="price">$2,800</td>
+        </tr>
+        <tr>
+          <td><span class="en" lang="en">Site + SEO Kickstart</span><span class="fr" lang="fr">Site + Départ SEO</span></td>
+          <td class="price">$3,800</td>
+        </tr>
+        <tr class="recurring">
+          <td><span class="en" lang="en">Managed Hosting</span><span class="fr" lang="fr">Hébergement Géré</span><span class="grid-tag">Recurring</span></td>
+          <td class="price">$385/yr</td>
+        </tr>
+        <tr class="recurring">
+          <td><span class="en" lang="en">Compliance Shield</span><span class="fr" lang="fr">Bouclier Conformité</span><span class="grid-tag">Recurring</span></td>
+          <td class="price">$250/yr</td>
+        </tr>
+        <tr class="recurring">
+          <td><span class="en" lang="en">Essential Care Maintenance</span><span class="fr" lang="fr">Soins Essentiels</span><span class="grid-tag">Recurring</span></td>
+          <td class="price">$99/mo</td>
+        </tr>
+        <tr class="recurring">
+          <td><span class="en" lang="en">VIP Care Maintenance</span><span class="fr" lang="fr">Soins VIP</span><span class="grid-tag">Recurring</span></td>
+          <td class="price">$199/mo</td>
+        </tr>
+        <tr class="recurring">
+          <td><span class="en" lang="en">Local Dominance Bundle</span><span class="fr" lang="fr">Pack Domination Locale</span><span class="grid-tag">Recurring</span></td>
+          <td class="price">$349/mo</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="tax-note" style="margin-top:14px;">
+      <span class="en" lang="en">GST/QST added where applicable by law. Web projects: 50% deposit reserves your start date, balance before launch. Recurring services: cancel by written notice (30 days standard, 60 days for Local Dominance).</span>
+      <span class="fr" lang="fr">TPS/TVQ ajoutées où applicable par la loi. Projets web : acompte de 50 % pour réserver votre date de début, solde avant la mise en ligne. Services récurrents : résiliation par préavis écrit (30 jours standard, 60 jours pour le Pack Domination Locale).</span>
+    </p>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-band">
+    <h3><span class="en" lang="en">Not Sure Where to Start?</span><span class="fr" lang="fr">Pas Sûr de Par Où Commencer ?</span></h3>
+    <p><span class="en" lang="en">Get a free estimate — tell us your website and we'll tell you honestly whether we can help.</span><span class="fr" lang="fr">Obtenez une estimation gratuite — dites-nous votre site web et on vous dira honnêtement si on peut vous aider.</span></p>
+    <a href="index.html"><span class="en" lang="en">Get Your Free Estimate</span><span class="fr" lang="fr">Obtenez Votre Estimation Gratuite</span></a>
   </div>
 
 </div>
 
 <footer>
-  <p>&copy; 2026 Solutions Marketing VIP - <span class="en" lang="en">Privacy-first payments. We never store your card data.</span><span class="fr" lang="fr">Paiements axés sur la confidentialité. Nous ne stockons jamais vos données de carte.</span></p>
+  <p>&copy; 2026 Solutions Marketing VIP - <span class="en" lang="en">Payment options. Privacy respected.</span><span class="fr" lang="fr">Options de paiement. Vie privée respectée.</span></p>
 </footer>
 
 <script>
