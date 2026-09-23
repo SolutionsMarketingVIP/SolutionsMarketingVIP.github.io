@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://solutionsmarketingvip.com/sectors.html">
+<title>Industries We Serve — Websites by Sector | Solutions Marketing VIP</title>
+<meta name="description" content="Websites built for your industry: restaurants, salons, gyms, accountants, transport, trades, and more. Two styles — Classic or Neon — one SEO standard.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Industry Website Design",
+  "description": "Sector-specific website design for Montreal and Quebec businesses in two visual styles, Classic and Neon, with identical SEO foundations.",
+  "url": "https://solutionsmarketingvip.com/sectors.html",
+  "provider": {
+    "@type": "ProfessionalService",
+    "name": "Solutions Marketing VIP",
+    "url": "https://solutionsmarketingvip.com/",
+    "email": "solutions.marketing.vip@proton.me",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Montréal",
+      "addressRegion": "QC",
+      "addressCountry": "CA"
+    }
+  },
+  "areaServed": ["Montréal", "Québec", "Canada"]
+}
+</script>
+<style>
+  :root {
+    --gold: #B08D3E;
+    --gold-light: #D9C99A;
+    --dark: #23252B;
+    --cream: #F5F2EA;
+    --text: #3a3a40;
+    --neon: #ff2d55;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: var(--cream); color: var(--text); line-height: 1.7;
+  }
+
+  header {
+    background: var(--dark); color: #fff;
+    padding: 20px 0; border-bottom: 3px solid var(--gold);
+    position: sticky; top: 0; z-index: 50;
+    transition: padding 0.3s ease, box-shadow 0.3s ease;
+  }
+  header.condensed {
+    padding: 10px 0;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.45);
+  }
+  header .hwrap {
+    max-width: 960px; margin: 0 auto; padding: 0 24px;
+    display: flex; justify-content: space-between; align-items: center;
+    flex-wrap: wrap; gap: 10px;
+  }
+  header h1.logo-block { line-height: 0; }
+  header h1.logo-block a { display: inline-block; text-decoration: none; }
+  header h1.logo-block img {
+    height: 54px; width: auto; max-width: 240px;
+    display: block; border-radius: 3px;
+    transition: height 0.3s ease;
+  }
+  header.condensed h1.logo-block img { height: 40px; }
+  @media (max-width: 600px) {
+    header h1.logo-block img { height: 42px; max-width: 190px; }
+    header.condensed h1.logo-block img { height: 34px; }
+  }
+  header nav a, header nav button {
+    color: var(--gold-light); text-decoration: none;
+    margin-left: 14px; font-size: 0.95rem;
+    background: none; border: none; cursor: pointer;
+    font-family: inherit; padding: 0;
+    transition: color 0.25s ease;
+  }
+  header nav a:hover, header nav button:hover { color: #fff; }
+
+  .page-title {
+    max-width: 900px; margin: 0 auto; padding: 50px 24px 8px;
+    text-align: center;
+  }
+  .eyebrow {
+    color: var(--gold); font-size: 0.75rem; letter-spacing: 3px;
+    text-transform: uppercase; font-family: Arial, sans-serif;
+    margin-bottom: 6px;
+  }
+  .page-title h2 { font-size: 1.9rem; color: var(--dark); line-height: 1.3; }
+  .page-title p { max-width: 660px; margin: 14px auto 0; font-size: 1rem; }
+  .proof-link { color: var(--gold); font-weight: bold; }
+
+  .content {
+    max-width: 960px; margin: 10px auto 80px; padding: 0 24px;
+  }
+
+  .style-explainer {
+    background: rgba(176, 141, 62, 0.08);
+    border-left: 3px solid var(--gold);
+    padding: 22px 26px; margin: 40px 0 10px;
+    font-size: 0.93rem; border-radius: 3px;
+  }
+  .style-explainer h3 { color: var(--dark); font-size: 1.1rem; margin-bottom: 10px; }
+  .style-explainer p { margin-bottom: 8px; }
+  .pill {
+    display: inline-block; padding: 2px 10px; border-radius: 12px;
+    font-size: 0.8rem; font-family: Arial, sans-serif; font-weight: bold;
+  }
+  .pill.classic { background: rgba(176,141,62,0.2); color: #8a6d2b; }
+  .pill.neon { background: rgba(255,45,85,0.12); color: #c21f45; }
+
+  .sector {
+    background: #fff; border: 1px solid #D8CFBA; border-radius: 5px;
+    padding: 24px 26px; margin-bottom: 18px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  .sector:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.10);
+  }
+  .sector-head {
+    display: flex; align-items: center; gap: 14px;
+    margin-bottom: 10px; flex-wrap: wrap;
+  }
+  .sector-emoji { font-size: 1.9rem; }
+  .sector h3 {
+    color: var(--dark); font-size: 1.25rem; flex: 1 1 auto;
+  }
+  .sector p { font-size: 0.93rem; margin-bottom: 12px; }
+  .style-tags { display: flex; gap: 10px; flex-wrap: wrap; }
+  .style-tag {
+    font-size: 0.8rem; font-family: Arial, sans-serif;
+    padding: 4px 12px; border-radius: 12px; font-weight: bold;
+  }
+  .style-tag.both { background: #23252B; color: #D9C99A; }
+  .style-tag.classic-only { background: rgba(176,141,62,0.15); color: #8a6d2b; }
+  .style-tag.neon-only { background: rgba(255,45,85,0.10); color: #c21f45; }
+  .style-tag a { color: inherit; text-decoration: none; }
+  .style-tag.live { cursor: pointer; }
+  .style-tag.live:hover { opacity: 0.8; }
+
+  footer {
+    background: var(--dark); color: #8a8a8a; text-align: center;
+    padding: 30px 20px; font-size: 0.85rem;
+    border-top: 3px solid var(--gold);
+    font-family: Arial, sans-serif;
+  }
+
+  .fr { display: none; }
+  body.lang-fr .en { display: none; }
+  body.lang-fr .fr { display: block; }
+
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .sector { animation: fadeInUp 0.6s ease both; }
+  .sector:nth-child(odd) { animation-delay: 0.1s; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .sector { animation: none; }
+    html { scroll-behavior: auto; }
+  }
+</style>
+</head>
+<body class="lang-en">
+
+<header id="site-header">
+  <div class="hwrap">
+    <h1 class="logo-block"><a href="index.html"><img src="/logo-new.png" alt="Solutions Marketing VIP"></a></h1>
+    <nav>
+      <a href="index.html"><span class="en" lang="en">Home</span><span class="fr" lang="fr">Accueil</span></a>
+      <a href="websites.html"><span class="en" lang="en">Websites</span><span class="fr" lang="fr">Sites Web</span></a>
+      <a href="sectors.html"><span class="en" lang="en">Industries</span><span class="fr" lang="fr">Secteurs</span></a>
+      <a href="case-studies.html"><span class="en" lang="en">Case Studies</span><span class="fr" lang="fr">Études de cas</span></a>
+      <a href="blog-list.html"><span class="en" lang="en">Articles</span><span class="fr" lang="fr">Articles</span></a>
+      <button class="toggle-btn" onclick="toggleLang()" id="langBtn" style="background:#B08D3E;color:#fff;border:none;padding:8px 18px;cursor:pointer;font-weight:bold;border-radius:3px;font-family:Georgia,serif;">FR</button>
+    </nav>
+  </div>
+</header>
+
+<div class="page-title">
+  <div class="en" lang="en">
+    <div class="eyebrow">Industry Showcase</div>
+    <h2>We Speak Your Industry</h2>
+    <p>Every sector has different customers, questions, and buying triggers. We build websites in your industry's language — with two visual styles and one non-negotiable SEO standard. For documented audit results, see our <a href="case-studies.html" class="proof-link">case studies</a>.</p>
+  </div>
+  <div class="fr" lang="fr">
+    <div class="eyebrow">Portfolio Industriel</div>
+    <h2>Nous Parlons Votre Langage</h2>
+    <p>Chaque secteur a ses clients, ses questions et ses déclencheurs d'achat. Nous construisons des sites dans le langage de votre industrie — deux styles visuels, une seule norme SEO non négociable. Pour des résultats d'audit documentés, consultez nos <a href="case-studies.html" class="proof-link">études de cas</a>.</p>
+  </div>
+</div>
+
+<div class="content">
+
+  <div class="style-explainer">
+    <div class="en" lang="en">
+      <h3>Two Styles. One Standard.</h3>
+      <p><span class="pill classic">CLASSIC</span> Warm, trustworthy, family-oriented. Serif fonts, cream tones. Proven for established businesses where credibility drives sales.</p>
+      <p><span class="pill neon">NEON</span> Dark, energetic, memorable. Glow effects, motion, night-life attitude. Built for businesses that live on energy and Instagram.</p>
+      <p><strong>Both ship with the identical SEO engine</strong> — schema markup, meta descriptions, alt text, 300+ word pages, bilingual toggle. Style is a choice; ranking standards are not.</p>
+    </div>
+    <div class="fr" lang="fr">
+      <h3>Deux Styles. Une Seule Norme.</h3>
+      <p><span class="pill classic">CLASSIQUE</span> Chaleureux, digne de confiance, familial. Polices serifs, tons crème. Prouvé pour les entreprises établies où la crédibilité fait vendre.</p>
+      <p><span class="pill neon">NÉON</span> Sombre, énergique, mémorable. Effets lumineux, mouvement, attitude nocturne. Conçu pour les entreprises qui vivent d'énergie et d'Instagram.</p>
+      <p><strong>Les deux sont livrés avec le même moteur SEO</strong> — schema markup, méta-descriptions, texte alternatif, pages de 300+ mots, bascule bilingue. Le style est un choix ; les normes de classement ne le sont pas.</p>
+    </div>
+  </div>
+
+  <!-- RESTAURANTS — live demo -->
+  <div class="sector">
+    <div class="sector-head">
+      <span class="sector-emoji">🍕</span>
+      <h3><span class="en" lang="en">Restaurants & Pizzerias</span><span class="fr" lang="fr">Restaurants et Pizzerias</span></h3>
+      <div class="style-tags">
+        <span class="style-tag both live"><a href="https://solutionsmarketingvip.github.io/fuoco-demo/" target="_blank" rel="noopener"><span class="en" lang="en">Classic — Live Demo ▸</span><span class="fr" lang="fr">Classique — Démo ▸</span></a></span>
+        <span class="style-tag both live"><a href="https://solutionsmarketingvip.com/forno-nero-demo/" target="_blank" rel="noopener"><span class="en" lang="en">Neon — Live Demo ▸</span><span class="fr" lang="fr">Néon — Démo ▸</span></a></span>
+      </div>
+    </div>
+    <p><span class="en" lang="en">Menus with schema markup, delivery-zone pages, review sections, special-event banners. The industry we built our flagship demos in.</span><span class="fr" lang="fr">Menus avec schema markup, pages zones de livraison, sections avis, bannières d'événements spéciaux. L'industrie de nos démos vedettes.</span></p>
+  </div>
+
+  <!-- HAIR SALONS -->
+  <div class="sector">
+    <div class="sector-head">
+      <span class="sector-emoji">💇</span>
+      <h3><span class="en" lang="en">Hair Salons & Barbershops</span><span class="fr" lang="fr">Salons de Coiffure et Barbiers</span></h3>
+      <div class="style-tags">
+        <span class="style-tag both"><span class="en" lang="en">Both Styles</span><span class="fr" lang="fr">Les Deux Styles</span></span>
+      </div>
+    </div>
+    <p><span class="en" lang="en">Online booking emphasis, portfolio galleries, stylist profiles, service-price clarity. Classic suits family salons and barbers; Neon suits colour specialists and downtown studios chasing Instagram bookings.</span><span class="fr" lang="fr">Accent sur la réservation en ligne, galeries portfolios, profils de stylistes, clarté des prix. Le Classique convient aux salons familiaux et barbiers ; le Néon aux coloristes et studios du centre-ville qui visent les réservations Instagram.</span></p>
+  </div>
+
+  <!-- GYMS -->
+  <div class="sector">
+    <div class="sector-head">
+      <span class="sector-emoji">💪</span>
+      <h3><span class="en" lang="en">Gyms & Fitness Studios</span><span class="fr" lang="fr">Gymnases et Studios de Fitness</span></h3>
+      <div class="style-tags">
+        <span class="style-tag neon-only"><span class="en" lang="en">Neon Recommended</span><span class="fr" lang="fr">Néon Recommandé</span></span>
+      </div>
+    </div>
+    <p><span class="en" lang="en">Class schedules, trainer bios, membership-plan comparison, free-trial CTAs. Neon matches the energy of CrossFit and boxing; Classic fits yoga, pilates, and senior-wellness studios.</span><span class="fr" lang="fr">Horaires de cours, bios d'entraîneurs, comparaison d'abonnements, appels à l'essai gratuit. Le Néon correspond à l'énergie du CrossFit et de la boxe ; le Classique convient au yoga, au pilates et aux studios de bien-être seniors.</span></p>
+  </div>
+
+  <!-- ACCOUNTANTS -->
+  <div class="sector">
+    <div class="sector-head">
+      <span class="sector-emoji">📊</span>
+      <h3><span class="en" lang="en">Accountants & Bookkeepers</span><span class="fr" lang="fr">Comptables et Teneurs de Livres</span></h3>
+      <div class="style-tags">
+        <span class="style-tag classic-only"><span class="en" lang="en">Classic Preferred</span><span class="fr" lang="fr">Classique Préféré</span></span>
+      </div>
+    </div>
+    <p><span class="en" lang="en">Deadline-driven content (RRSP season, tax deadlines), service tiers, bilingual trust signals. Neon reserved for fintech-forward consultants only.</span><span class="fr" lang="fr">Contenu axé sur les échéances (saison REER, dates limites fiscales), paliers de services, signaux de confiance bilingues. Le Néon réservé aux conseillers fintech seulement.</span></p>
+  </div>
+
+  <!-- TAXI / RIDES -->
+  <div class="sector">
+    <div class="sector-head">
+      <span class="sector-emoji">🚕</span>
+      <h3><span class="en" lang="en">Taxi & Rideshare Companies</span><span class="fr" lang="fr">Entreprises de Taxi et VTC</span></h3>
+      <div class="style-tags">
+        <span class="style-tag both"><span class="en" lang="en">Both Styles</span><span class="fr" lang="fr">Les Deux Styles</span></span>
+      </div>
+    </div>
+    <p><span class="en" lang="en">Click-to-call everything, coverage-zone pages for each borough, fare transparency, airport-transfer landing pages. Classic for established fleets; Neon for night-shift brands.</span><span class="fr" lang="fr">Clic-pour-appeler partout, pages zones de couverture par arrondissement, transparence tarifaire, pages d'atterrissage transferts aéroport. Classique pour flottes établies ; Néon pour les marques de nuit.</span></p>
+  </div>
+
+  <!-- TRUCKING -->
+  <div class="sector">
+    <div class="sector-head">
+      <span class="sector-emoji">🚚</span>
+      <h3><span class="en" lang="en">Trucking & Freight</span><span class="fr" lang="fr">Camionnage et Fret</span></h3>
+      <div class="style-tags">
+        <span class="style-tag classic-only"><span class="en" lang="en">Classic Preferred</span><span class="fr" lang="fr">Classique Préféré</span></span>
+      </div>
+    </div>
+    <p><span class="en" lang="en">Corporate credibility, service-area mapping, safety and certification badges, RFQ forms. B2B buyers reward trust signals — and you already audit this sector (see our transport case study).</span><span class="fr" lang="fr">Crédibilité corporative, cartographie des zones desservies, badges de sécurité et certification, formulaires de demande de soumission. Les acheteurs B2B récompensent les signaux de confiance — et vous auditez déjà ce secteur (voir notre étude de cas transport).</span></p>
+  </div>
+
+  <!-- BUS / SHUTTLE -->
+  <div class="sector">
+    <div class="sector-head">
+      <span class="sector-emoji">🚌</span>
+      <h3><span class="en" lang="en">Bus, Shuttle & Charter</span><span class="fr" lang="fr">Autobus, Navettes et Nolisement</span></h3>
+      <div class="style-tags">
+        <span class="style-tag both"><span class="en" lang="en">Both Styles</span><span class="fr" lang="fr">Les Deux Styles</span></span>
+      </div>
+    </div>
+    <p><span class="en" lang="en">Route and schedule pages, group-quote forms, fleet galleries. Classic for school and corporate contracts; Neon for party-bus and event-shuttle brands.</span><span class="fr" lang="fr">Pages de routes et horaires, formulaires de devis de groupe, galeries de flotte. Classique pour contrats scolaires et corporatifs ; Néon pour les marques de bus festifs et navettes d'événements.</span></p>
+  </div>
+
+  <!-- AUTO REPAIR -->
+  <div class="sector">
+    <div class="sector-head">
+      <span class="sector-emoji">🔧</span>
+      <h3><span class="en" lang="en">Mechanics & Auto Shops</span><span class="fr" lang="fr">Mécaniciens et Garages</span></h3>
+      <div class="style-tags">
+        <span class="style-tag both"><span class="en" lang="en">Both Styles</span><span class="fr" lang="fr">Les Deux Styles</span></span>
+      </div>
+    </div>
+    <p><span class="en" lang="en">Seasonal-service landing pages (winter tires, AC checks), photo proof of work, appointment CTAs. Classic for established garages; Neon for performance-tuning shops.</span><span class="fr" lang="fr">Pages saisonnières (pneus d'hiver, vérification climatisation), preuves photo des travaux, prise de rendez-vous. Classique pour garages établis ; Néon pour ateliers de préparation performance.</span></p>
+  </div>
+
+  <!-- CONTRACTORS -->
+  <div class="sector">
+    <div class="sector-head">
+      <span class="sector-emoji">🛠️</span>
+      <h3><span class="en" lang="en">Plumbers, Electricians & HVAC</span><span class="fr" lang="fr">Plombiers, Électriciens et CVAC</span></h3>
+      <div class="style-tags">
+        <span class="style-tag classic-only"><span class="en" lang="en">Classic Preferred</span><span class="fr" lang="fr">Classique Préféré</span></span>
+      </div>
+    </div>
+    <p><span class="en" lang="en">Emergency click-to-call, service-area pages per neighbourhood, license and insurance badges, before-after job galleries. Local SEO gold when done right.</span><span class="fr" lang="fr">Urgences clic-pour-appeler, pages zones de service par quartier, badges de licence et assurance, galories avant-après. De l'or SEO local quand c'est bien fait.</span></p>
+  </div>
+
+  <!-- INTERNET CAFÉ / GAMING -->
+  <div class="sector">
+    <div class="sector-head">
+      <span class="sector-emoji">🎮</span>
+      <h3><span class="en" lang="en">Internet Cafés & Gaming Lounges</span><span class="fr" lang="fr">Cybercafés et Salles de Jeux</span></h3>
+      <div class="style-tags">
+        <span class="style-tag neon-only"><span class="en" lang="en">Neon Perfect Match</span><span class="fr" lang="fr">Néon Idéal</span></span>
+      </div>
+    </div>
+    <p><span class="en" lang="en">Hourly-rate tables, tournament announcements, PC-spec listings, Discord links. Neon's RGB aesthetic is literally native to this audience.</span><span class="fr" lang="fr">Tarifs horaires, annonces de tournois, configurations des PC, liens Discord. L'esthétique RGB du Néon est littéralement native à cette audience.</span></p>
+  </div>
+
+  <!-- LIBRARIES / COMMUNITY -->
+  <div class="sector">
+    <div class="sector-head">
+      <span class="sector-emoji">📚</span>
+      <h3><span class="en" lang="en">Libraries & Community Centers</span><span class="fr" lang="fr">Bibliothèques et Centres Communautaires</span></h3>
+      <div class="style-tags">
+        <span class="style-tag classic-only"><span class="en" lang="en">Classic Only</span><span class="fr" lang="fr">Classique Seulement</span></span>
+      </div>
+    </div>
+    <p><span class="en" lang="en">Event calendars, program registration, accessibility-first design, clear public information. Institutional tone doesn't chase trends — and shouldn't.</span><span class="fr" lang="fr">Calendriers d'événements, inscriptions aux programmes, conception axée sur l'accessibilité, information publique claire. Le ton institutionnel ne suit pas les modes — et ne devrait pas.</span></p>
+  </div>
+
+  <!-- FLORISTS -->
+  <div class="sector">
+    <div class="sector-head">
+      <span class="sector-emoji">💐</span>
+      <h3><span class="en" lang="en">Florists</span><span class="fr" lang="fr">Fleuristes</span></h3>
+      <div class="style-tags">
+        <span class="style-tag classic-only"><span class="en" lang="en">Classic Preferred</span><span class="fr" lang="fr">Classique Préféré</span></span>
+      </div>
+    </div>
+    <p><span class="en" lang="en">Occasion landing pages (weddings, funerals, Valentine's), same-day delivery CTAs, flower-meaning content that ranks. Alt-text matters enormously — every arrangement is searchable if described.</span><span class="fr" lang="fr">Pages occasions (mariages, funérailles, Saint-Valentin), livraison le jour même, contenus sur le langage des fleurs qui se classent bien. Le texte alternatif compte énormément — chaque arrangement est cherchable s'il est décrit.</span></p>
+  </div>
+
+  <!-- BAKERIES -->
+  <div class="sector">
+    <div class="sector-head">
+      <span class="sector-emoji">🥐</span>
+      <h3><span class="en" lang="en">Bakeries & Coffee Shops</span><span class="fr" lang="fr">Boulangeries et Cafés</span></h3>
+      <div class="style-tags">
+        <span class="style-tag both"><span class="en" lang="en">Both Styles</span><span class="fr" lang="fr">Les Deux Styles</span></span>
+      </div>
+    </div>
+    <p><span class="en" lang="en">Fresh-content angles (daily specials), neighbourhood keyword targeting, mobile-first maps integration. Classic for traditional patisseries; Neon for specialty espresso bars.</span><span class="fr" lang="fr">Angles de contenu frais (spécialités du jour), ciblage mots-clés de quartier, cartes intégrées mobile-first. Classique pour pâtisseries traditionnelles ; Néon pour bars à espresso de spécialité.</span></p>
+  </div>
+
+  <!-- REAL ESTATE -->
+  <div class="sector">
+    <div class="sector-head">
+      <span class="sector-emoji">🏠</span>
+      <h3><span class="en" lang="en">Real Estate Agents</span><span class="fr" lang="fr">Courtiers Immobiliers</span></h3>
+      <div class="style-tags">
+        <span class="style-tag classic-only"><span class="en" lang="en">Classic Preferred</span><span class="fr" lang="fr">Classique Préféré</span></span>
+      </div>
+    </div>
+    <p><span class="en" lang="en">Neighbourhood expertise pages (the underrated SEO play for agents), testimonial-driven bios, market-report teasers. Trust is the product; design signals it.</span><span class="fr" lang="fr">Pages d'expertise par quartier (la stratégie SEO sous-estimée des courtiers), bios axées témoignages, aperçus de rapports de marché. La confiance est le produit ; le design la signale.</span></p>
+  </div>
+
+  <!-- VETERINARY / PET -->
+  <div class="sector">
+    <div class="sector-head">
+      <span class="sector-emoji">🐾</span>
+      <h3><span class="en" lang="en">Veterinary Clinics & Pet Services</span><span class="fr" lang="fr">Cliniques Vétérinaires et Services Animaliers</span></h3>
+      <div class="style-tags">
+        <span class="style-tag classic-only"><span class="en" lang="en">Classic Preferred</span><span class="fr" lang="fr">Classique Préféré</span></span>
+      </div>
+    </div>
+    <p><span class="en" lang="en">Emergency-hours prominence, service menus, staff credentials, gentle reassuring tone. Pet owners search urgently — speed and clarity win their clicks.</span><span class="fr" lang="fr">Heures d'urgence en évidence, menus de services, accréditations du personnel, ton doux et rassurant. Les propriétaires d'animaux cherchent urgemment — vitesse et clarté gagnent leurs clics.</span></p>
+  </div>
+
+  <div class="style-explainer">
+    <div class="en" lang="en">
+      <h3>Don't See Your Sector?</h3>
+      <p>Every industry page you see above follows the same two-style framework. If your sector isn't listed, that's a conversation, not a limitation — <a href="mailto:solutions.marketing.vip@proton.me?subject=My%20Sector%20-%20Website%20Question">ask us</a> which style fits your customers, and we'll show you why before quoting a penny.</p>
+    </div>
+    <div class="fr" lang="fr">
+      <h3>Vous Ne Voyez Pas Votre Secteur ?</h3>
+      <p>Chaque page industrielle ci-dessus suit le même cadre à deux styles. Si votre secteur n'est pas listé, c'est une conversation, pas une limite — <a href="mailto:solutions.marketing.vip@proton.me?subject=Mon%20Secteur%20-%20Question%20Site%20Web">demandez-nous</a> quel style convient à vos clients, et nous vous le démontrerons avant de soumissionner un sou.</p>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <p>&copy; 2026 Solutions Marketing VIP - <span class="en" lang="en">Every industry. One standard.</span><span class="fr" lang="fr">Toutes les industries. Une seule norme.</span></p>
+</footer>
+
+<script>
+function toggleLang() {
+  var b = document.body;
+  var btn = document.getElementById('langBtn');
+  if (b.classList.contains('lang-en')) {
+    b.classList.remove('lang-en'); b.classList.add('lang-fr');
+    btn.textContent = 'EN';
+  } else {
+    b.classList.remove('lang-fr'); b.classList.add('lang-en');
+    btn.textContent = 'FR';
+  }
+}
+
+var header = document.getElementById("site-header");
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 40) header.classList.add("condensed");
+  else header.classList.remove("condensed");
+}, { passive: true });
+</script>
+
+</body>
+</html>
