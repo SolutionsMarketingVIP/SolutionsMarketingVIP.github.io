@@ -5,38 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="canonical" href="https://solutionsmarketingvip.com/case-studies.html">
-<title>SEO Case Studies Montreal | Solutions Marketing VIP</title>
-<meta name="description" content="Real SEO audit results from Quebec businesses. Before-and-after health scores, documented fixes, and transparent case studies. No hype, just numbers.">
+<title>SEO Case Studies Montréal | Solutions Marketing VIP</title>
+<meta name="description" content="Real SEO audits, real numbers. Transport, dental, renovation and photography case studies from Montreal. Never invented, only measured.">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "CollectionPage",
+  "@type": "WebPage",
   "name": "SEO Case Studies",
-  "description": "Documented SEO audit results from real Quebec business websites, showing before-and-after health scores.",
+  "description": "Real audit results for Montreal businesses, with measured health scores and findings.",
   "url": "https://solutionsmarketingvip.com/case-studies.html",
-  "inLanguage": ["en-CA", "fr-CA"],
-  "hasPart": [
-    {
-      "@type": "WebPage",
-      "name": "Dental Clinic Audit",
-      "url": "https://solutionsmarketingvip.com/case-studies.html#dental"
-    },
-    {
-      "@type": "WebPage",
-      "name": "Transport Company Audit",
-      "url": "https://solutionsmarketingvip.com/case-studies.html#transport"
-    },
-    {
-      "@type": "WebPage",
-      "name": "Photography Business Audit",
-      "url": "https://solutionsmarketingvip.com/case-studies.html#photography"
-    },
-    {
-      "@type": "WebPage",
-      "name": "Internal Website Audit",
-      "url": "https://solutionsmarketingvip.com/case-studies.html#internal"
-    }
-  ]
+  "inLanguage": ["en-CA", "fr-CA"]
 }
 </script>
 <style>
@@ -76,9 +54,8 @@
     transition: height 0.3s ease;
   }
   header.condensed h1.logo-block img { height: 40px; }
-  @media (max-width: 600px) {
-    header h1.logo-block img { height: 42px; max-width: 190px; }
-    header.condensed h1.logo-block img { height: 34px; }
+  header nav {
+    display: flex; align-items: center; flex-wrap: wrap; gap: 4px 0;
   }
   header nav a, header nav button {
     color: var(--gold-light); text-decoration: none;
@@ -88,6 +65,32 @@
     transition: color 0.25s ease;
   }
   header nav a:hover, header nav button:hover { color: #fff; }
+
+  /* MOBILE HEADER FIX */
+  @media (max-width: 720px) {
+    header .hwrap {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+    }
+    header h1.logo-block img {
+      height: 44px; max-width: 200px; margin: 0 auto;
+    }
+    header.condensed h1.logo-block img { height: 36px; }
+    header nav {
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 8px 0;
+    }
+    header nav a, header nav button {
+      margin-left: 0;
+      padding: 6px 10px;
+      font-size: 0.88rem;
+      text-align: center;
+    }
+  }
+
   .page-title {
     max-width: 900px; margin: 0 auto; padding: 50px 24px 8px;
     text-align: center;
@@ -102,58 +105,68 @@
   .content {
     max-width: 900px; margin: 10px auto 80px; padding: 0 24px;
   }
-  .case-study {
+  .case-card {
     background: #fff; border: 1px solid #D8CFBA;
     border-left: 5px solid var(--gold); border-radius: 5px;
-    padding: 30px 28px; margin-bottom: 26px;
+    padding: 30px 28px; margin-bottom: 30px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.06);
     transition: transform 0.25s ease, box-shadow 0.25s ease;
   }
-  .case-study:hover {
+  .case-card:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.10);
   }
-  .case-header {
-    border-bottom: 2px solid var(--gold-light);
-    padding-bottom: 14px; margin-bottom: 20px;
-  }
-  .case-badge {
-    background: var(--gold); color: #fff;
-    padding: 5px 14px; border-radius: 3px;
-    font-size: 0.72rem; font-weight: bold; letter-spacing: 1px;
-    display: inline-block; margin-bottom: 10px;
-    font-family: Arial, sans-serif; text-transform: uppercase;
-  }
-  .case-title {
-    color: var(--dark); font-size: 1.4rem; font-weight: bold;
+  .case-card h3 { color: var(--dark); font-size: 1.35rem; margin-bottom: 4px; }
+  .case-type {
+    color: var(--gold); font-size: 0.82rem; letter-spacing: 2px;
+    text-transform: uppercase; font-family: Arial, sans-serif;
     margin-bottom: 6px;
   }
-  .case-subtitle {
-    color: #777; font-size: 0.92rem;
+  .score-badge {
+    display: inline-block; background: var(--dark); color: var(--gold-light);
+    padding: 6px 16px; border-radius: 3px;
+    font-size: 0.92rem; font-weight: bold;
+    margin-bottom: 16px; font-family: Arial, sans-serif;
   }
-  .case-body h4 {
-    color: var(--dark); font-size: 1.1rem;
-    margin: 16px 0 8px;
+  .case-card h4 {
+    color: var(--dark); font-size: 1.05rem; margin: 18px 0 8px;
   }
-  .case-body ul, .case-body ol {
-    margin-left: 24px; margin-bottom: 16px;
+  .case-card p { font-size: 0.95rem; margin-bottom: 10px; }
+  .clist { list-style: none; margin: 10px 0; }
+  .clist li {
+    padding-left: 26px; position: relative; margin-bottom: 9px;
+    font-size: 0.93rem;
   }
-  .case-body li {
-    margin-bottom: 7px; font-size: 0.95rem;
+  .clist li::before {
+    content: "✓"; color: var(--gold); font-weight: bold;
+    position: absolute; left: 0;
   }
-  .result-metric {
-    font-size: 1.3rem; margin: 16px 0;
-    font-family: Arial, sans-serif;
+  .method-note {
+    font-size: 0.88rem; color: #777; font-style: italic;
   }
-  .metric-value {
-    color: #777; font-weight: normal;
+  .closing-note {
+    background: var(--dark); color: #e8e6df;
+    border: 1px solid var(--gold);
+    border-left: 5px solid var(--gold); border-radius: 5px;
+    padding: 26px 28px; margin: 36px 0;
+    text-align: center;
   }
-  .metric-value.perfect {
-    color: var(--gold); font-weight: bold;
+  .closing-note p { font-size: 0.98rem; }
+  .closing-note strong { color: var(--gold-light); }
+  .cta-band {
+    background: var(--gold); text-align: center;
+    padding: 36px 24px; border-radius: 5px; margin-top: 40px;
+    box-shadow: 0 6px 18px rgba(176, 141, 62, 0.4);
   }
-  .metric-arrow {
-    color: var(--gold); margin: 0 10px; font-size: 1.1rem;
+  .cta-band h3 { color: #fff; font-size: 1.4rem; margin-bottom: 10px; }
+  .cta-band p { color: #fdf8ec; font-size: 0.98rem; margin-bottom: 18px; }
+  .cta-band a {
+    display: inline-block; background: var(--dark); color: var(--gold-light);
+    padding: 15px 34px; border-radius: 5px; text-decoration: none;
+    font-weight: bold; font-size: 1.02rem;
+    transition: background 0.25s ease, color 0.25s ease;
   }
+  .cta-band a:hover { background: #000; color: #fff; }
   footer {
     background: var(--dark); color: #8a8a8a; text-align: center;
     padding: 30px 20px; font-size: 0.85rem;
@@ -167,12 +180,12 @@
     from { opacity: 0; transform: translateY(20px); }
     to   { opacity: 1; transform: translateY(0); }
   }
-  .case-study { animation: fadeInUp 0.7s ease both; }
-  .case-study:nth-child(2) { animation-delay: 0.1s; }
-  .case-study:nth-child(3) { animation-delay: 0.2s; }
-  .case-study:nth-child(4) { animation-delay: 0.3s; }
+  .case-card, .closing-note { animation: fadeInUp 0.7s ease both; }
+  .case-card:nth-child(2) { animation-delay: 0.1s; }
+  .case-card:nth-child(3) { animation-delay: 0.2s; }
+  .case-card:nth-child(4) { animation-delay: 0.3s; }
   @media (prefers-reduced-motion: reduce) {
-    .case-study { animation: none; }
+    .case-card, .closing-note { animation: none; }
     html { scroll-behavior: auto; }
   }
 </style>
@@ -198,248 +211,168 @@
 
 <div class="page-title">
   <div class="en" lang="en">
-    <div class="eyebrow">Proof, Not Promises</div>
-    <h2>Real SEO Audit Results</h2>
-    <p>Demonstration audits from Quebec businesses. Before-and-after health scores, documented fixes, and transparent reporting. No hype, just numbers.</p>
+    <div class="eyebrow">Real Audits, Real Numbers</div>
+    <h2>Case Studies</h2>
+    <p>Every number below comes from an actual audit we ran, measured page by page, in both languages — the way a search engine discovers a site without a map.</p>
   </div>
   <div class="fr" lang="fr">
-    <div class="eyebrow">Preuve, Pas Promesses</div>
-    <h2>Résultats d'Audit SEO Réels</h2>
-    <p>Audits de démonstration d'entreprises québécoises. Scores de santé avant-après, corrections documentées et rapports transparents. Sans battage, juste des chiffres.</p>
+    <div class="eyebrow">De Vrais Audits, de Vrais Chiffres</div>
+    <h2>Études de Cas</h2>
+    <p>Chaque chiffre ci-dessous provient d'un véritable audit que nous avons mené, mesuré page par page, dans les deux langues — comme un moteur de recherche découvre un site sans carte.</p>
   </div>
 </div>
 
 <div class="content">
 
-  <!-- CASE STUDY 1: DENTAL CLINIC -->
-  <div class="case-study" id="dental">
-    <div class="case-header">
-      <div class="case-badge">Medical / Médical</div>
-      <div class="en" lang="en">
-        <div class="case-title">Clinique Dentaire Montréalaise</div>
-        <div class="case-subtitle">Bilingual dental clinic website | 40/100 initial score</div>
-      </div>
-      <div class="fr" lang="fr">
-        <div class="case-title">Clinique Dentaire Montréalaise</div>
-        <div class="case-subtitle">Site web de clinique bilingue | Score initial de 40/100</div>
-      </div>
+  <!-- CASE 1: TRANSPORT -->
+  <div class="case-card">
+    <div class="en" lang="en">
+      <div class="case-type">Demonstration Audit · Corporate Logistics Site</div>
+      <h3>Transport Company | Technical Audit</h3>
+      <span class="score-badge">Health Score Found: 40 / 100</span>
+      <h4>The situation</h4>
+      <p>A freight transport company with unusually solid written content: pages averaging over 700 words, not a single weak page on the entire site. The writing was never the problem. The packaging was. 110 distinct issues stood between that content and the ranking it deserved.</p>
+      <h4>What the audit found</h4>
+      <ul class="clist">
+        <li>110 distinct technical issues identified and ranked by impact</li>
+        <li>Solid content structure requiring no rewriting — the rare case where the client's words were already excellent</li>
+        <li>A prioritized fix list concentrating on template-level corrections</li>
+      </ul>
     </div>
-
-    <div class="case-body">
-      <div class="en" lang="en">
-        <h4>The Situation</h4>
-        <p>A modern clinic site where design outpaced structure. Dozens of images, animated sections, and no sitemap to guide search engines. Beautiful brand, weak foundations.</p>
-
-        <h4>What the Audit Found</h4>
-        <ul>
-          <li>Meta descriptions missing on roughly a third of pages</li>
-          <li>Multiple H1 headings per page on 8 pages, diluting each page's declared topic</li>
-          <li>Over 25 pages with images lacking alt text</li>
-          <li>No sitemap.xml found, forcing search engines to guess the site structure</li>
-        </ul>
-
-        <h4>The Fix Approach</h4>
-        <p>Crawled page by page across both languages, the way a search engine discovers a site without a map. Issues documented individually, fixes prioritized by ranking impact.</p>
-      </div>
-
-      <div class="fr" lang="fr">
-        <h4>La Situation</h4>
-        <p>Un site de clinique moderne où la forme a devancé la structure. Des dizaines d'images, des sections animées, et aucun plan de site pour guider les moteurs de recherche. Une belle marque, des fondations faibles.</p>
-
-        <h4>Ce que l'audit a révélé</h4>
-        <ul>
-          <li>Descriptions méta absentes sur environ un tiers des pages</li>
-          <li>Plusieurs balises H1 par page sur 8 pages, diluant le sujet déclaré de chacune</li>
-          <li>Plus de 25 pages portant des images sans texte alternatif</li>
-          <li>Aucun fichier sitemap.xml trouvé, obligeant les moteurs de recherche à deviner la structure</li>
-        </ul>
-
-        <h4>L'Approche de Correction</h4>
-        <p>Parcours page par page dans les deux langues, comme un moteur de recherche découvre un site sans carte. Problèmes documentés individuellement, corrections priorisées par impact sur le classement.</p>
-      </div>
+    <div class="fr" lang="fr">
+      <div class="case-type">Audit de démonstration · Site corporatif de logistique</div>
+      <h3>Entreprise de transport | Audit technique</h3>
+      <span class="score-badge">Score de santé trouvé : 40 / 100</span>
+      <h4>La situation</h4>
+      <p>Une entreprise de transport de marchandises au contenu écrit inhabituellement solide : des pages dépassant 700 mots en moyenne, pas une seule page faible sur tout le site. Le texte n'a jamais été le problème. L'emballage, si. 110 problèmes distincts se dressaient entre ce contenu et le classement qu'il méritait.</p>
+      <h4>Ce que l'audit a révélé</h4>
+      <ul class="clist">
+        <li>110 problèmes techniques distincts identifiés et classés par impact</li>
+        <li>Structure de contenu solide ne nécessitant aucune réécriture — le cas rare où les mots du client étaient déjà excellents</li>
+        <li>Une liste de correctifs priorisés se concentrant sur les corrections au niveau du gabarit</li>
+      </ul>
     </div>
   </div>
 
-  <!-- CASE STUDY 2: TRANSPORT COMPANY -->
-  <div class="case-study" id="transport">
-    <div class="case-header">
-      <div class="case-badge">Transport / Transport</div>
-      <div class="en" lang="en">
-        <div class="case-title">Commercial Transport Company</div>
-        <div class="case-subtitle">Corporate logistics website | 110 issues documented</div>
-      </div>
-      <div class="fr" lang="fr">
-        <div class="case-title">Entreprise de Transport Commercial</div>
-        <div class="case-subtitle">Site web logistique corporate | 110 problèmes documentés</div>
-      </div>
+  <!-- CASE 2: DENTAL CLINIC -->
+  <div class="case-card">
+    <div class="en" lang="en">
+      <div class="case-type">Demonstration Audit · Bilingual Clinic Website</div>
+      <h3>Montreal Dental Clinic | Technical Audit</h3>
+      <span class="score-badge">Health Score Found: 40 / 100</span>
+      <h4>The situation</h4>
+      <p>A modern clinic website where form outran structure. Dozens of images, animated sections, and no sitemap for search engines to follow. Solid brand, weak foundations.</p>
+      <h4>What the audit found</h4>
+      <ul class="clist">
+        <li>No XML sitemap — search engines had to guess their way through the site</li>
+        <li>Images without alt text across dozens of gallery pages</li>
+        <li>Animated sections adding weight without adding findability</li>
+      </ul>
     </div>
-
-    <div class="case-body">
-      <div class="en" lang="en">
-        <h4>The Situation</h4>
-        <p>A freight and transport company with unusually strong written content: pages averaging over 700 words, not a single thin page on the site. Writing was never the problem. The packaging was. 110 separate issues stood between that content and the rankings it deserved.</p>
-
-        <h4>What the Audit Found</h4>
-        <ul>
-          <li>Images missing alt text on all 30 pages audited — the single largest drag on the score</li>
-          <li>Page titles exceeding search display limits on 20 pages</li>
-          <li>Zero schema markup site-wide, leaving Google to guess what the business does</li>
-          <li>Meta descriptions missing on 23 of 30 pages</li>
-        </ul>
-
-        <h4>The Result</h4>
-        <p>30 pages audited, 110 issues documented, every one fixable without rewriting a single paragraph. Classic case of paying writers, then hiding their work from Google.</p>
-      </div>
-
-      <div class="fr" lang="fr">
-        <h4>La Situation</h4>
-        <p>Une entreprise de fret et transport avec un contenu écrit exceptionnellement fort : pages en moyenne plus de 700 mots, pas une seule page mince sur le site. L'écriture n'était jamais le problème. L'emballage l'était. 110 problèmes séparés se tenaient entre ce contenu et le classement qu'il méritait.</p>
-
-        <h4>Ce que l'audit a trouvé</h4>
-        <ul>
-          <li>Images sans texte alternatif sur toutes les 30 pages auditées — le plus gros frein au score</li>
-          <li>Titres de pages dépassant les limites d'affichage des moteurs sur 20 pages</li>
-          <li>Zéro balise schéma site-wide, laissant Google deviner ce que fait l'entreprise</li>
-          <li>Descriptions méta absentes sur 23 pages sur 30</li>
-        </ul>
-
-        <h4>Le Résultat</h4>
-        <p>30 pages auditées, 110 problèmes documentés, chacun correctible sans réécrire un seul paragraphe. Cas classique de payer des rédacteurs, puis de cacher leur travail à Google.</p>
-      </div>
+    <div class="fr" lang="fr">
+      <div class="case-type">Audit de démonstration · Site de clinique bilingue</div>
+      <h3>Clinique dentaire de Montréal | Audit technique</h3>
+      <span class="score-badge">Score de santé trouvé : 40 / 100</span>
+      <h4>La situation</h4>
+      <p>Un site de clinique moderne où la forme avait dépassé la structure. Des dizaines d'images, des sections animées, et aucun plan de site pour guider les moteurs de recherche. Marque solide, fondations fragiles.</p>
+      <h4>Ce que l'audit a révélé</h4>
+      <ul class="clist">
+        <li>Aucun plan de site XML — les moteurs de recherche devaient deviner leur chemin à travers le site</li>
+        <li>Images sans texte alternatif sur des dizaines de pages de galerie</li>
+        <li>Sections animées ajoutant du poids sans ajouter de trouvabilité</li>
+      </ul>
     </div>
   </div>
 
-  <!-- CASE STUDY 3: PHOTOGRAPHY BUSINESS -->
-  <div class="case-study" id="photography">
-    <div class="case-header">
-      <div class="case-badge">Photography / Photographie</div>
-      <div class="en" lang="en">
-        <div class="case-title">Photography Portfolio Site</div>
-        <div class="case-subtitle">Visual artist website | Visibility restored</div>
-      </div>
-      <div class="fr" lang="fr">
-        <div class="case-title">Site de Portfolio Photographique</div>
-        <div class="case-subtitle">Site d'artiste visuel | Visibilité restaurée</div>
-      </div>
+  <!-- CASE 3: RENOVATION -->
+  <div class="case-card">
+    <div class="en" lang="en">
+      <div class="case-type">Demonstration Audit · Bilingual Renovation Website</div>
+      <h3>Renovation Company | Technical Audit</h3>
+      <span class="score-badge">Health Score Found: 49 / 100</span>
+      <h4>The situation</h4>
+      <p>An established bilingual renovation company with genuinely strong page content, held back by neglected mechanical SEO care. Its pages averaged nearly double the recommended minimum word count. The opportunity was in the packaging, not the writing.</p>
+      <h4>What the audit found</h4>
+      <ul class="clist">
+        <li>Page titles exceeding search display limits on 18 of 30 pages audited, concentrated on the French side</li>
+        <li>Images missing alt text across 13 pages</li>
+        <li>One broken internal link to a core service page</li>
+        <li>A prioritized fix list achievable in under an hour of template-level corrections</li>
+      </ul>
+      <p class="method-note">Audited from the official sitemap: 39 pages discovered, 30 sampled.</p>
     </div>
-
-    <div class="case-body">
-      <div class="en" lang="en">
-        <h4>The Situation</h4>
-        <p>A photographer whose work deserved visibility, but whose site suffered from structural blindness. On a photography site, missing alt text means every product is invisible to search.</p>
-
-        <h4>What the Audit Found</h4>
-        <ul>
-          <li>Thin content on 8 of 9 pages, starving the site of any chance to rank for its services</li>
-          <li>Images missing alt text across all pages</li>
-          <li>Duplicate title tags site-wide, making pages compete against each other</li>
-          <li>Titles and descriptions far below search result display length</li>
-        </ul>
-
-        <h4>The Fix</h4>
-        <p>The fix is not more photography. It is letting the work finally speak, with words where the machine needs them and alt text where the art lives.</p>
-      </div>
-
-      <div class="fr" lang="fr">
-        <h4>La Situation</h4>
-        <p>Un photographe dont le travail méritait visibilité, mais dont le site souffrait de cécité structurelle. Sur un site de photographie, le manque de texte alternatif signifie chaque produit invisible aux recherches.</p>
-
-        <h4>Ce que l'audit a trouvé</h4>
-        <ul>
-          <li>Contenu insuffisant sur 8 pages sur 9, privant le site de toute chance de se classer</li>
-          <li>Images sans texte alternatif sur toutes les pages</li>
-          <li>Titres de pages dupliqués partout, pages en compétition entre elles</li>
-          <li>Titres et descriptions bien en dessous de la longueur d'affichage des résultats</li>
-        </ul>
-
-        <h4>La Correction</h4>
-        <p>La correction n'est pas plus de photos. C'est de laisser le travail parler enfin, avec des mots là où la machine en a besoin et du texte alternatif là où l'art vit.</p>
-      </div>
+    <div class="fr" lang="fr">
+      <div class="case-type">Audit de démonstration · Site de rénovation bilingue</div>
+      <h3>Entreprise de rénovation | Audit technique</h3>
+      <span class="score-badge">Score de santé trouvé : 49 / 100</span>
+      <h4>La situation</h4>
+      <p>Une entreprise de rénovation bilingue établie, au contenu de pages vraiment solide, freinée par un entretien SEO mécanique négligé. Ses pages comptaient en moyenne près du double du minimum de mots recommandé. L'occasion était dans l'emballage, pas dans la rédaction.</p>
+      <h4>Ce que l'audit a révélé</h4>
+      <ul class="clist">
+        <li>Des titres de pages dépassant les limites d'affichage des moteurs de recherche sur 18 des 30 pages auditées, concentrés du côté français</li>
+        <li>Des images sans texte alternatif sur 13 pages</li>
+        <li>Un lien interne brisé vers une page de service centrale</li>
+        <li>Une liste de correctifs prioritaires réalisable en moins d'une heure de corrections au niveau du gabarit</li>
+      </ul>
+      <p class="method-note">Audit fait depuis le sitemap officiel : 39 pages découvertes, 30 échantillonnées.</p>
     </div>
   </div>
 
-  <!-- CASE STUDY 4: INTERNAL SITE OPTIMIZATION -->
-  <div class="case-study" id="internal">
-    <div class="case-header">
-      <div class="case-badge">Internal Audit / Audit Interne</div>
-      <div class="en" lang="en">
-        <div class="case-title">Own Website Optimization</div>
-        <div class="case-subtitle">From 96/100 to 100/100 — Documented Fix Loop</div>
-      </div>
-      <div class="fr" lang="fr">
-        <div class="case-title">Optimisation de Notre Propre Site</div>
-        <div class="case-subtitle">De 96/100 à 100/100 — Boucle de Correction Documentée</div>
-      </div>
+  <!-- CASE 4: PHOTOGRAPHER -->
+  <div class="case-card">
+    <div class="en" lang="en">
+      <div class="case-type">Demonstration Audit · Photography Portfolio</div>
+      <h3>Photographer | Content Audit</h3>
+      <span class="score-badge">Health Score Found: Low — Built to Reach 100</span>
+      <h4>The situation</h4>
+      <p>A talented photographer whose site let the images speak — and left the search engines deaf. Beautiful work, invisible to the machines that bring clients.</p>
+      <h4>What the audit found</h4>
+      <ul class="clist">
+        <li>Thin content on 8 of 9 pages, starving the site of any chance to rank for its own services</li>
+        <li>Images missing alt text across all pages. On a photography site, that is every product invisible to search</li>
+        <li>Duplicate title tags site-wide, making the photographer's own pages compete against each other in Google</li>
+        <li>Titles and descriptions far below the length search results can display</li>
+      </ul>
+      <p>The fix is not more photography. It is letting the work finally speak, with words where the machine needs them and alt text where the art lives.</p>
     </div>
-
-    <div class="case-body">
-      <div class="en" lang="en">
-        <h4>The Challenge</h4>
-        <p>After updating our sitemap to include 14 pages (fixing previously missing core pages), the first full audit showed 96/100 instead of our usual 100/100. Two previously unseen pages were now exposed with structural gaps.</p>
-
-        <h4>Issues Found</h4>
-        <ul>
-          <li><strong>websites.html:</strong> Missing schema markup</li>
-          <li><strong>website-types.html:</strong> Missing schema markup + meta description over 160 characters (177 total)</li>
-        </ul>
-
-        <h4>Solution Applied</h4>
-        <ol>
-          <li>Added <code>Service</code> schema to websites.html with three package offerings ($900, $2800, $3800 CAD)</li>
-          <li>Added <code>WebPage</code> schema to website-types.html with bilingual language tags</li>
-          <li>Trimmed meta description to 127 characters while preserving core message</li>
-          <li>Restored missing "Guide" link in website-types.html navigation</li>
-        </ol>
-
-        <h4>Results (September 18, 2026)</h4>
-        <div class="result-metric">
-          <span class="metric-value">96/100</span>
-          <span class="metric-arrow">→</span>
-          <span class="metric-value perfect">100/100</span>
-        </div>
-        <p>All 15 pages now pass with zero issues. Each step documented with dated audit reports stored locally.</p>
-      </div>
-
-      <div class="fr" lang="fr">
-        <h4>Le Défi</h4>
-        <p>Après avoir mis à jour notre plan de site pour inclure 14 pages (corrigeant des pages principales manquantes), le premier audit complet a affiché 96/100 au lieu de nos habituels 100/100. Deux pages auparavant invisibles étaient maintenant exposées avec des lacunes structurelles.</p>
-
-        <h4>Problèmes Détectés</h4>
-        <ul>
-          <li><strong>websites.html :</strong> Balise schéma manquante</li>
-          <li><strong>website-types.html :</strong> Balise schéma manquante + méta description trop longue (177 caractères)</li>
-        </ul>
-
-        <h4>Solution Appliquée</h4>
-        <ol>
-          <li>Ajout du schéma <code>Service</code> à websites.html avec trois offres de forfait (900 $, 2 800 $, 3 800 $ CA)</li>
-          <li>Ajout du schéma <code>WebPage</code> à website-types.html avec balises linguistiques bilingues</li>
-          <li>Raccourcissement de la méta description à 127 caractères tout en préservant le message principal</li>
-          <li>Restauration du lien manquant « Guide » dans la navigation de website-types.html</li>
-        </ol>
-
-        <h4>Résultats (18 septembre 2026)</h4>
-        <div class="result-metric">
-          <span class="metric-value">96/100</span>
-          <span class="metric-arrow">→</span>
-          <span class="metric-value perfect">100/100</span>
-        </div>
-        <p>Toutes les 15 pages passent maintenant sans aucun problème. Chaque étape documentée avec des rapports d'audit datés stockés localement.</p>
-      </div>
+    <div class="fr" lang="fr">
+      <div class="case-type">Audit de démonstration · Portfolio de photographie</div>
+      <h3>Photographe | Audit de contenu</h3>
+      <span class="score-badge">Score de santé trouvé : Bas — Conçu pour Atteindre 100</span>
+      <h4>La situation</h4>
+      <p>Une photographe talentueuse dont le site laissait les images parler — et rendait les moteurs de recherche sourds. Un beau travail, invisible pour les machines qui apportent les clients.</p>
+      <h4>Ce que l'audit a révélé</h4>
+      <ul class="clist">
+        <li>Contenu étoffé insuffisant sur 8 pages sur 9, privant le site de toute chance de se classer pour ses propres services</li>
+        <li>Des images sans texte alternatif sur toutes les pages. Sur un site de photographie, c'est chaque produit invisible aux recherches</li>
+        <li>Des titres de pages dupliqués partout, faisant compétitionner entre elles les propres pages de la photographe dans Google</li>
+        <li>Titres et descriptions bien en dessous de la longueur que les résultats de recherche peuvent afficher</li>
+      </ul>
+      <p>Le correctif n'est pas plus de photos. C'est de laisser le travail parler enfin, avec des mots là où la machine en a besoin et du texte alternatif là où vit l'art.</p>
     </div>
   </div>
 
-  <div class="en" lang="en">
-    <p style="text-align:center;margin-top:40px;color:#777;font-size:0.92rem;">More case studies added as audits accumulate. Never invented, only measured.</p>
+  <!-- CLOSING NOTE -->
+  <div class="closing-note">
+    <div class="en" lang="en">
+      <p><strong>More case studies added as audits accumulate.</strong> Never invented, only measured.</p>
+    </div>
+    <div class="fr" lang="fr">
+      <p><strong>D'autres études de cas ajoutées à mesure des audits.</strong> Jamais inventées, uniquement mesurées.</p>
+    </div>
   </div>
-  <div class="fr" lang="fr">
-    <p style="text-align:center;margin-top:40px;color:#777;font-size:0.92rem;">D'autres études de cas ajoutées à mesure des audits. Jamais inventées, uniquement mesurées.</p>
+
+  <!-- CTA -->
+  <div class="cta-band">
+    <h3><span class="en" lang="en">What Would Your Score Be?</span><span class="fr" lang="fr">Quel Serait Votre Score ?</span></h3>
+    <p><span class="en" lang="en">Tell us your website. We'll tell you honestly whether we can help — and what your audit would cost.</span><span class="fr" lang="fr">Dites-nous votre site web. On vous dira honnêtement si on peut vous aider — et combien coûterait votre audit.</span></p>
+    <a href="index.html"><span class="en" lang="en">Get Your Free Estimate</span><span class="fr" lang="fr">Obtenez Votre Estimation Gratuite</span></a>
   </div>
 
 </div>
 
 <footer>
-  <p>&copy; 2026 Solutions Marketing VIP - <span class="en" lang="en">Real numbers. Real audits. No stories invented.</span><span class="fr" lang="fr">Vrais chiffres. Vrais audits. Aucune histoire inventée.</span></p>
+  <p>&copy; 2026 Solutions Marketing VIP - <span class="en" lang="en">Case studies. Privacy respected.</span><span class="fr" lang="fr">Études de cas. Vie privée respectée.</span></p>
 </footer>
 
 <script>
