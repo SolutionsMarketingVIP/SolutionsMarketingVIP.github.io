@@ -126,5 +126,133 @@
       <a href="sectors.html"><span class="en" lang="en">Industries</span><span class="fr" lang="fr">Secteurs</span></a>
       <a href="blog-list.html"><span class="en" lang="en">Articles</span><span class="fr" lang="fr">Articles</span></a>
       <a href="case-studies.html"><span class="en" lang="en">Case Studies</span><span class="fr" lang="fr">Études de cas</span></a>
+      <a href="documents.html"><span class="en" lang="en">Documents</span><span class="fr" lang="fr">Documents</span></a>
       <a href="payment.html"><span class="en" lang="en">Payment</span><span class="fr" lang="fr">Paiement</span></a>
-      <button class="toggle-btn" onclick="toggleLang()" id="langBtn" style="background:#B08D3E;color:#fff;border:n
+      <button class="toggle-btn" onclick="toggleLang()" id="langBtn" style="background:#B08D3E;color:#fff;border:none;padding:8px 18px;cursor:pointer;font-weight:bold;border-radius:3px;font-family:Georgia,serif;">FR</button>
+    </nav>
+  </div>
+</header>
+
+<!-- ENGLISH CONTENT -->
+<div class="en" lang="en">
+  <div class="wrap">
+    <h2 class="page-title">Free Guides</h2>
+    <p class="intro">Our honesty-first documents, free to download.
+       Read them whether or not you ever hire us.</p>
+  </div>
+  <div class="wrap docs">
+    <div class="doc">
+      <h4>Client FAQ</h4>
+      <p>14 questions and answers: pricing, method, privacy, what
+         happens if you leave.</p>
+      <a class="dl" href="VIP_FAQ_Client.pdf" download>Download PDF</a>
+    </div>
+    <div class="doc">
+      <h4>The Privacy Advantage</h4>
+      <p>Where your data sits with typical providers compared to us,
+         and how to verify it yourself.</p>
+      <a class="dl" href="VIP_Privacy_Guide.pdf" download>Download PDF</a>
+    </div>
+    <div class="doc">
+      <h4>Honesty Checklist</h4>
+      <p>8 questions to ask any marketing provider before signing
+         anything. Especially us.</p>
+      <a class="dl" href="VIP_Honesty_Checklist.pdf" download>Download PDF</a>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="why-box">
+      <p><strong>Why we give these away:</strong> most free audits are
+      sales pitches built to funnel you into a contract. A document you
+      download owes you nothing. Read the FAQ, check our prices against
+      the market, and hold any provider, including us, to the honesty
+      checklist. If what we measure impresses you, we will still be here
+      with no setup fees and no contract, the way it should be.</p>
+    </div>
+  </div>
+  <div class="faq-line">
+    <p><strong>Common questions:</strong> Do I need to rebuild my website?
+    No. Most fixes happen inside your existing admin. Do the guides cost
+    anything? Nothing, ever, and you keep them. Are they really free of
+    trackers? This page loads nothing from third parties, and neither do
+    the downloads.</p>
+  </div>
+</div>
+
+<!-- FRENCH CONTENT -->
+<div class="fr" lang="fr">
+  <div class="wrap">
+    <h2 class="page-title">Guides gratuits</h2>
+    <p class="intro">Nos documents fondés sur l'honnêteté, en libre
+       téléchargement. À lire que vous nous engagiez ou non.</p>
+  </div>
+  <div class="wrap docs">
+    <div class="doc">
+      <h4>FAQ clients</h4>
+      <p>14 questions et réponses : prix, méthode, confidentialité,
+         ce qui arrive si vous partez.</p>
+      <a class="dl" href="VIP_FAQ_Client_FR.pdf" download>Télécharger le PDF</a>
+    </div>
+    <div class="doc">
+      <h4>L'avantage confidentialité</h4>
+      <p>Où vos données se trouvent chez les fournisseurs habituels
+         comparativement à chez nous, et comment le vérifier vous-même.</p>
+      <a class="dl" href="VIP_Privacy_Guide_FR.pdf" download>Télécharger le PDF</a>
+    </div>
+    <div class="doc">
+      <h4>Liste de contrôle d'honnêteté</h4>
+      <p>8 questions à poser à tout fournisseur en marketing avant
+         de signer quoi que ce soit. Surtout à nous.</p>
+      <a class="dl" href="VIP_Honesty_Checklist_FR.pdf" download>Télécharger le PDF</a>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="why-box">
+      <p><strong>Pourquoi nous les offrons :</strong> la plupart des
+      audits gratuits sont des argumentaires de vente conçus pour vous
+      enfermer dans un contrat. Un document que vous téléchargez ne vous
+      doit rien. Lisez la FAQ, comparez nos prix au marché et demandez à
+      tout fournisseur, nous inclus, de répondre à la liste de contrôle.
+      Si ce que nous mesurons vous impressionne, nous serons toujours ici,
+      sans frais d'installation ni contrat, comme il se doit.</p>
+    </div>
+  </div>
+  <div class="faq-line">
+    <p><strong>Questions fréquentes :</strong> Faut-il refaire mon site
+    web? Non. La plupart des correctifs se font dans votre admin existant.
+    Les guides coûtent-ils quelque chose? Rien, jamais, et vous les
+    gardez. Sont-ils vraiment sans traceurs? Cette page ne charge
+    rien de tiers, et les téléchargements non plus.</p>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <p>Solutions Marketing VIP · Montréal, Québec</p>
+    <p style="margin-top:6px">This site uses no cookies, no trackers, and loads nothing from third parties.</p>
+    <p style="margin-top:6px"><a href="index.html"><span class="en" lang="en">Back</span><span class="fr" lang="fr">Retour</span></a></p>
+  </div>
+</footer>
+
+<script>
+function toggleLang() {
+  var b = document.body;
+  var btn = document.getElementById('langBtn');
+  if (b.classList.contains('lang-en')) {
+    b.classList.remove('lang-en'); b.classList.add('lang-fr');
+    btn.textContent = 'EN';
+  } else {
+    b.classList.remove('lang-fr'); b.classList.add('lang-en');
+    btn.textContent = 'FR';
+  }
+}
+
+var header = document.getElementById("site-header");
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 40) header.classList.add("condensed");
+  else header.classList.remove("condensed");
+}, { passive: true });
+</script>
+
+</body>
+</html>
