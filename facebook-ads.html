@@ -4,12 +4,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Facebook Ads Management | Solutions Marketing VIP</title>
-<meta name="description" content="Facebook Ads management for Montreal businesses. $450/month, no contracts, privacy-first approach. Clear prices, no lock-in.">
+<meta name="description" content="Facebook Ads management for Montreal businesses. $450/month, no contracts, privacy-first approach. Clear prices, no lock-in. Gestion publicitaire Facebook Montréal.">
 <style>
  body { font-family: Georgia, serif; margin: 0; background: #f5f2ea; }
  header { background: #23252B; color: #fff; padding: 28px 24px; }
  header h1 { margin: 0; font-size: 24px; letter-spacing: 1px; }
  header p { margin: 6px 0 0; color: #D9C99A; font-size: 13px; }
+ .lang-switch { margin-top: 14px; }
+ .lang-switch button { font-family: Georgia, serif; font-size: 13px;
+   background: #23252B; color: #D9C99A; border: 1px solid #B08D3E;
+   padding: 5px 14px; cursor: pointer; margin-right: 6px; }
+ .lang-switch button.active { background: #B08D3E; color: #fff; }
  main { max-width: 760px; margin: 20px auto; padding: 0 14px 40px; }
  h2 { color: #B08D3E; border-bottom: 2px solid #B08D3E;
       padding-bottom: 4px; margin-top: 30px; }
@@ -22,144 +27,310 @@
  .price-box { background: #fff; border: 2px solid #B08D3E;
               padding: 18px; margin: 16px 0; }
  .price-large { font-size: 22px; font-weight: bold; color: #B08D3E; }
- .meta { color: #8A8A8A; font-size: 13px; margin: 0 0 8px; }
- .callout { font-family: "Courier New", monospace; font-size: 13px;
-          line-height: 1.5; background: #fff; border-left: 3px solid #B08D3E;
-          padding: 12px 14px; margin: 14px 0; }
  blockquote { background: #F2EBDC; border-left: 4px solid #B08D3E;
               margin: 18px 0; padding: 14px 16px; font-style: italic; }
- footer { text-align: center; color: #8A8A8A; font-size: 12px;
-          padding: 20px; }
- .nav-link { display: inline-block; margin: 20px 0 0; 
+ ul { padding-left: 22px; }
+ footer { text-align: center; color: #8A8A8A; font-size: 12px; padding: 20px; }
+ .nav-link { display: inline-block; margin: 20px 0 0;
              color: #B08D3E; text-decoration: none; }
  .nav-link:hover { text-decoration: underline; }
+ .lang-fr { display: none; }
+ body.fr .lang-en { display: none; }
+ body.fr .lang-fr { display: block; }
+ body.fr .lang-fr.hidden-block { display: none; }
 </style>
 </head>
 <body>
 <header>
 <h1>SOLUTIONS MARKETING VIP</h1>
-<p>Facebook Ads Management — Montréal</p>
+<p><span class="lang-en">Facebook Ads Management — Montréal</span>
+<span class="lang-fr" style="display:none">Gestion publicitaire Facebook — Montréal</span></p>
+<div class="lang-switch">
+  <button type="button" id="btn-en" class="active" onclick="setLang('en')">English</button>
+  <button type="button" id="btn-fr" onclick="setLang('fr')">Français</button>
+</div>
 </header>
 <main>
 
+<!-- ============ ENGLISH ============ -->
+<div class="lang-en">
+
 <h2>Facebook Ads, Done Our Way</h2>
-<p>We've been asked for years to run Facebook Ads too. The answer was no — 
+<p>We've been asked for years to run Facebook Ads too. The answer was no —
 because doing it honestly conflicted with how we work. Until now.</p>
 
-<p><strong>What's different:</strong> We solved the tracker problem before 
-launching. Most agencies never bother. Read below — this is why we waited, 
+<p><strong>What's different:</strong> We solved the tracker problem before
+launching. Most agencies never bother. Read below — this is why we waited,
 and why you'll never see hidden pixels or lock-in contracts.</p>
 
 <h2>Pricing (Clear, No Surprises)</h2>
 
 <div class="price-box">
 <div class="price-large">$450 / month</div>
-<p>Management fee only. Ad budget goes directly from your card to Meta. 
+<p>Management fee only. Ad budget goes directly from your card to Meta.
 We never touch your money.</p>
 </div>
 
 <div class="price-box">
 <div class="price-large">$600 / month</div>
-<p>Recommended minimum ad spend. Below this, the system never learns 
+<p>Recommended minimum ad spend. Below this, the system never learns
 properly — you pay us to watch a stalled campaign.</p>
 </div>
 
 <p><strong>No setup fee</strong> (market norm: $850+)<br>
 <strong>No 12-month contract</strong> (ours: 60 days' written notice)<br>
-<strong>Your data stays yours</strong> — your ad account, your pixel, your audiences. Leave and take it all with you.</p>
+<strong>Your data stays yours</strong> — your ad account, your pixel, your
+audiences. Leave and take it all with you.</p>
 
 <h2>How Facebook Ads Work (Plain Language)</h2>
-<p>If you don't know the tech, this explains what you're buying — and why 
+<p>If you don't know the tech, this explains what you're buying — and why
 week 3 looks broken even when it's not.</p>
 
 <h3>The Algorithm as a New Employee</h3>
-<p>Think of Meta's system as a brilliant new hire who's never met your 
-customers. On day one, they don't know who to show your ad to. So they start 
+<p>Think of Meta's system as a brilliant new hire who's never met your
+customers. On day one, they don't know who to show your ad to. So they start
 guessing.</p>
 
-<div class="callout">
-<strong>Week 1:</strong> They try wildly different people. Some react, some 
-don't. Notes taken.<br>
-<strong>Week 2–3:</strong> The guessing gets more expensive. Results look 
-unstable. This is <em>normal</em> — they're still studying.<br>
-<strong>Week 4–6:</strong> Around 50 leads' worth of data later, they finally 
-know your customer. Costs drop, stability improves.<br>
-<strong>Month 2–3:</strong> The algorithm graduates from student to expert. 
-Same budget, better results.
-</div>
+<table>
+<tr><td>Week 1</td><td>They try wildly different people. Some react, some
+don't. Notes taken.</td></tr>
+<tr><td>Week 2–3</td><td>The guessing gets more expensive. Results look
+unstable. This is <em>normal</em> — they're still studying.</td></tr>
+<tr><td>Week 4–6</td><td>Around 50 leads' worth of data later, they finally
+know your customer. Costs drop, stability improves.</td></tr>
+<tr><td>Month 2–3</td><td>The algorithm graduates from student to expert.
+Same budget, better results.</td></tr>
+</table>
 
-<p>This isn't a metaphor. This IS how delivery optimization works. We call it 
+<p>This isn't a metaphor. This IS how delivery optimization works. We call it
 the <strong>Learning Phase</strong>.</p>
 
 <h3>Why Week 3 Is When People Quit (And Shouldn't)</h3>
-<p>Here's the curve most campaigns follow if funded properly:</p>
-
 <table>
 <tr><td>Week 1</td><td>Low costs (easy guesses exhaust quickly)</td></tr>
 <tr><td>Week 2</td><td>Rising (deepest exploration begins)</td></tr>
-<tr><td>Week 3</td><td><strong>PEAK PAIN</strong> (maximum guessing — ugliest it ever looks)</td></tr>
+<tr><td>Week 3</td><td><strong>PEAK PAIN</strong> (maximum guessing —
+ugliest it ever looks)</td></tr>
 <tr><td>Week 4</td><td>Falling (algorithm has your map)</td></tr>
 <tr><td>Week 6</td><td>Better than launch</td></tr>
 <tr><td>Week 8</td><td>Efficient</td></tr>
 </table>
 
 <blockquote>
-<strong>The lesson:</strong> Week 3 is when every successful campaign looked 
-its worst before it got better. If you shut down at week 3, you paid full 
-tuition and left before the exam. We compare Month 1 to Month 3, never Week 1 
+<strong>The lesson:</strong> Week 3 is when every successful campaign looked
+its worst before it got better. If you shut down at week 3, you paid full
+tuition and left before the exam. We compare Month 1 to Month 3, never Week 1
 to Week 2.
 </blockquote>
 
 <h3>Why $5/Day Doesn't Work</h3>
-<p>Learning costs roughly 50 leads' worth of exploration. At $15 per lead, 
+<p>Learning costs roughly 50 leads' worth of exploration. At $15 per lead,
 that's $750 of tuition.</p>
 
-<p>At $5/day, it would take 150 days to graduate. You'd quit at week 3. At 
-$20/day, it takes ~37 days — achievable. Below $600/month, we decline the 
+<p>At $5/day, it would take 150 days to graduate. You'd quit at week 3. At
+$20/day, it takes ~37 days — achievable. Below $600/month, we decline the
 work because we refuse to manufacture the "ads don't work" experience.</p>
 
 <h2>Our Privacy-First Approach</h2>
-<p>You chose us because we don't do trackers. Ads require them. Here's how we 
+<p>You chose us because we don't do trackers. Ads require them. Here's how we
 resolve that tension without compromising either value:</p>
 
 <div class="highlight">
 <h3>The One-Page Rule</h3>
-<p>The Meta Pixel goes on <strong>ONE page only</strong>: the campaign landing 
-page built for that offer. Your main site — where your organic rankings live 
+<p>The Meta Pixel goes on <strong>ONE page only</strong>: the campaign landing
+page built for that offer. Your main site — where your organic rankings live
 — stays completely tracker-free, same as always.</p>
-<p>Your visitors are told the pixel is there (disclosure banner). You sign 
-consent. The day you stop running ads, the pixel comes out and leaves nothing 
-behind. Privacy is infrastructure — even when we're briefly running a wire 
+<p>Your visitors are told the pixel is there (disclosure banner). You sign
+consent. The day you stop running ads, the pixel comes out and leaves nothing
+behind. Privacy is infrastructure — even when we're briefly running a wire
 through one room.</p>
 </div>
 
 <h3>What You Get Monthly</h3>
 <ul>
-<li><strong>Campaign setup and management</strong> — one objective, chosen 
+<li><strong>Campaign setup and management</strong> — one objective, chosen
 based on what actually grows your business</li>
-<li><strong>Geo-targeted to your real market</strong> — Montreal, Laval, 
+<li><strong>Geo-targeted to your real market</strong> — Montreal, Laval,
 Longueuil, the South Shore. Your neighbours, not the whole planet</li>
-<li><strong>New creative every month</strong> — tested angles, plain language, 
-no inflated promises</li>
-<li><strong>Bilingual ads</strong> — English and French audiences get equal 
+<li><strong>New creative every month</strong> — tested angles, plain
+language, no inflated promises</li>
+<li><strong>Bilingual ads</strong> — English and French audiences get equal
 treatment</li>
-<li><strong>One-page monthly report</strong> — spend, reach, clicks, leads, 
+<li><strong>One-page monthly report</strong> — spend, reach, clicks, leads,
 cost per lead. No dashboard maze</li>
 </ul>
 
 <h2>Next Steps</h2>
-<p>We'll tell you honestly whether ads make sense for you. Same as we always 
+<p>We'll tell you honestly whether ads make sense for you. Same as we always
 have.</p>
 
-<p>Email: <a href="mailto:solutions.marketing.vip@proton.me">solutions.marketing.vip@proton.me</a><br>
-Area served: Montréal, Laval, Longueuil, South Shore</p>
+</div><!-- end lang-en -->
 
-<a href="services.html" class="nav-link">← Back to All Services</a>
+<!-- ============ FRANÇAIS ============ -->
+<div class="lang-fr">
+
+<h2>Publicités Facebook, à notre façon</h2>
+<p>Depuis des années, on nous demande de gérer aussi des publicités Facebook.
+La réponse était non — parce que le faire honnêtement entrait en conflit avec
+notre façon de travailler. Jusqu'à maintenant.</p>
+
+<p><strong>Ce qui est différent :</strong> nous avons réglé le problème des
+traceurs avant de lancer. La plupart des agences ne s'en préoccupent jamais.
+Lisez ce qui suit — c'est pourquoi nous avons attendu, et pourquoi vous ne
+verrez jamais de pixels cachés ni de contrats verrouillés.</p>
+
+<h2>Tarification (claire, sans surprises)</h2>
+
+<div class="price-box">
+<div class="price-large">450 $ / mois</div>
+<p>Frais de gestion seulement. Le budget publicitaire passe directement de
+votre carte à Meta. Nous ne touchons jamais à votre argent.</p>
+</div>
+
+<div class="price-box">
+<div class="price-large">600 $ / mois</div>
+<p>Budget publicitaire minimum recommandé. En dessous, le système n'apprend
+jamais correctement — vous nous payeriez pour surveiller une campagne
+immobilisée.</p>
+</div>
+
+<p><strong>Aucun frais d'installation</strong> (norme du marché :
+850 $ et plus)<br>
+<strong>Aucun contrat de 12 mois</strong> (le nôtre : préavis écrit de
+60 jours)<br>
+<strong>Vos données restent les vôtres</strong> — votre compte publicitaire,
+votre pixel, vos audiences. Partez et emportez tout.</p>
+
+<h2>Comment fonctionnent les publicités Facebook (en langage clair)</h2>
+<p>Si la technologie n'est pas votre monde, voici ce que vous achetez — et
+pourquoi la semaine 3 semble brisée même quand tout va bien.</p>
+
+<h3>L'algorithme comme nouvel employé</h3>
+<p>Imaginez le système de Meta comme un nouvel employé brillant qui n'a jamais
+rencontré vos clients. Le premier jour, il ne sait pas à qui montrer votre
+annonce. Alors il commence à deviner.</p>
+
+<table>
+<tr><td>Semaine 1</td><td>Il essaie des gens très variés. Certains réagissent,
+d'autres non. Notes prises.</td></tr>
+<tr><td>Semaines 2–3</td><td>Les devinettes coûtent plus cher. Les résultats
+semblent instables. C'est <em>normal</em> — il étudie encore.</td></tr>
+<tr><td>Semaines 4–6</td><td>Après environ 50 prospects de données, il connaît
+enfin votre clientèle. Les coûts baissent, la stabilité s'améliore.</td></tr>
+<tr><td>Mois 2–3</td><td>L'algorithme passe d'étudiant à expert. Même budget,
+meilleurs résultats.</td></tr>
+</table>
+
+<p>Ce n'est pas une métaphore. C'est AINSI que l'optimisation fonctionne.
+Nous appelons cela la <strong>phase d'apprentissage</strong>.</p>
+
+<h3>Pourquoi la semaine 3 est le moment où les gens abandonnent (à tort)</h3>
+<table>
+<tr><td>Semaine 1</td><td>Coûts bas (les devinettes faciles s'épuisent vite)</td></tr>
+<tr><td>Semaine 2</td><td>En hausse (l'exploration la plus profonde commence)</td></tr>
+<tr><td>Semaine 3</td><td><strong>SOMMET DE LA DOULEUR</strong> (devinettes
+maximales — le plus laid que ce sera jamais)</td></tr>
+<tr><td>Semaine 4</td><td>En baisse (l'algorithme a votre carte)</td></tr>
+<tr><td>Semaine 6</td><td>Mieux qu'au lancement</td></tr>
+<tr><td>Semaine 8</td><td>Efficace</td></tr>
+</table>
+
+<blockquote>
+<strong>La leçon :</strong> la semaine 3 est le moment où chaque campagne
+réussie a eu l'air de son pire avant de s'améliorer. Si vous arrêtez à la
+semaine 3, vous avez payé la scolarité au complet et vous êtes parti avant
+l'examen. Nous comparons le mois 1 au mois 3, jamais la semaine 1 à la
+semaine 2.
+</blockquote>
+
+<h3>Pourquoi 5 $/jour ne fonctionne pas</h3>
+<p>L'apprentissage coûte environ l'équivalent de 50 prospects d'exploration.
+À 15 $ le prospect, c'est 750 $ de scolarité.</p>
+
+<p>À 5 $/jour, il faudrait 150 jours pour diplômer. Vous abandonneriez à la
+semaine 3. À 20 $/jour, ça prend environ 37 jours — atteignable. En dessous de
+600 $/mois, nous refusons le mandat, parce que nous refusons de fabriquer
+l'expérience « les publicités ne fonctionnent pas ».</p>
+
+<h2>Notre approche axée sur la vie privée</h2>
+<p>Vous nous avez choisis parce que nous n'utilisons pas de traceurs. Les
+publicités en exigent. Voici comment nous résolvons cette tension sans rien
+compromettre :</p>
+
+<div class="highlight">
+<h3>La règle de la page unique</h3>
+<p>Le pixel Meta est installé sur <strong>UNE SEULE page</strong> : la page
+d'atterrissage construite pour cette offre. Votre site principal — là où vos
+positions organiques vivent — demeure entièrement sans traceur, comme
+toujours.</p>
+<p>Vos visiteurs sont informés de sa présence (bandeau de divulgation). Vous
+signez un consentement. Le jour où vous arrêtez les publicités, le pixel est
+retiré et ne laisse rien derrière. La vie privée, c'est une infrastructure —
+même quand on tire brièvement un fil dans une pièce.</p>
+</div>
+
+<h3>Ce que vous recevez chaque mois</h3>
+<ul>
+<li><strong>Création et gestion de campagnes</strong> — un objectif, choisi
+selon ce qui fait grandir votre entreprise</li>
+<li><strong>Ciblage géographique réel</strong> — Montréal, Laval, Longueuil,
+la Rive-Sud. Vos voisins, pas la planète entière</li>
+<li><strong>Nouvelle création chaque mois</strong> — des angles testés, en
+langage clair, sans promesses gonflées</li>
+<li><strong>Publicités bilingues</strong> — les auditoires anglais et
+français sont traités d'égal à égal</li>
+<li><strong>Rapport mensuel d'une page</strong> — dépenses, portée, clics,
+prospects, coût par prospect. Pas de labyrinthe</li>
+</ul>
+
+<h2>Prochaines étapes</h2>
+<p>Nous vous dirons honnêtement si les publicités ont du sens pour vous.
+Comme toujours.</p>
+
+</div><!-- end lang-fr -->
+
+<p><a href="mailto:solutions.marketing.vip@proton.me">solutions.marketing.vip@proton.me</a><br>
+<span class="lang-en">Area served: Montréal, Laval, Longueuil, South Shore</span>
+<span class="lang-fr" style="display:none">Région desservie : Montréal, Laval, Longueuil, Rive-Sud</span></p>
+
+<a href="services.html" class="nav-link">
+<span class="lang-en">← Back to All Services</span>
+<span class="lang-fr" style="display:none">← Retour aux services</span>
+</a>
 
 </main>
 <footer>
 Solutions Marketing VIP — Confidential · Prepared for Montréal small businesses<br>
 No setup fees · No 12-month lock-in · Your data stays yours
 </footer>
+
+<script>
+function setLang(lang) {
+  var fr = lang === 'fr';
+  document.body.className = fr ? 'fr' : '';
+  document.documentElement.lang = lang;
+  document.getElementById('btn-en').className = fr ? '' : 'active';
+  document.getElementById('btn-fr').className = fr ? 'active' : '';
+  // Switch inline spans (used inside tables/links where display:block would break layout)
+  var spans = document.querySelectorAll('.lang-fr');
+  for (var i = 0; i < spans.length; i++) {
+    if (spans[i].tagName === 'SPAN') {
+      spans[i].style.display = fr ? 'inline' : 'none';
+    }
+  }
+  var spansEn = document.querySelectorAll('.lang-en');
+  for (var j = 0; j < spansEn.length; j++) {
+    if (spansEn[j].tagName === 'SPAN') {
+      spansEn[j].style.display = fr ? 'none' : 'inline';
+    }
+  }
+  // Remember the choice for this visit only (session, not permanent tracking)
+  if (sessionStorage) sessionStorage.setItem('vip_lang', lang);
+}
+// Restore choice if set earlier this session
+if (sessionStorage && sessionStorage.getItem('vip_lang')) {
+  setLang(sessionStorage.getItem('vip_lang'));
+}
+</script>
 </body>
 </html>
