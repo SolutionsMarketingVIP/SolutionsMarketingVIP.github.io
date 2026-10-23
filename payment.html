@@ -488,11 +488,11 @@
   <div class="shop-section">
     <div class="en" lang="en">
       <h3>Recurring Plans — Card Payment</h3>
-      <p>Our recurring services, billed automatically through Square. Cancel by written notice — 30 days standard, 60 days for Local Dominance. No lock-in, no penalties.</p>
+      <p>Our recurring services, billed automatically through Square. Cancel by written notice — 30 days standard, 60 days for Local Dominance and Facebook Ads. No lock-in, no penalties.</p>
     </div>
     <div class="fr" lang="fr">
       <h3>Forfaits Récurrents — Paiement par Carte</h3>
-      <p>Nos services récurrents, facturés automatiquement via Square. Résiliation par préavis écrit — 30 jours standard, 60 jours pour la Domination Locale. Aucun enfermement, aucune pénalité.</p>
+      <p>Nos services récurrents, facturés automatiquement via Square. Résiliation par préavis écrit — 30 jours standard, 60 jours pour la Domination Locale et les Publicités Facebook. Aucun enfermement, aucune pénalité.</p>
     </div>
 
     <!-- Essential Care -->
@@ -533,6 +533,20 @@
         <div class="item-price">$349<span class="en" lang="en">/mo</span><span class="fr" lang="fr">/mois</span></div>
         <div class="btn-row">
           <a class="sq-buy" href="https://square.link/u/w7zdisUM?src=embed" target="_blank" rel="noopener"><span class="en" lang="en">Subscribe</span><span class="fr" lang="fr">S'abonner</span></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Facebook Ads Management -->
+    <div class="buy-card">
+      <div class="buy-row">
+        <div>
+          <h4><span class="en" lang="en">Facebook Ads Management</span><span class="fr" lang="fr">Gestion Publicitaire Facebook</span></h4>
+          <div class="item-desc"><span class="en" lang="en">Management fee only — your ad budget goes straight from your card to Meta. We never touch your money. 60 days' notice. Recommended ad spend: $600+/month.</span><span class="fr" lang="fr">Frais de gestion seulement — votre budget publicitaire va directement de votre carte à Meta. Nous ne touchons jamais votre argent. Préavis de 60 jours. Budget publicitaire recommandé : 600 $+/mois.</span></div>
+        </div>
+        <div class="item-price">$450<span class="en" lang="en">/mo</span><span class="fr" lang="fr">/mois</span></div>
+        <div class="btn-row">
+          <a class="sq-buy" href="https://square.link/u/VEGR9IZR?src=embed" target="_blank" rel="noopener"><span class="en" lang="en">Subscribe</span><span class="fr" lang="fr">S'abonner</span></a>
         </div>
       </div>
     </div>
@@ -594,6 +608,7 @@
       <option value="essential">Maintenance Essential — $99/mo</option>
       <option value="vip">Maintenance VIP — $199/mo</option>
       <option value="dominance">Local Dominance — $349/mo</option>
+      <option value="fbads">Facebook Ads Management — $450/mo</option>
       <option value="monitoring">Monitoring &amp; Repair — $650/mo</option>
     </select>
 
@@ -674,11 +689,15 @@
           <td><span class="en" lang="en">Local Dominance Bundle</span><span class="fr" lang="fr">Pack Domination Locale</span><span class="grid-tag">Recurring</span></td>
           <td class="price">$349/mo</td>
         </tr>
+        <tr class="recurring">
+          <td><span class="en" lang="en">Facebook Ads Management</span><span class="fr" lang="fr">Gestion Publicitaire Facebook</span><span class="grid-tag">Recurring</span></td>
+          <td class="price">$450/mo</td>
+        </tr>
       </tbody>
     </table>
     <p class="tax-note" style="margin-top:14px;">
-      <span class="en" lang="en">GST/QST added where applicable by law. Web projects: 50% deposit reserves your start date, balance before launch. Recurring services: cancel by written notice (30 days standard, 60 days for Local Dominance).</span>
-      <span class="fr" lang="fr">TPS/TVQ ajoutées où applicable par la loi. Projets web : acompte de 50 % pour réserver votre date de début, solde avant la mise en ligne. Services récurrents : résiliation par préavis écrit (30 jours standard, 60 jours pour le Pack Domination Locale).</span>
+      <span class="en" lang="en">GST/QST added where applicable by law. Web projects: 50% deposit reserves your start date, balance before launch. Recurring services: cancel by written notice (30 days standard, 60 days for Local Dominance and Facebook Ads). Facebook Ads: management fee only — ad budget paid directly to Meta, $600/month recommended minimum.</span>
+      <span class="fr" lang="fr">TPS/TVQ ajoutées où applicable par la loi. Projets web : acompte de 50 % pour réserver votre date de début, solde avant la mise en ligne. Services récurrents : résiliation par préavis écrit (30 jours standard, 60 jours pour le Pack Domination Locale et les Publicités Facebook). Publicités Facebook : frais de gestion seulement — budget publicitaire payé directement à Meta, minimum recommandé de 600 $/mois.</span>
     </p>
   </div>
 
@@ -746,6 +765,7 @@ var VIP_PLAN_PRICES = {
   essential:  [99,  "mo"],
   vip:        [199, "mo"],
   dominance:  [349, "mo"],
+  fbads:      [450, "mo"],
   monitoring: [650, "mo"]
 };
 
