@@ -186,6 +186,83 @@
   body.lang-fr .en { display: none; }
   body.lang-fr .fr { display: block; }
 
+  /* ===== VIP PROMO SYSTEM ===== */
+  .vip-banner {
+    background: var(--gold); color: #fff; text-align: center;
+    padding: 18px 24px; border-radius: 5px; margin-bottom: 26px;
+    box-shadow: 0 6px 18px rgba(176,141,62,0.4);
+    font-size: 1rem;
+  }
+  .vip-banner .code-chip {
+    display: inline-block; background: var(--dark); color: var(--gold-light);
+    padding: 4px 14px; border-radius: 3px; font-family: Arial, sans-serif;
+    font-weight: bold; margin-top: 8px; letter-spacing: 1px;
+  }
+  .promo-box {
+    background: #fff; border: 1px solid #D8CFBA;
+    border-left: 5px solid var(--gold); border-radius: 5px;
+    padding: 30px 28px; margin-bottom: 26px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  }
+  .promo-box h3 { color: var(--dark); font-size: 1.35rem; margin-bottom: 6px; }
+  .promo-box p.intro { font-size: 0.95rem; margin-bottom: 4px; }
+  .promo-box label {
+    display: block; font-size: 0.82rem; margin: 16px 0 5px;
+    color: var(--dark); font-weight: bold; font-family: Arial, sans-serif;
+    letter-spacing: 1px; text-transform: uppercase;
+  }
+  .promo-box input {
+    width: 100%; padding: 11px 13px; font-size: 1rem;
+    border: 1px solid #D8CFBA; border-radius: 3px;
+    font-family: inherit; background: #fff; color: var(--text);
+    text-transform: uppercase; letter-spacing: 1px;
+  }
+  .promo-box input:focus {
+    outline: none; border-color: var(--gold);
+    box-shadow: 0 0 0 3px rgba(176,141,62,0.18);
+  }
+  .calc-btn {
+    margin-top: 20px; background: var(--dark); color: var(--gold-light);
+    border: none; padding: 13px 30px; border-radius: 5px;
+    font-weight: bold; font-size: 1rem; cursor: pointer;
+    font-family: inherit; transition: background 0.25s ease, color 0.25s ease;
+  }
+  .calc-btn:hover { background: #000; color: #fff; }
+  .promo-result {
+    margin-top: 18px; padding: 15px 18px; border-radius: 5px;
+    font-size: 0.97rem; display: none;
+  }
+  .promo-result.ok {
+    display: block; background: rgba(176,141,62,0.12);
+    border: 1px solid var(--gold); color: var(--dark);
+  }
+  .promo-result.bad {
+    display: block; background: rgba(170,50,50,0.07);
+    border: 1px solid #a33; color: #7a2222;
+  }
+
+  /* ===== SUBSCRIBE BUTTON ===== */
+  .sub-cta {
+    margin-top: 22px; padding-top: 20px; border-top: 1px solid #EAE3D2;
+    display: flex; align-items: center; flex-wrap: wrap; gap: 14px;
+  }
+  .sq-buy {
+    display: inline-block; background: var(--gold); color: #fff;
+    padding: 12px 26px; border-radius: 5px; text-decoration: none;
+    font-weight: bold; font-size: 0.98rem;
+    font-family: Arial, sans-serif;
+    transition: background 0.25s ease;
+  }
+  .sq-buy:hover { background: #8a6d2b; color: #fff; }
+  .pay-link {
+    color: var(--gold); font-size: 0.9rem; text-decoration: underline;
+  }
+  .pay-link:hover { color: #8a6d2b; }
+  .cards-note {
+    font-size: 0.83rem; color: #999; margin-top: 8px;
+    font-family: Arial, sans-serif;
+  }
+
   @keyframes fadeInUp {
     from { opacity: 0; transform: translateY(20px); }
     to   { opacity: 1; transform: translateY(0); }
@@ -197,6 +274,10 @@
   @media (prefers-reduced-motion: reduce) {
     .service-card { animation: none; }
     html { scroll-behavior: auto; }
+  }
+  @media (max-width: 480px) {
+    .calc-btn { width: 100%; }
+    .sq-buy { width: 100%; text-align: center; }
   }
 </style>
 </head>
@@ -236,6 +317,9 @@
 
 <div class="content">
 
+  <!-- SEASONAL PROMO BANNER (auto-updates by date) -->
+  <div class="vip-banner" id="promoBanner"></div>
+
   <!-- PRICING CARD -->
   <div class="service-card">
     <div class="en" lang="en">
@@ -249,6 +333,11 @@
         <li><strong>No 12-month contract</strong> (ours: 60 days' written notice)</li>
         <li><strong>Your data stays yours.</strong> Your ad account, your pixel, your audiences. Leave and take it all with you.</li>
       </ul>
+      <div class="sub-cta">
+        <a class="sq-buy" href="https://square.link/u/VEGR9IZR?src=embed" target="_blank" rel="noopener">Subscribe — $450/month</a>
+        <a class="pay-link" href="payment.html">All payment options →</a>
+      </div>
+      <p class="cards-note">Secure checkout handled by Square. GST/QST added where applicable by law.</p>
     </div>
     <div class="fr" lang="fr">
       <h3>Tarification (claire, sans surprises)</h3>
@@ -261,7 +350,27 @@
         <li><strong>Aucun contrat de 12 mois</strong> (le nôtre : préavis écrit de 60 jours)</li>
         <li><strong>Vos données restent les vôtres.</strong> Votre compte publicitaire, votre pixel, vos audiences. Partez et emportez tout.</li>
       </ul>
+      <div class="sub-cta">
+        <a class="sq-buy" href="https://square.link/u/VEGR9IZR?src=embed" target="_blank" rel="noopener">S'abonner — 450 $/mois</a>
+        <a class="pay-link" href="payment.html">Toutes les options de paiement →</a>
+      </div>
+      <p class="cards-note">Paiement sécurisé traité par Square. TPS/TVQ ajoutées où applicable par la loi.</p>
     </div>
+  </div>
+
+  <!-- PROMO CODE CALCULATOR (Facebook Ads only) -->
+  <div class="promo-box">
+    <h3><span class="en" lang="en">Check Your Promo Price</span><span class="fr" lang="fr">Vérifiez Votre Prix Promo</span></h3>
+    <p class="intro"><span class="en" lang="en">Enter the promo code from the banner above and see your discounted Facebook Ads management price instantly.</span><span class="fr" lang="fr">Entrez le code promo de la bannière ci-dessus et voyez instantanément votre prix réduit pour la gestion publicitaire Facebook.</span></p>
+
+    <label><span class="en" lang="en">Promo code</span><span class="fr" lang="fr">Code promo</span></label>
+    <input type="text" id="promoInput" placeholder="NEWYEAR15" autocomplete="off">
+
+    <button class="calc-btn" onclick="checkPromo()">
+      <span class="en" lang="en">Calculate My Price</span><span class="fr" lang="fr">Calculer Mon Prix</span>
+    </button>
+
+    <div class="promo-result" id="promoResult"></div>
   </div>
 
   <!-- HOW IT WORKS CARD -->
@@ -380,6 +489,7 @@
 </footer>
 
 <script>
+/* ===== LANGUAGE TOGGLE ===== */
 function toggleLang() {
   var b = document.body;
   var btn = document.getElementById('langBtn');
@@ -390,13 +500,103 @@ function toggleLang() {
     b.classList.remove('lang-fr'); b.classList.add('lang-en');
     btn.textContent = 'FR';
   }
+  renderPromoBanner();
+  renderPromoResult();
 }
 
+/* ===== STICKY CONDENSING HEADER ===== */
 var header = document.getElementById("site-header");
 window.addEventListener("scroll", function () {
   if (window.scrollY > 40) header.classList.add("condensed");
   else header.classList.remove("condensed");
 }, { passive: true });
+
+/* ===== VIP PROMO SYSTEM =====
+   Same campaigns as payment.html. Calculator is fixed to
+   Facebook Ads management: $450/month.
+*/
+var VIP_CAMPAIGNS = [
+  { m: [0, 1],  code: "NEWYEAR15",     pct: 15, en: "<strong>New Year, New Site</strong> — 15% off everything until January 31!", fr: "<strong>Nouvelle Année, Nouveau Site</strong> — 15 % de rabais jusqu'au 31 janvier !" },
+  { m: [1],     code: "LOVELOCAL10",   pct: 10, en: "<strong>Valentine's Special</strong> — 10% off for florists, restaurants &amp; salons until Feb 12!", fr: "<strong>Spécial St-Valentin</strong> — 10 % de rabais pour fleuristes, restaurants et salons jusqu'au 12 février !" },
+  { m: [2, 3],  code: "SPRINGCLEAN20", pct: 20, en: "<strong>Spring Cleaning</strong> — 20% off Local Dominance until April 15!", fr: "<strong>Grand Ménage du Printemps</strong> — 20 % de rabais sur la Domination Locale jusqu'au 15 avril !" },
+  { m: [4, 5],  code: "TERRASSE15",    pct: 15, en: "<strong>Terrasse Season</strong> — 15% off packages until June 15!", fr: "<strong>Saison des Terrasses</strong> — 15 % de rabais sur les forfaits jusqu'au 15 juin !" },
+  { m: [6, 7],  code: "BUILDNOW10",    pct: 10, en: "<strong>Summer Build</strong> — 10% off + fast delivery until August 15!", fr: "<strong>Construction d'Été</strong> — 10 % de rabais + livraison rapide jusqu'au 15 août !" },
+  { m: [8],     code: "RENTREE20",     pct: 20, en: "<strong>La Rentrée</strong> — first month of VIP Care free in September!", fr: "<strong>La Rentrée</strong> — premier mois de Soins VIP gratuit en septembre !" },
+  { m: [9, 10], code: "BLACKVIP25",    pct: 25, en: "<strong>Black Friday</strong> — our deepest discount of the year, until December 1!", fr: "<strong>Vendredi Fou</strong> — notre plus gros rabais de l'année, jusqu'au 1er décembre !" },
+  { m: [11],    code: "",              pct: 0,  en: "<strong>Deduct It This Year</strong> — sign before December 31 and deduct from your 2026 taxes!", fr: "<strong>Déduisez Cette Année</strong> — signez avant le 31 décembre et déduisez de vos impôts 2026 !" }
+];
+
+var VIP_PROMO_CODES = {
+  NEWYEAR15: 15,
+  LOVELOCAL10: 10,
+  SPRINGCLEAN20: 20,
+  TERRASSE15: 15,
+  BUILDNOW10: 10,
+  RENTREE20: 20,
+  BLACKVIP25: 25
+};
+
+var FB_ADS_PRICE = 450; /* CAD per month */
+
+var vipLastCode = null;
+
+function vipIsFR() {
+  return document.body.classList.contains('lang-fr');
+}
+
+function vipCurrentCampaign() {
+  var month = new Date().getMonth();
+  for (var i = 0; i < VIP_CAMPAIGNS.length; i++) {
+    if (VIP_CAMPAIGNS[i].m.indexOf(month) !== -1) return VIP_CAMPAIGNS[i];
+  }
+  return null;
+}
+
+function renderPromoBanner() {
+  var el = document.getElementById('promoBanner');
+  if (!el) return;
+  var camp = vipCurrentCampaign();
+  if (!camp) { el.style.display = 'none'; return; }
+  el.style.display = 'block';
+  var msg = vipIsFR() ? camp.fr : camp.en;
+  el.innerHTML = msg + (camp.code ? '<br><span class="code-chip">' + camp.code + '</span>' : '');
+}
+
+function checkPromo() {
+  vipLastCode = document.getElementById('promoInput').value.trim().toUpperCase();
+  renderPromoResult();
+}
+
+function renderPromoResult() {
+  var res = document.getElementById('promoResult');
+  if (!res) return;
+  if (!vipLastCode) { res.className = 'promo-result'; res.innerHTML = ''; return; }
+
+  var code = vipLastCode;
+  var fr = vipIsFR();
+
+  if (!VIP_PROMO_CODES.hasOwnProperty(code)) {
+    res.className = 'promo-result bad';
+    res.innerHTML = fr
+      ? 'Code invalide ou expiré. Vérifiez la bannière ci-dessus pour le code actuel.'
+      : 'Invalid or expired code. Check the banner above for the current code.';
+    return;
+  }
+
+  var pct = VIP_PROMO_CODES[code];
+  var newPrice = Math.round(FB_ADS_PRICE * (100 - pct)) / 100;
+
+  var priceStr = newPrice.toFixed(2);
+  var oldStr = FB_ADS_PRICE.toFixed(2);
+  if (fr) { priceStr = priceStr.replace('.', ','); oldStr = oldStr.replace('.', ','); }
+
+  res.className = 'promo-result ok';
+  res.innerHTML = fr
+    ? '✓ Code <strong>' + code + '</strong> accepté : ' + pct + ' % de rabais.<br><strong>' + priceStr + ' $/mois</strong> (au lieu de ' + oldStr + ' $/mois)'
+    : '✓ Code <strong>' + code + '</strong> accepted: ' + pct + '% off.<br><strong>$' + priceStr + '/month</strong> (instead of $' + oldStr + '/month)';
+}
+
+renderPromoBanner();
 </script>
 
 </body>
