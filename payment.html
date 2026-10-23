@@ -6,13 +6,13 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="canonical" href="https://solutionsmarketingvip.com/payment.html">
 <title>Payment Options | Solutions Marketing VIP</title>
-<meta name="description" content="Pay by Interac e-Transfer. All service prices listed clearly. TPS/TVQ where applicable by law.">
+<meta name="description" content="Pay by credit card or Interac e-Transfer. All service prices listed clearly. TPS/TVQ where applicable by law.">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
   "name": "Payment Options",
-  "description": "Interac e-Transfer payments for Montreal web services.",
+  "description": "Credit card and Interac e-Transfer payments for Montreal web services.",
   "url": "https://solutionsmarketingvip.com/payment.html",
   "inLanguage": ["en-CA", "fr-CA"]
 }
@@ -137,11 +137,6 @@
   .tax-note {
     font-size: 0.9rem; color: #777; font-style: italic;
   }
-  .coming-soon {
-    background: #f4f4f4; border: 1px dashed #ccc;
-    padding: 16px 20px; border-radius: 5px; margin: 18px 0;
-    font-size: 0.9rem; color: #666; font-style: italic;
-  }
   .grid-section { margin-top: 44px; }
   .grid-section h3 {
     color: var(--dark); font-size: 1.35rem; margin-bottom: 8px;
@@ -263,10 +258,55 @@
     display: block; background: rgba(170,50,50,0.07);
     border: 1px solid #a33; color: #7a2222;
   }
-  .square-slot {
-    margin-top: 22px; padding: 16px 20px; border-radius: 5px;
-    border: 1px dashed #D8CFBA; background: #FBF7EC;
-    font-size: 0.87rem; color: #888; font-style: italic;
+
+  /* ===== SQUARE BUY SYSTEM ===== */
+  .shop-section { margin-top: 44px; }
+  .shop-section h3 {
+    color: var(--dark); font-size: 1.35rem; margin-bottom: 8px;
+  }
+  .shop-section > .en > p, .shop-section > .fr > p { font-size: 0.95rem; margin-bottom: 18px; }
+  .buy-card {
+    background: #fff; border: 1px solid #D8CFBA;
+    border-left: 5px solid var(--gold); border-radius: 5px;
+    padding: 22px 26px; margin-bottom: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    animation: fadeInUp 0.7s ease both;
+  }
+  .buy-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.10);
+  }
+  .buy-card .buy-row {
+    display: flex; align-items: center; justify-content: space-between;
+    flex-wrap: wrap; gap: 14px;
+  }
+  .buy-card h4 { color: var(--dark); font-size: 1.12rem; }
+  .buy-card .item-price {
+    color: var(--gold); font-weight: bold; font-size: 1.05rem;
+    font-family: Arial, sans-serif;
+  }
+  .buy-card .item-desc {
+    font-size: 0.9rem; color: #777; margin-top: 4px;
+  }
+  .btn-row { display: flex; gap: 10px; flex-wrap: wrap; }
+  .sq-buy {
+    display: inline-block; background: var(--gold); color: #fff;
+    padding: 12px 26px; border-radius: 5px; text-decoration: none;
+    font-weight: bold; font-size: 0.98rem;
+    font-family: Arial, sans-serif;
+    transition: background 0.25s ease;
+  }
+  .sq-buy:hover { background: #8a6d2b; color: #fff; }
+  .sq-buy.deposit { background: var(--dark); color: var(--gold-light); }
+  .sq-buy.deposit:hover { background: #000; color: #fff; }
+  .cards-note {
+    font-size: 0.83rem; color: #999; margin-top: 8px;
+    font-family: Arial, sans-serif;
+  }
+  @media (max-width: 600px) {
+    .buy-card .buy-row { flex-direction: column; align-items: flex-start; }
+    .sq-buy { width: 100%; text-align: center; }
   }
   @media (max-width: 480px) {
     .calc-btn { width: 100%; }
@@ -297,12 +337,12 @@
   <div class="en" lang="en">
     <div class="eyebrow">Secure Payments</div>
     <h2>How to Pay</h2>
-    <p>For now, we accept Interac e-Transfer — direct to our bank account, no third party holding your money. Other payment methods coming soon.</p>
+    <p>Pay securely by credit card, or by Interac e-Transfer — direct to our bank account, no third party holding your money.</p>
   </div>
   <div class="fr" lang="fr">
     <div class="eyebrow">Paiements Sécurisés</div>
     <h2>Comment Payer</h2>
-    <p>Pour l'instant, nous acceptons le virement Interac — directement à notre compte bancaire, aucun tiers ne retient votre argent. Autres méthodes de paiement bientôt disponibles.</p>
+    <p>Payez par carte de crédit en toute sécurité, ou par virement Interac — directement à notre compte bancaire, aucun tiers ne retient votre argent.</p>
   </div>
 </div>
 
@@ -311,7 +351,7 @@
   <!-- SEASONAL PROMO BANNER (auto-updates by date) -->
   <div class="vip-banner" id="promoBanner"></div>
 
-  <!-- METHOD 1: INTERAC (ONLY OPTION FOR NOW) -->
+  <!-- INTERAC TRANSFER -->
   <div class="pay-card">
     <div class="en" lang="en">
       <h3>Interac e-Transfer</h3>
@@ -343,6 +383,205 @@
     </div>
   </div>
 
+  <!-- START A PROJECT: ONE-TIME PURCHASES -->
+  <div class="shop-section">
+    <div class="en" lang="en">
+      <h3>Start a Project — Card Payment</h3>
+      <p>One-time services and project deposits, paid securely by credit card. For web projects, the 50% deposit reserves your start date; balance due before launch. Prefer to pay in full? Both options below.</p>
+    </div>
+    <div class="fr" lang="fr">
+      <h3>Démarrer un Projet — Paiement par Carte</h3>
+      <p>Services ponctuels et acomptes de projet, payés par carte de crédit en toute sécurité. Pour les projets web, l'acompte de 50 % réserve votre date de début ; solde avant la mise en ligne. Préférez payer en entier ? Les deux options ci-dessous.</p>
+    </div>
+
+    <!-- Health Check -->
+    <div class="buy-card">
+      <div class="buy-row">
+        <div>
+          <h4><span class="en" lang="en">Health Check Audit</span><span class="fr" lang="fr">Vérification de Santé</span></h4>
+          <div class="item-desc"><span class="en" lang="en">Full SEO and health report of your existing site</span><span class="fr" lang="fr">Rapport complet SEO et santé de votre site existant</span></div>
+        </div>
+        <div class="item-price">$300</div>
+        <div class="btn-row">
+          <a class="sq-buy" href="https://square.link/u/EW8CZRNU?src=embed" target="_blank" rel="noopener"><span class="en" lang="en">Book Now</span><span class="fr" lang="fr">Réserver</span></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Complete Audit -->
+    <div class="buy-card">
+      <div class="buy-row">
+        <div>
+          <h4><span class="en" lang="en">Complete Audit</span><span class="fr" lang="fr">Audit Complet</span></h4>
+          <div class="item-desc"><span class="en" lang="en">Deep technical, SEO and content audit with action plan</span><span class="fr" lang="fr">Audit technique, SEO et contenu approfondi avec plan d'action</span></div>
+        </div>
+        <div class="item-price">$1,200+</div>
+        <div class="btn-row">
+          <a class="sq-buy deposit" href="https://square.link/u/uJLXdAZQ?src=embed" target="_blank" rel="noopener"><span class="en" lang="en">Pay Deposit — $600</span><span class="fr" lang="fr">Acompte — 600 $</span></a>
+          <a class="sq-buy" href="https://square.link/u/Usdel5UF?src=embed" target="_blank" rel="noopener"><span class="en" lang="en">Pay in Full — $1,200</span><span class="fr" lang="fr">Payer en Entier — 1 200 $</span></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Enterprise Audit -->
+    <div class="buy-card">
+      <div class="buy-row">
+        <div>
+          <h4><span class="en" lang="en">Enterprise Audit</span><span class="fr" lang="fr">Audit d'Entreprise</span></h4>
+          <div class="item-desc"><span class="en" lang="en">Multi-site, multi-stakeholder audit with executive reporting</span><span class="fr" lang="fr">Audit multi-sites et multi-intervenants avec rapport de direction</span></div>
+        </div>
+        <div class="item-price">$4,500+</div>
+        <div class="btn-row">
+          <a class="sq-buy deposit" href="https://square.link/u/eFf0gPtg?src=embed" target="_blank" rel="noopener"><span class="en" lang="en">Pay Deposit — $2,250</span><span class="fr" lang="fr">Acompte — 2 250 $</span></a>
+          <a class="sq-buy" href="https://square.link/u/xqR3OIjL?src=embed" target="_blank" rel="noopener"><span class="en" lang="en">Pay in Full — $4,500</span><span class="fr" lang="fr">Payer en Entier — 4 500 $</span></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Landing Page -->
+    <div class="buy-card">
+      <div class="buy-row">
+        <div>
+          <h4><span class="en" lang="en">Landing Page</span><span class="fr" lang="fr">Page d'Atterrissage</span></h4>
+          <div class="item-desc"><span class="en" lang="en">One focused page built to convert visitors into customers</span><span class="fr" lang="fr">Une page ciblée conçue pour convertir les visiteurs en clients</span></div>
+        </div>
+        <div class="item-price">$900</div>
+        <div class="btn-row">
+          <a class="sq-buy deposit" href="https://square.link/u/wrwHtCzu?src=embed" target="_blank" rel="noopener"><span class="en" lang="en">Pay Deposit — $450</span><span class="fr" lang="fr">Acompte — 450 $</span></a>
+          <a class="sq-buy" href="https://square.link/u/tUfN8chD?src=embed" target="_blank" rel="noopener"><span class="en" lang="en">Pay in Full — $900</span><span class="fr" lang="fr">Payer en Entier — 900 $</span></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Business Site -->
+    <div class="buy-card">
+      <div class="buy-row">
+        <div>
+          <h4><span class="en" lang="en">Business Site</span><span class="fr" lang="fr">Site d'Affaires</span></h4>
+          <div class="item-desc"><span class="en" lang="en">Complete bilingual hand-coded business website</span><span class="fr" lang="fr">Site d'affaires bilingue complet, codé à la main</span></div>
+        </div>
+        <div class="item-price">$2,800</div>
+        <div class="btn-row">
+          <a class="sq-buy deposit" href="https://square.link/u/LOb6fcOG?src=embed" target="_blank" rel="noopener"><span class="en" lang="en">Pay Deposit — $1,400</span><span class="fr" lang="fr">Acompte — 1 400 $</span></a>
+          <a class="sq-buy" href="https://square.link/u/tEVQRszt?src=embed" target="_blank" rel="noopener"><span class="en" lang="en">Pay in Full — $2,800</span><span class="fr" lang="fr">Payer en Entier — 2 800 $</span></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Site + SEO Kickstart -->
+    <div class="buy-card">
+      <div class="buy-row">
+        <div>
+          <h4><span class="en" lang="en">Site + SEO Kickstart</span><span class="fr" lang="fr">Site + Départ SEO</span></h4>
+          <div class="item-desc"><span class="en" lang="en">Business site plus local SEO foundation to launch you ranking</span><span class="fr" lang="fr">Site d'affaires plus fondation SEO local pour vous lancer dans le classement</span></div>
+        </div>
+        <div class="item-price">$3,800</div>
+        <div class="btn-row">
+          <a class="sq-buy deposit" href="https://square.link/u/nKWN3uvv?src=embed" target="_blank" rel="noopener"><span class="en" lang="en">Pay Deposit — $1,900</span><span class="fr" lang="fr">Acompte — 1 900 $</span></a>
+          <a class="sq-buy" href="https://square.link/u/YUUHPiV6?src=embed" target="_blank" rel="noopener"><span class="en" lang="en">Pay in Full — $3,800</span><span class="fr" lang="fr">Payer en Entier — 3 800 $</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SUBSCRIPTIONS: RECURRING PLANS -->
+  <div class="shop-section">
+    <div class="en" lang="en">
+      <h3>Recurring Plans — Card Payment</h3>
+      <p>Our recurring services, billed automatically through Square. Cancel by written notice — 30 days standard, 60 days for Local Dominance. No lock-in, no penalties.</p>
+    </div>
+    <div class="fr" lang="fr">
+      <h3>Forfaits Récurrents — Paiement par Carte</h3>
+      <p>Nos services récurrents, facturés automatiquement via Square. Résiliation par préavis écrit — 30 jours standard, 60 jours pour la Domination Locale. Aucun enfermement, aucune pénalité.</p>
+    </div>
+
+    <!-- Essential Care -->
+    <div class="buy-card">
+      <div class="buy-row">
+        <div>
+          <h4><span class="en" lang="en">Essential Care Maintenance</span><span class="fr" lang="fr">Soins Essentiels</span></h4>
+          <div class="item-desc"><span class="en" lang="en">Updates, backups, monitoring, 1h of changes per month</span><span class="fr" lang="fr">Mises à jour, sauvegardes, surveillance, 1 h de modifications par mois</span></div>
+        </div>
+        <div class="item-price">$99<span class="en" lang="en">/mo</span><span class="fr" lang="fr">/mois</span></div>
+        <div class="btn-row">
+          <a class="sq-buy" href="https://square.link/u/rcLqqpTy?src=embed" target="_blank" rel="noopener"><span class="en" lang="en">Subscribe</span><span class="fr" lang="fr">S'abonner</span></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- VIP Care -->
+    <div class="buy-card">
+      <div class="buy-row">
+        <div>
+          <h4><span class="en" lang="en">VIP Care Maintenance</span><span class="fr" lang="fr">Soins VIP</span></h4>
+          <div class="item-desc"><span class="en" lang="en">3h of changes per month, quarterly SEO report, same-day support, monthly blog post</span><span class="fr" lang="fr">3 h de modifications par mois, rapport SEO trimestriel, support le jour même, article mensuel</span></div>
+        </div>
+        <div class="item-price">$199<span class="en" lang="en">/mo</span><span class="fr" lang="fr">/mois</span></div>
+        <div class="btn-row">
+          <a class="sq-buy" href="https://square.link/u/Du5J3CbH?src=embed" target="_blank" rel="noopener"><span class="en" lang="en">Subscribe</span><span class="fr" lang="fr">S'abonner</span></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Local Dominance -->
+    <div class="buy-card">
+      <div class="buy-row">
+        <div>
+          <h4><span class="en" lang="en">Local Dominance Bundle</span><span class="fr" lang="fr">Pack Domination Locale</span></h4>
+          <div class="item-desc"><span class="en" lang="en">Google Business Profile, local SEO, reviews and localized content</span><span class="fr" lang="fr">Profil d'entreprise Google, SEO local, avis et contenu localisé</span></div>
+        </div>
+        <div class="item-price">$349<span class="en" lang="en">/mo</span><span class="fr" lang="fr">/mois</span></div>
+        <div class="btn-row">
+          <a class="sq-buy" href="https://square.link/u/w7zdisUM?src=embed" target="_blank" rel="noopener"><span class="en" lang="en">Subscribe</span><span class="fr" lang="fr">S'abonner</span></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Monitoring & Repair -->
+    <div class="buy-card">
+      <div class="buy-row">
+        <div>
+          <h4><span class="en" lang="en">Monitoring &amp; Repair</span><span class="fr" lang="fr">Surveillance &amp; Réparation</span></h4>
+          <div class="item-desc"><span class="en" lang="en">Our top-tier managed plan: full monitoring with priority repairs</span><span class="fr" lang="fr">Notre forfait géré haut de gamme : surveillance complète et réparations prioritaires</span></div>
+        </div>
+        <div class="item-price">$650<span class="en" lang="en">/mo</span><span class="fr" lang="fr">/mois</span></div>
+        <div class="btn-row">
+          <a class="sq-buy" href="https://square.link/u/TSvxyosk?src=embed" target="_blank" rel="noopener"><span class="en" lang="en">Subscribe</span><span class="fr" lang="fr">S'abonner</span></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Managed Hosting -->
+    <div class="buy-card">
+      <div class="buy-row">
+        <div>
+          <h4><span class="en" lang="en">Managed Hosting</span><span class="fr" lang="fr">Hébergement Géré</span></h4>
+          <div class="item-desc"><span class="en" lang="en">Fast servers, SSL, daily backups, uptime monitoring, DNS handled</span><span class="fr" lang="fr">Serveurs rapides, SSL, sauvegardes quotidiennes, surveillance, DNS géré</span></div>
+        </div>
+        <div class="item-price">$385<span class="en" lang="en">/yr</span><span class="fr" lang="fr">/an</span></div>
+        <div class="btn-row">
+          <a class="sq-buy" href="https://square.link/u/6cULe14f?src=embed" target="_blank" rel="noopener"><span class="en" lang="en">Subscribe</span><span class="fr" lang="fr">S'abonner</span></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Compliance Shield -->
+    <div class="buy-card">
+      <div class="buy-row">
+        <div>
+          <h4><span class="en" lang="en">Compliance Shield</span><span class="fr" lang="fr">Bouclier Conformité</span></h4>
+          <div class="item-desc"><span class="en" lang="en">Law 25, GDPR, CCPA compliance with annual review</span><span class="fr" lang="fr">Conformité Loi 25, RGPD, CCPA avec revue annuelle</span></div>
+        </div>
+        <div class="item-price">$250<span class="en" lang="en">/yr</span><span class="fr" lang="fr">/an</span></div>
+        <div class="btn-row">
+          <a class="sq-buy" href="https://square.link/u/FTkEPZ39?src=embed" target="_blank" rel="noopener"><span class="en" lang="en">Subscribe</span><span class="fr" lang="fr">S'abonner</span></a>
+        </div>
+      </div>
+    </div>
+
+    <p class="cards-note"><span class="en" lang="en">Secure checkout handled by Square. Visa, Mastercard, Amex accepted.</span><span class="fr" lang="fr">Paiement sécurisé traité par Square. Visa, Mastercard, Amex acceptées.</span></p>
+  </div>
+
   <!-- PROMO CODE CALCULATOR -->
   <div class="promo-box">
     <h3><span class="en" lang="en">Check Your Promo Price</span><span class="fr" lang="fr">Vérifiez Votre Prix Promo</span></h3>
@@ -367,23 +606,6 @@
 
     <div class="promo-result" id="promoResult"></div>
 
-    <!-- ===== SQUARE / PAYPAL EMBED CODE GOES BELOW THIS LINE ===== -->
-    <div class="square-slot">
-      <span class="en" lang="en">Card payment button will appear here once processor approval is complete.</span>
-      <span class="fr" lang="fr">Le bouton de paiement par carte apparaîtra ici dès que l'approbation du processeur sera complétée.</span>
-    </div>
-    <!-- ===== END SQUARE SLOT ===== -->
-
-  </div>
-
-  <!-- COMING SOON MESSAGE -->
-  <div class="coming-soon">
-    <div class="en" lang="en">
-      <strong>Credit card payments coming soon.</strong> We're finishing our payment processor approval right now. For immediate payment, use Interac e-Transfer (above), or ask us about in-person tap payment in Montreal.
-    </div>
-    <div class="fr" lang="fr">
-      <strong>Paiements par carte de crédit bientôt disponibles.</strong> Nous terminons actuellement l'approbation de notre processeur de paiement. Pour un paiement immédiat, utilisez le virement Interac (ci-dessus), ou demandez-nous le paiement sans contact en personne à Montréal.
-    </div>
   </div>
 
   <!-- FULL PRICE GRID -->
@@ -414,7 +636,7 @@
         </tr>
         <tr>
           <td><span class="en" lang="en">Enterprise Audit</span><span class="fr" lang="fr">Audit d'Entreprise</span></td>
-          <td class="price"><span class="en" lang="en">Quote</span><span class="fr" lang="fr">Sur devis</span></td>
+          <td class="price">$4,500+</td>
         </tr>
         <tr class="recurring">
           <td><span class="en" lang="en">Monitoring &amp; Repair</span><span class="fr" lang="fr">Suivi et Correction</span><span class="grid-tag">Recurring</span></td>
@@ -496,11 +718,7 @@ window.addEventListener("scroll", function () {
   else header.classList.remove("condensed");
 }, { passive: true });
 
-/* ===== VIP PROMO SYSTEM =====
-   The banner picks the current campaign from the visitor's date.
-   To retire or change a season, edit VIP_CAMPAIGNS below.
-   Codes are PUBLIC by design — they appear on the banner anyway.
-*/
+/* ===== VIP PROMO SYSTEM ===== */
 var VIP_CAMPAIGNS = [
   { m: [0, 1],  code: "NEWYEAR15",     pct: 15, en: "<strong>New Year, New Site</strong> — 15% off everything until January 31!", fr: "<strong>Nouvelle Année, Nouveau Site</strong> — 15 % de rabais jusqu'au 31 janvier !" },
   { m: [1],     code: "LOVELOCAL10",   pct: 10, en: "<strong>Valentine's Special</strong> — 10% off for florists, restaurants &amp; salons until Feb 12!", fr: "<strong>Spécial St-Valentin</strong> — 10 % de rabais pour fleuristes, restaurants et salons jusqu'au 12 février !" },
