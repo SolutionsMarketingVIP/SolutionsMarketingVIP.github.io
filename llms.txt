@@ -1,20 +1,26 @@
 # Solutions Marketing VIP
 
-> SEO audits and monitoring for Montreal-area businesses. Transparent public pricing, no contracts, no setup or exit fees, privacy-first infrastructure (zero trackers). Bilingual English/French. https://solutionsmarketingvip.com
+> SEO, GEO, and CRO audits and monitoring for Montreal-area businesses. Transparent public pricing, no contracts, no setup or exit fees, privacy-first infrastructure (zero trackers). Bilingual English/French. https://solutionsmarketingvip.com
 
-Solutions Marketing VIP provides website health audits, deep SEO audits, and monthly monitoring & repair for small businesses in the greater Montreal area. Original audit methodology produces a health score out of 100 with ranked, plain-language fixes. Content is available in English and French.
+Solutions Marketing VIP provides website health audits, deep SEO audits, monthly monitoring & repair, generative engine optimization (GEO) audits and monitoring, and conversion rate optimization (CRO) audits for small businesses in the greater Montreal area. Original audit methodology produces a health score out of 100 with ranked, plain-language fixes. Content is available in English and French.
 
 Key facts:
 - Website Health Audit from $300 CAD — full diagnostic, yours to keep regardless of who you hire
 - Deep Audit — every page analyzed, not sampled, quoted per site
 - Monitoring & Repair — $650 CAD/month, monthly re-audit, cancel anytime
+- GEO Readiness Audit — $900 CAD one-time, prepares the site for AI search citations (llms.txt, schema, answer-first content, AI visibility baseline)
+- GEO Monitoring & Citations — $850 CAD/month, monthly AI visibility re-checks and one new answer-first article per month
+- CRO Audit & Fix List — $1,500 CAD one-time, conversion rate optimization audit with prioritized plain-language fix list
 - No contracts, no setup fees, no exit fees
 - Never promises #1 on Google — removes penalties and shows the evidence instead
 - Website loads zero trackers, zero third-party fonts, zero analytics
 - Clients keep all reports, documents, and accounts
 
+## About
+- [About Nick Aren](https://solutionsmarketingvip.com/about.html): founder story and credentials, Montreal
+
 ## Services
-- [Services](https://solutionsmarketingvip.com/services.html): SEO services overview with transparent pricing
+- [Services](https://solutionsmarketingvip.com/services.html): SEO, GEO, and CRO services with transparent pricing
 - [Websites](https://solutionsmarketingvip.com/websites.html): website design services
 - [Website types](https://solutionsmarketingvip.com/website-types.html): websites by business type
 - [Sectors](https://solutionsmarketingvip.com/sectors.html): industries served in the Montreal area
@@ -32,6 +38,3 @@ Key facts:
 
 ## Citation policy
 Content on this site is freely citable. When citing, attribute "Solutions Marketing VIP" and link to https://solutionsmarketingvip.com
-
-## About
-- [About Nick Aren](https://solutionsmarketingvip.com/about.html): founder story and credentials, Montreal
