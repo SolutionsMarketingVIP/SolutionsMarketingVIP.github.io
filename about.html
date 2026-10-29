@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://solutionsmarketingvip.com/about.html">
+<title>About Nick Aren | Solutions Marketing VIP</title>
+<meta name="description" content="Meet Nick Aren, founder of Solutions Marketing VIP. Former trucking and car detailing professional who learned SEO after losing his own website to a missed payment. Montreal, QC.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://solutionsmarketingvip.com/#organization",
+      "name": "Solutions Marketing VIP",
+      "url": "https://solutionsmarketingvip.com/",
+      "email": "solutions.marketing.vip@proton.me",
+      "description": "SEO audits, monitoring and privacy-first websites for Montreal and Quebec small businesses.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Montréal",
+        "addressRegion": "QC",
+        "addressCountry": "CA"
+      },
+      "areaServed": ["Montréal", "Québec", "Canada"],
+      "founder": { "@id": "https://solutionsmarketingvip.com/#nickaren" }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://solutionsmarketingvip.com/#nickaren",
+      "name": "Nick Aren",
+      "jobTitle": "Founder",
+      "image": "https://solutionsmarketingvip.com/nick.jpg",
+      "worksFor": { "@id": "https://solutionsmarketingvip.com/#organization" },
+      "knowsAbout": ["SEO", "Web Design", "Website Audits", "Local SEO", "Law 25 Compliance"],
+      "description": "Founder of Solutions Marketing VIP in Montreal. Formerly worked in trucking and car detailing before teaching himself web design and SEO after losing a website to a missed platform payment."
+    }
+  ]
+}
+</script>
+<style>
+  :root {
+    --gold: #B08D3E;
+    --gold-light: #D9C99A;
+    --dark: #23252B;
+    --cream: #F5F2EA;
+    --text: #3a3a40;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: var(--cream); color: var(--text); line-height: 1.7;
+  }
+
+  header {
+    background: var(--dark); color: #fff;
+    padding: 20px 0; border-bottom: 3px solid var(--gold);
+    position: sticky; top: 0; z-index: 50;
+    transition: padding 0.3s ease, box-shadow 0.3s ease;
+  }
+  header.condensed {
+    padding: 10px 0;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.45);
+  }
+  header .hwrap {
+    max-width: 900px; margin: 0 auto; padding: 0 24px;
+    display: flex; justify-content: space-between; align-items: center;
+    flex-wrap: wrap; gap: 10px;
+  }
+  header h1.logo-block { line-height: 0; }
+  header h1.logo-block a { display: inline-block; text-decoration: none; }
+  header h1.logo-block img {
+    height: 54px; width: auto; max-width: 240px;
+    display: block; border-radius: 3px;
+    transition: height 0.3s ease;
+  }
+  header.condensed h1.logo-block img { height: 40px; }
+  header nav {
+    display: flex; align-items: center; flex-wrap: wrap; gap: 4px 0;
+  }
+  header nav a, header nav button {
+    color: var(--gold-light); text-decoration: none;
+    margin-left: 14px; font-size: 0.95rem;
+    background: none; border: none; cursor: pointer;
+    font-family: inherit; padding: 0;
+    transition: color 0.25s ease;
+  }
+  header nav a:hover, header nav button:hover { color: #fff; }
+
+  @media (max-width: 720px) {
+    header .hwrap {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+    }
+    header h1.logo-block img {
+      height: 44px; max-width: 200px; margin: 0 auto;
+    }
+    header.condensed h1.logo-block img { height: 36px; }
+    header nav {
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 8px 0;
+    }
+    header nav a, header nav button {
+      margin-left: 0;
+      padding: 6px 10px;
+      font-size: 0.88rem;
+      text-align: center;
+    }
+  }
+
+  .hero {
+    background: var(--dark); color: #fff;
+    padding: 70px 24px 60px; text-align: center;
+    border-bottom: 3px solid var(--gold);
+  }
+  .hero .eyebrow {
+    color: var(--gold); font-size: 0.78rem; letter-spacing: 3px;
+    text-transform: uppercase; font-family: Arial, sans-serif;
+    margin-bottom: 14px;
+  }
+  .hero h2 {
+    font-size: 2rem; line-height: 1.35; color: #fff;
+    max-width: 700px; margin: 0 auto;
+  }
+  .hero p {
+    max-width: 620px; margin: 18px auto 0; font-size: 1.02rem; color: #cfcfd4;
+  }
+
+  .content {
+    max-width: 900px; margin: 30px auto 80px; padding: 0 24px;
+  }
+
+  .section-heading { text-align: center; margin: 60px 0 10px; }
+  .section-heading .eyebrow {
+    color: var(--gold); font-size: 0.75rem; letter-spacing: 3px;
+    text-transform: uppercase; font-family: Arial, sans-serif;
+    margin-bottom: 6px;
+  }
+  .section-heading h3 { font-size: 1.55rem; color: var(--dark); }
+
+  .intro {
+    display: flex; gap: 34px; align-items: flex-start; flex-wrap: wrap;
+    margin-top: 40px;
+  }
+  .intro-photo {
+    flex: 0 0 280px;
+    background: #fff; border: 1px solid #D8CFBA;
+    border-top: 5px solid var(--gold); border-radius: 5px;
+    padding: 12px 12px 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  }
+  .intro-photo img {
+    width: 100%; height: auto; display: block; border-radius: 3px;
+  }
+  .intro-photo .caption {
+    text-align: center; font-size: 0.82rem; color: #777;
+    margin-top: 10px; font-family: Arial, sans-serif;
+  }
+  .intro-text { flex: 1 1 400px; font-size: 1rem; }
+  .intro-text p { margin-bottom: 18px; }
+
+  .story-item {
+    background: #fff; border: 1px solid #D8CFBA;
+    border-left: 5px solid var(--gold); border-radius: 5px;
+    padding: 22px 26px; margin-bottom: 16px;
+    box-shadow: 0 3px 9px rgba(0,0,0,0.05);
+    font-size: 0.96rem;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  .story-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.10);
+  }
+  .story-item strong { color: var(--dark); }
+  .story-item p { margin: 6px 0 0; }
+
+  .pledge {
+    background: var(--dark); color: #fff;
+    border-radius: 5px; padding: 34px 30px; margin-top: 26px;
+    border-left: 5px solid var(--gold);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  }
+  .pledge .eyebrow {
+    color: var(--gold); font-size: 0.75rem; letter-spacing: 3px;
+    text-transform: uppercase; font-family: Arial, sans-serif;
+    margin-bottom: 6px;
+  }
+  .pledge h3 { color: var(--gold-light); font-size: 1.35rem; margin-bottom: 12px; }
+  .pledge p { font-size: 0.95rem; color: #e8e8ec; margin-bottom: 10px; }
+
+  .contact-band {
+    text-align: center; margin-top: 60px;
+  }
+  .contact-band .cta-btn {
+    display: inline-block;
+    background: var(--gold); color: #fff;
+    padding: 16px 36px; border-radius: 5px;
+    text-decoration: none; font-weight: bold; font-size: 1.05rem;
+    transition: background 0.25s ease, transform 0.25s ease;
+  }
+  .contact-band .cta-btn:hover {
+    background: #9c7b33; transform: translateY(-1px);
+  }
+
+  footer {
+    background: var(--dark); color: #8a8a8a; text-align: center;
+    padding: 30px 20px; font-size: 0.85rem;
+    border-top: 3px solid var(--gold);
+    font-family: Arial, sans-serif;
+  }
+  footer .foot-links { margin-bottom: 12px; }
+  footer .foot-links a { margin: 0 8px; }
+  footer a {
+    color: var(--gold); font-weight: bold; text-decoration: none;
+  }
+  footer a:hover { color: var(--gold-light); }
+
+  .fr { display: none; }
+  body.lang-fr .en { display: none; }
+  body.lang-fr .fr { display: block; }
+</style>
+</head>
+<body class="lang-en">
+
+<header id="site-header">
+  <div class="hwrap">
+    <h1 class="logo-block"><a href="index.html"><img src="/logo-new.png" alt="Solutions Marketing VIP"></a></h1>
+    <nav>
+      <a href="index.html"><span class="en" lang="en">Home</span><span class="fr" lang="fr">Accueil</span></a>
+      <a href="websites.html"><span class="en" lang="en">Websites</span><span class="fr" lang="fr">Sites Web</span></a>
+      <a href="services.html"><span class="en" lang="en">Services</span><span class="fr" lang="fr">Services</span></a>
+      <a href="facebook-ads.html"><span class="en" lang="en">Facebook Ads</span><span class="fr" lang="fr">Publicités Facebook</span></a>
+      <a href="website-types.html"><span class="en" lang="en">Guide</span><span class="fr" lang="fr">Guide</span></a>
+      <a href="sectors.html"><span class="en" lang="en">Industries</span><span class="fr" lang="fr">Secteurs</span></a>
+      <a href="blog-list.html"><span class="en" lang="en">Articles</span><span class="fr" lang="fr">Articles</span></a>
+      <a href="case-studies.html"><span class="en" lang="en">Case Studies</span><span class="fr" lang="fr">Études de cas</span></a>
+      <a href="documents.html"><span class="en" lang="en">Documents</span><span class="fr" lang="fr">Documents</span></a>
+      <a href="payment.html"><span class="en" lang="en">Payment</span><span class="fr" lang="fr">Paiement</span></a>
+      <button class="toggle-btn" onclick="toggleLang()" id="langBtn" style="background:#B08D3E;color:#fff;border:none;padding:8px 18px;cursor:pointer;font-weight:bold;border-radius:3px;font-family:Georgia,serif;">FR</button>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="en" lang="en">
+    <div class="eyebrow">About · Montréal</div>
+    <h2>I lost a website over one missed payment. Now I make sure it never happens to anyone else.</h2>
+    <p>Nick Aren, founder of Solutions Marketing VIP. SEO audits and websites you own forever.</p>
+  </div>
+  <div class="fr" lang="fr">
+    <div class="eyebrow">À Propos · Montréal</div>
+    <h2>J'ai perdu un site web à cause d'un seul paiement manqué. Je m'assure que cela n'arrive jamais à personne d'autre.</h2>
+    <p>Nick Aren, fondateur de Solutions Marketing VIP. Audits SEO et sites web qui vous appartiennent pour toujours.</p>
+  </div>
+</div>
+
+<div class="content">
+
+  <!-- INTRO WITH PHOTO -->
+  <div class="intro">
+    <div class="intro-photo">
+      <img src="nick.jpg" alt="Nick Aren, founder of Solutions Marketing VIP, in a lavender field">
+      <div class="caption"><span class="en" lang="en">Nick Aren, founder</span><span class="fr" lang="fr">Nick Aren, fondateur</span></div>
+    </div>
+    <div class="intro-text">
+      <div class="en" lang="en">
+        <p>My name is Nick Aren and I run Solutions Marketing VIP in Montreal. Before this business, I spent years in trucking and car detailing. Long hours, physical work, and customers who judge you on the result, not the promise. That is the standard I brought with me.</p>
+        <p>Today I build and repair websites, run SEO audits, and help small businesses across the greater Montreal area get found by the people already searching for them. But the reason this company exists is a story about losing everything.</p>
+      </div>
+      <div class="fr" lang="fr">
+        <p>Je m'appelle Nick Aren et je dirige Solutions Marketing VIP à Montréal. Avant cette entreprise, j'ai passé des années dans le transport routier et le detail de voitures. De longues heures, du travail physique, et des clients qui vous jugent sur le résultat, pas sur la promesse. C'est la norme que j'ai apportée avec moi.</p>
+        <p>Aujourd'hui, je construis et répare des sites web, je réalise des audits SEO, et j'aide les petites entreprises du grand Montréal à être trouvées par les personnes qui les cherchent déjà. Mais la raison d'être de cette entreprise est une histoire de perte totale.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- THE STORY -->
+  <div class="section-heading">
+    <div class="en" lang="en"><div class="eyebrow">The Story</div><h3>Why I Started This Company</h3></div>
+    <div class="fr" lang="fr"><div class="eyebrow">L'Histoire</div><h3>Pourquoi J'ai Créé Cette Entreprise</h3></div>
+  </div>
+
+  <div class="en" lang="en">
+    <div class="story-item">
+      <strong>The day my website disappeared.</strong>
+      <p>Years ago I ran a business website on a rented platform. One month, one payment slipped through the cracks, and the site vanished. Every page I had written, every price I had calculated, every policy I had put in place, gone. Not suspended. Gone. There was no support line that could bring it back and no backup I controlled. I had been renting a storefront that belonged to someone else, and I only found out when the landlord changed the locks.</p>
+    </div>
+    <div class="story-item">
+      <strong>So I learned the craft.</strong>
+      <p>That failure did not just cost me money. It made me decide to understand exactly how this technology works. I taught myself web design, then SEO, then the technical side of how sites get crawled, indexed, and ranked. The more I learned, the more I saw how many small business owners are in the same position I was, paying monthly for a website they will never truly own.</p>
+    </div>
+    <div class="story-item">
+      <strong>Why I never touch rented platforms for my clients.</strong>
+      <p>Everything we build sits on infrastructure you control, with files in your name. Reports, documents, accounts, the site itself. If you stop working with us tomorrow, your website stays up and everything stays yours. I lived the opposite. I built this company so no other owner has to.</p>
+    </div>
+  </div>
+  <div class="fr" lang="fr">
+    <div class="story-item">
+      <strong>Le jour où mon site web a disparu.</strong>
+      <p>Il y a des années, je gérais un site web d'entreprise sur une plateforme louée. Un mois, un seul paiement a glissé entre les mailles, et le site s'est volatilisé. Chaque page que j'avais écrite, chaque prix que j'avais calculé, chaque politique que j'avait mise en place, disparus. Pas suspendus. Disparus. Aucune ligne d'assistance ne pouvait les ramener, et aucune sauvegarde sous mon contrôle n'existait. Je louais une vitrine qui appartenait à quelqu'un d'autre, et je ne l'ai découvert que le jour où le propriétaire a changé les serrures.</p>
+    </div>
+    <div class="story-item">
+      <strong>Alors j'ai appris le métier.</strong>
+      <p>Cet échec ne m'a pas seulement coûté de l'argent. Il m'a décidé à comprendre exactement comment cette technologie fonctionne. Je me suis enseigné le design web, puis le SEO, puis le côté technique de l'exploration, de l'indexation et du classement des sites. Plus j'apprenais, plus je voyais combien de propriétaires de petites entreprises sont dans la même position que j'étais : payer chaque mois pour un site web qu'ils ne possèderont jamais vraiment.</p>
+    </div>
+    <div class="story-item">
+      <strong>Pourquoi je n'utilise jamais de plateformes louées pour mes clients.</strong>
+      <p>Tout ce que nous construisons repose sur une infrastructure que vous contrôlez, avec des fichiers à votre nom. Rapports, documents, comptes, le site lui-même. Si vous cessez de travailler avec nous demain, votre site web reste en ligne et tout reste à vous. J'ai vécu le contraire. J'ai bâti cette entreprise pour qu'aucun autre propriétaire n'ait à le vivre.</p>
+    </div>
+  </div>
+
+  <!-- PLEDGE -->
+  <div class="pledge">
+    <div class="en" lang="en">
+      <div class="eyebrow">My Pledge</div>
+      <h3>Own your website. Never rent it.</h3>
+      <p>This is not a slogan for me. It is the reason the company exists. Every service on this site, from the $300 Health Check to monthly monitoring, was designed around one principle: you keep everything, and leaving costs you nothing.</p>
+      <p>If that way of doing business makes sense to you, the first conversation is free.</p>
+    </div>
+    <div class="fr" lang="fr">
+      <div class="eyebrow">Mon Engagement</div>
+      <h3>Possédez votre site web. Ne le louez jamais.</h3>
+      <p>Pour moi, ce n'est pas un slogan. C'est la raison d'être de l'entreprise. Chaque service sur ce site, de la Vérification de Santé à 300 $ à la surveillance mensuelle, a été conçu autour d'un seul principe : vous gardez tout, et partir ne vous coûte rien.</p>
+      <p>Si cette façon de faire des affaires vous parle, la première conversation est gratuite.</p>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <div class="contact-band">
+    <div class="en" lang="en"><a href="mailto:solutions.marketing.vip@proton.me?subject=Hello%20Nick" class="cta-btn">Talk to Me Directly</a></div>
+    <div class="fr" lang="fr"><a href="mailto:solutions.marketing.vip@proton.me?subject=Bonjour%20Nick" class="cta-btn">Parlez-Moi Directement</a></div>
+  </div>
+
+</div>
+
+<footer>
+  <p class="foot-links">
+    <a href="case-studies.html"><span class="en" lang="en">Case Studies</span><span class="fr" lang="fr">Études de Cas</span></a>
+    <a href="payment.html"><span class="en" lang="en">Payment</span><span class="fr" lang="fr">Paiement</span></a>
+    <a href="documents.html"><span class="en" lang="en">Client Documents</span><span class="fr" lang="fr">Documents Clients</span></a>
+  </p>
+  <p>&copy; 2026 Solutions Marketing VIP - <span class="en" lang="en">SEO Audits · Privacy First · Montreal, QC</span><span class="fr" lang="fr">Audits SEO · Confidentialité d'Abord · Montréal, QC</span></p>
+</footer>
+
+<script>
+function toggleLang() {
+  var b = document.body;
+  var btn = document.getElementById('langBtn');
+  if (b.classList.contains('lang-en')) {
+    b.classList.remove('lang-en'); b.classList.add('lang-fr');
+    btn.textContent = 'EN';
+  } else {
+    b.classList.remove('lang-fr'); b.classList.add('lang-en');
+    btn.textContent = 'FR';
+  }
+}
+
+var header = document.getElementById("site-header");
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 40) header.classList.add("condensed");
+  else header.classList.remove("condensed");
+}, { passive: true });
+</script>
+
+</body>
+</html>
